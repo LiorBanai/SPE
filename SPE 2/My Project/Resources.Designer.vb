@@ -191,6 +191,58 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to name = English (default)
+        '''ver = 1
+        '''menuname = English
+        '''RTL = false
+        '''comment1= Created by Lior Banai
+        '''comment2= do not modify, rename or delete this file. 
+        '''comment3= new languages should be saved under new name.
+        '''comment4=Email: lior_banai@eng-alum.tau.ac.il
+        '''*** Main GUI settings***
+        '''*** general settings ****
+        '''model_count=Number of times the model had been used:
+        '''model_orthotropic = Orthotropic Plate
+        '''model_grillage= Grillage
+        '''unit_millimeter = [mm]
+        '''unit_millimeter^2 = [mm^2]
+        '''unit_millimeter^4 = [mm^4]
+        ''' [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property default_eng() As String
+            Get
+                Return ResourceManager.GetString("default_eng", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to name = Hebrew (default)
+        '''ver = 1
+        '''menuname = עברית
+        '''RTL = true
+        '''comment1= נוצר ע&quot;י ליאור בנאי
+        '''comment2=ב-25.2.2006
+        '''comment3=אתר: לא זמין
+        '''comment4=אימייל: lior_banai@eng-alum.tau.ac.il
+        '''*** Main GUI settings***
+        '''*** general settins ****
+        '''model_count=מספר התוצאות שחושבו בעזרת המודל:
+        '''model_orthotropic =מודל הפלטה האורתוטרופית
+        '''model_grillage= מודל רשת הקורות
+        '''unit_millimeter = [מ&quot;מ]
+        '''unit_millimeter^2 = [מ&quot;מ^2]
+        '''unit_millimeter^4 = [מ&quot;מ^4]
+        '''unit_centimeter = [ס&quot;מ]
+        '''unit_centimeter^2 = [ס&quot;מ^2]
+        '''unit_centime [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property default_heb() As String
+            Get
+                Return ResourceManager.GetString("default_heb", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Exclamation_bulb() As System.Drawing.Bitmap

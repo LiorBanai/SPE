@@ -327,6 +327,8 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="Resources\default_eng.ini" />
+    <None Include="Resources\default_heb.ini" />
     <None Include="Resources\results - OPM - geo4 case 1 - old.jpg" />
     <None Include="Resources\results - geo4 case 2.jpg" />
     <None Include="Resources\results - geo4 case 3.jpg" />

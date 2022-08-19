@@ -39,11 +39,17 @@ Public Class language_settings
         Dim current_text As String = ""
         Dim current_line_number As UShort = 1
         If lang_file = "" Then
-            ' TO BE COMPLETE LATER
-        ElseIf File.Exists(lang_file) = False Then
-            ' TO BE COMPLETE LATER
-        Else
-            Using sr As StreamReader = New StreamReader(lang_file, System.Text.Encoding.Default)
+            lang_file = "default_eng.ini"
+        End If
+        If File.Exists(lang_file) = False Then
+            If lang_file = "default_eng.ini" Then
+                File.WriteAllText(lang_file, My.Resources.default_eng)
+            End If
+            If (lang_file = "default_heb.ini") Then
+                File.WriteAllText(lang_file, My.Resources.default_heb)
+            End If
+        End If
+        Using sr As StreamReader = New StreamReader(lang_file, System.Text.Encoding.Default)
                 language_settings.language_current_file = lang_file
                 current_line = sr.ReadLine() ' or current_line = language_settings.read_line_from_file(sr, 1)
                 While Not (current_line Is Nothing) 'there is text
@@ -1208,7 +1214,6 @@ Public Class language_settings
                 End While
                 sr.Close()
             End Using
-        End If
     End Function
 #End Region
 #Region "langagues variables declarations"
