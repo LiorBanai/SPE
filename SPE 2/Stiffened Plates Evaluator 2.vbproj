@@ -1,0 +1,422 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FBAC75C-1C42-488A-9BEE-69839358D193}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\SPE01_64x64.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Stiffened Plates Evaluator</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Text</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>SPE</RootNamespace>
+    <StartupObject>SPE.My.MyApplication</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsForms</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ManifestCertificateThumbprint>0D1F2A233046BD632E041A36A13A0D65AC75418F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Stiffened Plates Evaluator 1.8_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Stiffened Plates Evaluator.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42025,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Stiffened Plates Evaluator.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42025,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="DB_DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form - about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - ADINA main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - BC form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - calculations.Designer.vb">
+      <DependentUpon>Form - calculations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form - calculations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form - grillage model.Designer.vb">
+      <DependentUpon>form - grillage model.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form - grillage model.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - languages fields.Designer.vb">
+      <DependentUpon>Form - languages fields.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form - languages fields.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - model Chart value.Designer.vb">
+      <DependentUpon>Form - model Chart value.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form - model Chart value.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - database.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - FEA results.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - first run.Designer.vb">
+      <DependentUpon>Form - first run.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form - first run.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - languages selection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - history.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - Input Parameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - last result.Designer.vb">
+      <DependentUpon>Form - last result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form - last result.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - Launcher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - model parameters.Designer.vb">
+      <DependentUpon>Form - model parameters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form - model parameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - Results.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form - citation.Designer.vb">
+      <DependentUpon>Form - citation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form - citation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="general functions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="general settings.vb" />
+    <Compile Include="language settings.vb" />
+    <Compile Include="models calculations.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Form - SplashScreen.designer.vb">
+      <DependentUpon>Form - SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form - SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form - about.resx">
+      <DependentUpon>Form - about.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - ADINA main.resx">
+      <DependentUpon>Form - ADINA main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - BC form.resx">
+      <DependentUpon>Form - BC form.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - calculations.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form - calculations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - database.resx">
+      <DependentUpon>Form - database.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - FEA results.resx">
+      <DependentUpon>Form - FEA results.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - first run.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form - first run.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form - grillage model.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>form - grillage model.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - languages fields.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form - languages fields.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - languages selection.resx">
+      <DependentUpon>Form - languages selection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - history.resx">
+      <DependentUpon>Form - history.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - Input Parameters.resx">
+      <DependentUpon>Form - Input Parameters.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - last result.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form - last result.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - Launcher.resx">
+      <DependentUpon>Form - Launcher.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - model Chart value.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form - model Chart value.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - model parameters.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form - model parameters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - Results.resx">
+      <DependentUpon>Form - Results.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - citation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form - citation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form - SplashScreen.resx">
+      <DependentUpon>Form - SplashScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Resources\results - OPM - geo4 case 1 - old.jpg" />
+    <None Include="Resources\results - geo4 case 2.jpg" />
+    <None Include="Resources\results - geo4 case 3.jpg" />
+    <None Include="Resources\results - geo4 case 4.jpg" />
+    <None Include="Resources\ship with stiffeners.JPG" />
+    <None Include="Resources\icon01- 32x32.ico" />
+    <None Include="Resources\saar_in_sunset.jpg" />
+    <None Include="Resources\button_model_grillage.gif" />
+    <None Include="Resources\flag-hebrew01.png" />
+    <None Include="Resources\flag-english01.png" />
+    <None Include="Resources\menu-hebrew.gif" />
+    <None Include="Resources\menu_english.gif" />
+    <None Include="Resources\menu_information01.gif" />
+    <None Include="Resources\menu_adina.gif" />
+    <None Include="Resources\menu_exit.gif" />
+    <None Include="Resources\Bar_graph.gif" />
+    <None Include="Resources\geometry_grillage.gif" />
+    <None Include="Resources\plate_empty_text.GIF" />
+    <None Include="Resources\rpoints.gif" />
+    <None Include="Resources\quickreward.jpg" />
+    <None Include="Resources\results - geo4 case 1.jpg" />
+    <None Include="Resources\m_map.gif" />
+    <None Include="Resources\m_portal.gif" />
+    <None Include="Resources\SPE01_small.gif" />
+    <None Include="Resources\question mark.gif" />
+    <None Include="Resources\SPE01.ico" />
+    <None Include="Resources\SPE01_64x64.ico" />
+    <None Include="Resources\Exclamation_bulb.gif" />
+    <None Include="Resources\geometry_model.gif" />
+    <None Include="Resources\both_models_BC4.jpg" />
+    <None Include="Resources\both_models_BC1.jpg" />
+    <None Include="Resources\both_models_BC2.jpg" />
+    <None Include="Resources\both_models_BC3.jpg" />
+    <None Include="Resources\cashbag.gif" />
+    <None Include="Resources\bidvertiser.gif" />
+    <None Include="Resources\adbrite.gif" />
+    <None Include="Resources\SAOS_cover.gif" />
+    <None Include="Resources\icon_confirmation.gif" />
+    <None Include="Resources\icon_x.gif" />
+    <None Include="Resources\icon_check.gif" />
+    <None Include="Resources\icon_unknown.gif" />
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="Resources\arrw01_01a.gif" />
+    <None Include="Resources\arrw01_012.gif" />
+    <None Include="Resources\arrw01_04a.gif" />
+    <None Include="Resources\arrw01_04b.gif" />
+    <None Include="Resources\results - geo3 case 1+2.jpg" />
+    <None Include="Resources\results - geo3 case 3+4.jpg" />
+    <None Include="Resources\results - geo1 case all.jpg" />
+    <None Include="Resources\results - geo2 case all.jpg" />
+    <None Include="Resources\results - geo4 case all.jpg" />
+    <None Include="Resources\mt_shadow.gif" />
+    <None Include="Resources\greasypalm.gif" />
+    <Content Include="results.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="DB_DataSet.xsc">
+      <DependentUpon>DB_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_DataSet.xss">
+      <DependentUpon>DB_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="addons\PopupNotifier\SPE Popup.vbproj">
+      <Project>{D8D8FAB5-B82D-4363-82B4-E6C295074075}</Project>
+      <Name>SPE Popup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
