@@ -180,156 +180,156 @@ Namespace Adina_Generator
         Friend WithEvents SplitContainer As System.Windows.Forms.SplitContainer
         Friend WithEvents PictureBox_info As System.Windows.Forms.PictureBox
         <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-            Me.components = New System.ComponentModel.Container
+            Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GUI_ADINA_main))
-            Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("שלב ראשון - גיאומטרית המודל", 2)
-            Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("שלב שני - הגדרות רישות", 1)
-            Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("שלב שלישי- יצירת המודל", 0)
-            Me.GroupBox_stiffeners = New System.Windows.Forms.GroupBox
-            Me.label_unit_mm06 = New System.Windows.Forms.Label
-            Me.label_unit_mm05 = New System.Windows.Forms.Label
-            Me.label_unit_mm04 = New System.Windows.Forms.Label
-            Me.label_unit_mm03 = New System.Windows.Forms.Label
-            Me.label_unit_mm02 = New System.Windows.Forms.Label
-            Me.numeric_nb = New System.Windows.Forms.NumericUpDown
-            Me.numeric_na = New System.Windows.Forms.NumericUpDown
-            Me.Textbox_H_general = New System.Windows.Forms.TextBox
-            Me.Textbox_Tnb = New System.Windows.Forms.TextBox
-            Me.Label_transverses = New System.Windows.Forms.Label
-            Me.Label_H = New System.Windows.Forms.Label
-            Me.Textbox_Tna = New System.Windows.Forms.TextBox
-            Me.Textbox_Ta = New System.Windows.Forms.TextBox
-            Me.Label_thickness = New System.Windows.Forms.Label
-            Me.Label_non_central02 = New System.Windows.Forms.Label
-            Me.Label_central02 = New System.Windows.Forms.Label
-            Me.Label_longitudinals = New System.Windows.Forms.Label
-            Me.Label_non_central01 = New System.Windows.Forms.Label
-            Me.Label_central01 = New System.Windows.Forms.Label
-            Me.Textbox_Tb = New System.Windows.Forms.TextBox
-            Me.label_Nb = New System.Windows.Forms.Label
-            Me.label_Na = New System.Windows.Forms.Label
-            Me.GroupBox_stiffeners_Data = New System.Windows.Forms.GroupBox
-            Me.Label_data_transverses = New System.Windows.Forms.Label
-            Me.Label_data_longitudinals = New System.Windows.Forms.Label
-            Me.numeric_input_moment_units = New System.Windows.Forms.ComboBox
-            Me.Textbox_Ib = New System.Windows.Forms.TextBox
-            Me.Textbox_Inb = New System.Windows.Forms.TextBox
-            Me.Textbox_Ia = New System.Windows.Forms.TextBox
-            Me.Textbox_Ina = New System.Windows.Forms.TextBox
-            Me.Label_non_central04 = New System.Windows.Forms.Label
-            Me.Label_central04 = New System.Windows.Forms.Label
-            Me.Label_non_central03 = New System.Windows.Forms.Label
-            Me.Label_central03 = New System.Windows.Forms.Label
-            Me.Label_units = New System.Windows.Forms.Label
-            Me.RichTextBox_macro = New System.Windows.Forms.RichTextBox
-            Me.Button_gen = New System.Windows.Forms.Button
-            Me.Button_save_macro = New System.Windows.Forms.Button
-            Me.ProgressBar_sub = New System.Windows.Forms.ProgressBar
-            Me.ProgressBar_total = New System.Windows.Forms.ProgressBar
-            Me.Label_total_progress = New System.Windows.Forms.Label
-            Me.Label_current_progress = New System.Windows.Forms.Label
-            Me.CheckBox_macro = New System.Windows.Forms.CheckBox
-            Me.Panel_model_geometry = New System.Windows.Forms.Panel
-            Me.Picture_eng_panel1 = New System.Windows.Forms.PictureBox
-            Me.Picture_heb_panel1 = New System.Windows.Forms.PictureBox
-            Me.groupbox_plate_geo = New System.Windows.Forms.GroupBox
-            Me.label_t = New System.Windows.Forms.Label
-            Me.numeric_t = New System.Windows.Forms.NumericUpDown
-            Me.label_b = New System.Windows.Forms.Label
-            Me.numeric_b = New System.Windows.Forms.NumericUpDown
-            Me.label_a = New System.Windows.Forms.Label
-            Me.numeric_a = New System.Windows.Forms.NumericUpDown
-            Me.label_unit_mm01 = New System.Windows.Forms.Label
-            Me.label_unit_m02 = New System.Windows.Forms.Label
-            Me.label_unit_m01 = New System.Windows.Forms.Label
-            Me.groupbox_General = New System.Windows.Forms.GroupBox
-            Me.PictureBox_info = New System.Windows.Forms.PictureBox
-            Me.Label_GPa = New System.Windows.Forms.Label
-            Me.combobox_P_units = New System.Windows.Forms.ComboBox
-            Me.textbox_P_input = New System.Windows.Forms.TextBox
-            Me.textbox_ni_input = New System.Windows.Forms.TextBox
-            Me.textbox_E_input = New System.Windows.Forms.TextBox
-            Me.Label_pressure = New System.Windows.Forms.Label
-            Me.label_ni = New System.Windows.Forms.Label
-            Me.Label_E = New System.Windows.Forms.Label
-            Me.numeric_case_input = New System.Windows.Forms.NumericUpDown
-            Me.Label_BC = New System.Windows.Forms.Label
-            Me.Panel_create_model = New System.Windows.Forms.Panel
-            Me.Picture_eng_panel3 = New System.Windows.Forms.PictureBox
-            Me.Picture_heb_panel3 = New System.Windows.Forms.PictureBox
-            Me.GroupBox_video = New System.Windows.Forms.GroupBox
-            Me.RichTextBox_video = New System.Windows.Forms.RichTextBox
-            Me.PictureBox_video01 = New System.Windows.Forms.PictureBox
-            Me.GroupBox_generate = New System.Windows.Forms.GroupBox
-            Me.GroupBox_statistics = New System.Windows.Forms.GroupBox
-            Me.Button_time = New System.Windows.Forms.Button
-            Me.Label_time_interval = New System.Windows.Forms.Label
-            Me.Label_time_end = New System.Windows.Forms.Label
-            Me.Label_time_start = New System.Windows.Forms.Label
-            Me.GroupBox_process = New System.Windows.Forms.GroupBox
-            Me.GroupBox_generation = New System.Windows.Forms.GroupBox
-            Me.CheckBox_gen_mesh = New System.Windows.Forms.CheckBox
-            Me.CheckBox_gen_load = New System.Windows.Forms.CheckBox
-            Me.CheckBox_gen_BC = New System.Windows.Forms.CheckBox
-            Me.CheckBox_gen_geo = New System.Windows.Forms.CheckBox
-            Me.Panel_mesh_properties = New System.Windows.Forms.Panel
-            Me.Picture_eng_panel2 = New System.Windows.Forms.PictureBox
-            Me.Picture_heb_panel2 = New System.Windows.Forms.PictureBox
-            Me.GroupBox7 = New System.Windows.Forms.GroupBox
-            Me.CheckBox_degenenrate = New System.Windows.Forms.CheckBox
-            Me.CheckBox_flip = New System.Windows.Forms.CheckBox
-            Me.Label_shape = New System.Windows.Forms.Label
-            Me.ComboBox_shape_all = New System.Windows.Forms.ComboBox
-            Me.GroupBox11 = New System.Windows.Forms.GroupBox
-            Me.RadioButton_mid02 = New System.Windows.Forms.RadioButton
-            Me.RadioButton_mid01 = New System.Windows.Forms.RadioButton
-            Me.GroupBox10 = New System.Windows.Forms.GroupBox
-            Me.ComboBox_pattern = New System.Windows.Forms.ComboBox
-            Me.Label33 = New System.Windows.Forms.Label
-            Me.ComboBox_nodes = New System.Windows.Forms.ComboBox
-            Me.Label32 = New System.Windows.Forms.Label
-            Me.GroupBox_mesh_algo = New System.Windows.Forms.GroupBox
-            Me.RadioButton_free02 = New System.Windows.Forms.RadioButton
-            Me.RadioButton_free01 = New System.Windows.Forms.RadioButton
-            Me.GroupBox_mesh_type = New System.Windows.Forms.GroupBox
-            Me.RadioButton_mesh_type02 = New System.Windows.Forms.RadioButton
-            Me.RadioButton_mesh_type01 = New System.Windows.Forms.RadioButton
-            Me.Label31 = New System.Windows.Forms.Label
-            Me.ComboBox_type = New System.Windows.Forms.ComboBox
-            Me.ComboBox_shape_quaonly = New System.Windows.Forms.ComboBox
-            Me.ComboBox_shape_qua = New System.Windows.Forms.ComboBox
-            Me.ComboBox_shape_tri = New System.Windows.Forms.ComboBox
-            Me.GroupBox_density = New System.Windows.Forms.GroupBox
-            Me.Label30 = New System.Windows.Forms.Label
-            Me.GroupBox_CBIAS = New System.Windows.Forms.GroupBox
-            Me.CheckBox_CBIAS1 = New System.Windows.Forms.CheckBox
-            Me.CheckBox_CBIAS2 = New System.Windows.Forms.CheckBox
-            Me.GroupBox_ratio = New System.Windows.Forms.GroupBox
-            Me.TextBox_ratio_v = New System.Windows.Forms.TextBox
-            Me.Label26 = New System.Windows.Forms.Label
-            Me.TextBox_ratio_u = New System.Windows.Forms.TextBox
-            Me.Label27 = New System.Windows.Forms.Label
-            Me.GroupBox_div = New System.Windows.Forms.GroupBox
-            Me.TextBox_div_v = New System.Windows.Forms.TextBox
-            Me.Label25 = New System.Windows.Forms.Label
-            Me.TextBox_div_u = New System.Windows.Forms.TextBox
-            Me.Label24 = New System.Windows.Forms.Label
-            Me.Label23 = New System.Windows.Forms.Label
-            Me.ComboBox_progress = New System.Windows.Forms.ComboBox
-            Me.Label21 = New System.Windows.Forms.Label
-            Me.TextBox_edge_length = New System.Windows.Forms.TextBox
-            Me.ComboBox_method = New System.Windows.Forms.ComboBox
-            Me.Button_set_data = New System.Windows.Forms.Button
-            Me.ListView_steps = New System.Windows.Forms.ListView
+            Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("שלב ראשון - גיאומטרית המודל", 2)
+            Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("שלב שני - הגדרות רישות", 1)
+            Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("שלב שלישי- יצירת המודל", 0)
+            Me.GroupBox_stiffeners = New System.Windows.Forms.GroupBox()
+            Me.label_unit_mm06 = New System.Windows.Forms.Label()
+            Me.label_unit_mm05 = New System.Windows.Forms.Label()
+            Me.label_unit_mm04 = New System.Windows.Forms.Label()
+            Me.label_unit_mm03 = New System.Windows.Forms.Label()
+            Me.label_unit_mm02 = New System.Windows.Forms.Label()
+            Me.numeric_nb = New System.Windows.Forms.NumericUpDown()
+            Me.numeric_na = New System.Windows.Forms.NumericUpDown()
+            Me.Textbox_H_general = New System.Windows.Forms.TextBox()
+            Me.Textbox_Tnb = New System.Windows.Forms.TextBox()
+            Me.Label_transverses = New System.Windows.Forms.Label()
+            Me.Label_H = New System.Windows.Forms.Label()
+            Me.Textbox_Tna = New System.Windows.Forms.TextBox()
+            Me.Textbox_Ta = New System.Windows.Forms.TextBox()
+            Me.Label_thickness = New System.Windows.Forms.Label()
+            Me.Label_non_central02 = New System.Windows.Forms.Label()
+            Me.Label_central02 = New System.Windows.Forms.Label()
+            Me.Label_longitudinals = New System.Windows.Forms.Label()
+            Me.Label_non_central01 = New System.Windows.Forms.Label()
+            Me.Label_central01 = New System.Windows.Forms.Label()
+            Me.Textbox_Tb = New System.Windows.Forms.TextBox()
+            Me.label_Nb = New System.Windows.Forms.Label()
+            Me.label_Na = New System.Windows.Forms.Label()
+            Me.GroupBox_stiffeners_Data = New System.Windows.Forms.GroupBox()
+            Me.Label_data_transverses = New System.Windows.Forms.Label()
+            Me.Label_data_longitudinals = New System.Windows.Forms.Label()
+            Me.numeric_input_moment_units = New System.Windows.Forms.ComboBox()
+            Me.Textbox_Ib = New System.Windows.Forms.TextBox()
+            Me.Textbox_Inb = New System.Windows.Forms.TextBox()
+            Me.Textbox_Ia = New System.Windows.Forms.TextBox()
+            Me.Textbox_Ina = New System.Windows.Forms.TextBox()
+            Me.Label_non_central04 = New System.Windows.Forms.Label()
+            Me.Label_central04 = New System.Windows.Forms.Label()
+            Me.Label_non_central03 = New System.Windows.Forms.Label()
+            Me.Label_central03 = New System.Windows.Forms.Label()
+            Me.Label_units = New System.Windows.Forms.Label()
+            Me.RichTextBox_macro = New System.Windows.Forms.RichTextBox()
+            Me.Button_gen = New System.Windows.Forms.Button()
+            Me.Button_save_macro = New System.Windows.Forms.Button()
+            Me.ProgressBar_sub = New System.Windows.Forms.ProgressBar()
+            Me.ProgressBar_total = New System.Windows.Forms.ProgressBar()
+            Me.Label_total_progress = New System.Windows.Forms.Label()
+            Me.Label_current_progress = New System.Windows.Forms.Label()
+            Me.CheckBox_macro = New System.Windows.Forms.CheckBox()
+            Me.Panel_model_geometry = New System.Windows.Forms.Panel()
+            Me.Picture_eng_panel1 = New System.Windows.Forms.PictureBox()
+            Me.Picture_heb_panel1 = New System.Windows.Forms.PictureBox()
+            Me.groupbox_plate_geo = New System.Windows.Forms.GroupBox()
+            Me.label_t = New System.Windows.Forms.Label()
+            Me.numeric_t = New System.Windows.Forms.NumericUpDown()
+            Me.label_b = New System.Windows.Forms.Label()
+            Me.numeric_b = New System.Windows.Forms.NumericUpDown()
+            Me.label_a = New System.Windows.Forms.Label()
+            Me.numeric_a = New System.Windows.Forms.NumericUpDown()
+            Me.label_unit_mm01 = New System.Windows.Forms.Label()
+            Me.label_unit_m02 = New System.Windows.Forms.Label()
+            Me.label_unit_m01 = New System.Windows.Forms.Label()
+            Me.groupbox_General = New System.Windows.Forms.GroupBox()
+            Me.PictureBox_info = New System.Windows.Forms.PictureBox()
+            Me.Label_GPa = New System.Windows.Forms.Label()
+            Me.combobox_P_units = New System.Windows.Forms.ComboBox()
+            Me.textbox_P_input = New System.Windows.Forms.TextBox()
+            Me.textbox_ni_input = New System.Windows.Forms.TextBox()
+            Me.textbox_E_input = New System.Windows.Forms.TextBox()
+            Me.Label_pressure = New System.Windows.Forms.Label()
+            Me.label_ni = New System.Windows.Forms.Label()
+            Me.Label_E = New System.Windows.Forms.Label()
+            Me.numeric_case_input = New System.Windows.Forms.NumericUpDown()
+            Me.Label_BC = New System.Windows.Forms.Label()
+            Me.Panel_create_model = New System.Windows.Forms.Panel()
+            Me.Picture_eng_panel3 = New System.Windows.Forms.PictureBox()
+            Me.Picture_heb_panel3 = New System.Windows.Forms.PictureBox()
+            Me.GroupBox_generate = New System.Windows.Forms.GroupBox()
+            Me.GroupBox_statistics = New System.Windows.Forms.GroupBox()
+            Me.Button_time = New System.Windows.Forms.Button()
+            Me.Label_time_interval = New System.Windows.Forms.Label()
+            Me.Label_time_end = New System.Windows.Forms.Label()
+            Me.Label_time_start = New System.Windows.Forms.Label()
+            Me.GroupBox_process = New System.Windows.Forms.GroupBox()
+            Me.GroupBox_generation = New System.Windows.Forms.GroupBox()
+            Me.CheckBox_gen_mesh = New System.Windows.Forms.CheckBox()
+            Me.CheckBox_gen_load = New System.Windows.Forms.CheckBox()
+            Me.CheckBox_gen_BC = New System.Windows.Forms.CheckBox()
+            Me.CheckBox_gen_geo = New System.Windows.Forms.CheckBox()
+            Me.GroupBox_video = New System.Windows.Forms.GroupBox()
+            Me.RichTextBox_video = New System.Windows.Forms.RichTextBox()
+            Me.PictureBox_video01 = New System.Windows.Forms.PictureBox()
+            Me.Panel_mesh_properties = New System.Windows.Forms.Panel()
+            Me.Picture_eng_panel2 = New System.Windows.Forms.PictureBox()
+            Me.Picture_heb_panel2 = New System.Windows.Forms.PictureBox()
+            Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+            Me.CheckBox_degenenrate = New System.Windows.Forms.CheckBox()
+            Me.CheckBox_flip = New System.Windows.Forms.CheckBox()
+            Me.Label_shape = New System.Windows.Forms.Label()
+            Me.ComboBox_shape_all = New System.Windows.Forms.ComboBox()
+            Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+            Me.RadioButton_mid02 = New System.Windows.Forms.RadioButton()
+            Me.RadioButton_mid01 = New System.Windows.Forms.RadioButton()
+            Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+            Me.ComboBox_pattern = New System.Windows.Forms.ComboBox()
+            Me.Label33 = New System.Windows.Forms.Label()
+            Me.ComboBox_nodes = New System.Windows.Forms.ComboBox()
+            Me.Label32 = New System.Windows.Forms.Label()
+            Me.GroupBox_mesh_algo = New System.Windows.Forms.GroupBox()
+            Me.RadioButton_free02 = New System.Windows.Forms.RadioButton()
+            Me.RadioButton_free01 = New System.Windows.Forms.RadioButton()
+            Me.GroupBox_mesh_type = New System.Windows.Forms.GroupBox()
+            Me.RadioButton_mesh_type02 = New System.Windows.Forms.RadioButton()
+            Me.RadioButton_mesh_type01 = New System.Windows.Forms.RadioButton()
+            Me.Label31 = New System.Windows.Forms.Label()
+            Me.ComboBox_type = New System.Windows.Forms.ComboBox()
+            Me.ComboBox_shape_quaonly = New System.Windows.Forms.ComboBox()
+            Me.ComboBox_shape_qua = New System.Windows.Forms.ComboBox()
+            Me.ComboBox_shape_tri = New System.Windows.Forms.ComboBox()
+            Me.GroupBox_density = New System.Windows.Forms.GroupBox()
+            Me.Label30 = New System.Windows.Forms.Label()
+            Me.GroupBox_CBIAS = New System.Windows.Forms.GroupBox()
+            Me.CheckBox_CBIAS1 = New System.Windows.Forms.CheckBox()
+            Me.CheckBox_CBIAS2 = New System.Windows.Forms.CheckBox()
+            Me.GroupBox_ratio = New System.Windows.Forms.GroupBox()
+            Me.TextBox_ratio_v = New System.Windows.Forms.TextBox()
+            Me.Label26 = New System.Windows.Forms.Label()
+            Me.TextBox_ratio_u = New System.Windows.Forms.TextBox()
+            Me.Label27 = New System.Windows.Forms.Label()
+            Me.GroupBox_div = New System.Windows.Forms.GroupBox()
+            Me.TextBox_div_v = New System.Windows.Forms.TextBox()
+            Me.Label25 = New System.Windows.Forms.Label()
+            Me.TextBox_div_u = New System.Windows.Forms.TextBox()
+            Me.Label24 = New System.Windows.Forms.Label()
+            Me.Label23 = New System.Windows.Forms.Label()
+            Me.ComboBox_progress = New System.Windows.Forms.ComboBox()
+            Me.Label21 = New System.Windows.Forms.Label()
+            Me.TextBox_edge_length = New System.Windows.Forms.TextBox()
+            Me.ComboBox_method = New System.Windows.Forms.ComboBox()
+            Me.Button_set_data = New System.Windows.Forms.Button()
+            Me.ListView_steps = New System.Windows.Forms.ListView()
             Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-            Me.Panel_start = New System.Windows.Forms.Panel
-            Me.Picture_eng_panel0 = New System.Windows.Forms.PictureBox
-            Me.Picture_heb_panel0 = New System.Windows.Forms.PictureBox
-            Me.Label_status = New System.Windows.Forms.Label
-            Me.Label_disclaimer = New System.Windows.Forms.Label
-            Me.Label_affiliated = New System.Windows.Forms.Label
-            Me.RichTextBox_welcome = New System.Windows.Forms.RichTextBox
-            Me.SplitContainer = New System.Windows.Forms.SplitContainer
+            Me.Panel_start = New System.Windows.Forms.Panel()
+            Me.Picture_eng_panel0 = New System.Windows.Forms.PictureBox()
+            Me.Picture_heb_panel0 = New System.Windows.Forms.PictureBox()
+            Me.Label_status = New System.Windows.Forms.Label()
+            Me.Label_disclaimer = New System.Windows.Forms.Label()
+            Me.Label_affiliated = New System.Windows.Forms.Label()
+            Me.RichTextBox_welcome = New System.Windows.Forms.RichTextBox()
+            Me.SplitContainer = New System.Windows.Forms.SplitContainer()
             Me.GroupBox_stiffeners.SuspendLayout()
             CType(Me.numeric_nb, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.numeric_na, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -347,12 +347,12 @@ Namespace Adina_Generator
             Me.Panel_create_model.SuspendLayout()
             CType(Me.Picture_eng_panel3, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.Picture_heb_panel3, System.ComponentModel.ISupportInitialize).BeginInit()
-            Me.GroupBox_video.SuspendLayout()
-            CType(Me.PictureBox_video01, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.GroupBox_generate.SuspendLayout()
             Me.GroupBox_statistics.SuspendLayout()
             Me.GroupBox_process.SuspendLayout()
             Me.GroupBox_generation.SuspendLayout()
+            Me.GroupBox_video.SuspendLayout()
+            CType(Me.PictureBox_video01, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel_mesh_properties.SuspendLayout()
             CType(Me.Picture_eng_panel2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.Picture_heb_panel2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -368,6 +368,7 @@ Namespace Adina_Generator
             Me.Panel_start.SuspendLayout()
             CType(Me.Picture_eng_panel0, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.Picture_heb_panel0, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SplitContainer.Panel1.SuspendLayout()
             Me.SplitContainer.Panel2.SuspendLayout()
             Me.SplitContainer.SuspendLayout()
@@ -864,7 +865,7 @@ Namespace Adina_Generator
             'ProgressBar_sub
             '
             Me.ProgressBar_sub.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.ProgressBar_sub.Location = New System.Drawing.Point(9, 55)
             Me.ProgressBar_sub.Name = "ProgressBar_sub"
             Me.ProgressBar_sub.Size = New System.Drawing.Size(372, 16)
@@ -873,7 +874,7 @@ Namespace Adina_Generator
             'ProgressBar_total
             '
             Me.ProgressBar_total.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.ProgressBar_total.Location = New System.Drawing.Point(9, 107)
             Me.ProgressBar_total.Name = "ProgressBar_total"
             Me.ProgressBar_total.Size = New System.Drawing.Size(372, 16)
@@ -882,7 +883,7 @@ Namespace Adina_Generator
             'Label_total_progress
             '
             Me.Label_total_progress.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Label_total_progress.AutoEllipsis = True
             Me.Label_total_progress.Location = New System.Drawing.Point(9, 84)
             Me.Label_total_progress.Name = "Label_total_progress"
@@ -893,7 +894,7 @@ Namespace Adina_Generator
             'Label_current_progress
             '
             Me.Label_current_progress.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Label_current_progress.AutoEllipsis = True
             Me.Label_current_progress.Location = New System.Drawing.Point(9, 31)
             Me.Label_current_progress.Name = "Label_current_progress"
@@ -923,7 +924,7 @@ Namespace Adina_Generator
             Me.Panel_model_geometry.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel_model_geometry.Location = New System.Drawing.Point(0, 0)
             Me.Panel_model_geometry.Name = "Panel_model_geometry"
-            Me.Panel_model_geometry.Size = New System.Drawing.Size(693, 740)
+            Me.Panel_model_geometry.Size = New System.Drawing.Size(907, 740)
             Me.Panel_model_geometry.TabIndex = 58
             '
             'Picture_eng_panel1
@@ -931,7 +932,7 @@ Namespace Adina_Generator
             Me.Picture_eng_panel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Picture_eng_panel1.Cursor = System.Windows.Forms.Cursors.Hand
             Me.Picture_eng_panel1.Image = Global.SPE.My.Resources.Resources.flag_english01
-            Me.Picture_eng_panel1.Location = New System.Drawing.Point(651, 32)
+            Me.Picture_eng_panel1.Location = New System.Drawing.Point(865, 32)
             Me.Picture_eng_panel1.Name = "Picture_eng_panel1"
             Me.Picture_eng_panel1.Size = New System.Drawing.Size(32, 16)
             Me.Picture_eng_panel1.TabIndex = 50
@@ -942,7 +943,7 @@ Namespace Adina_Generator
             Me.Picture_heb_panel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Picture_heb_panel1.Cursor = System.Windows.Forms.Cursors.Hand
             Me.Picture_heb_panel1.Image = Global.SPE.My.Resources.Resources.flag_hebrew01
-            Me.Picture_heb_panel1.Location = New System.Drawing.Point(651, 8)
+            Me.Picture_heb_panel1.Location = New System.Drawing.Point(865, 8)
             Me.Picture_heb_panel1.Name = "Picture_heb_panel1"
             Me.Picture_heb_panel1.Size = New System.Drawing.Size(32, 20)
             Me.Picture_heb_panel1.TabIndex = 49
@@ -1250,7 +1251,7 @@ Namespace Adina_Generator
             Me.Panel_create_model.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel_create_model.Location = New System.Drawing.Point(0, 0)
             Me.Panel_create_model.Name = "Panel_create_model"
-            Me.Panel_create_model.Size = New System.Drawing.Size(693, 740)
+            Me.Panel_create_model.Size = New System.Drawing.Size(907, 740)
             Me.Panel_create_model.TabIndex = 61
             '
             'Picture_eng_panel3
@@ -1258,7 +1259,7 @@ Namespace Adina_Generator
             Me.Picture_eng_panel3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Picture_eng_panel3.Cursor = System.Windows.Forms.Cursors.Hand
             Me.Picture_eng_panel3.Image = Global.SPE.My.Resources.Resources.flag_english01
-            Me.Picture_eng_panel3.Location = New System.Drawing.Point(1517, 32)
+            Me.Picture_eng_panel3.Location = New System.Drawing.Point(1731, 32)
             Me.Picture_eng_panel3.Name = "Picture_eng_panel3"
             Me.Picture_eng_panel3.Size = New System.Drawing.Size(32, 16)
             Me.Picture_eng_panel3.TabIndex = 63
@@ -1269,49 +1270,11 @@ Namespace Adina_Generator
             Me.Picture_heb_panel3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Picture_heb_panel3.Cursor = System.Windows.Forms.Cursors.Hand
             Me.Picture_heb_panel3.Image = Global.SPE.My.Resources.Resources.flag_hebrew01
-            Me.Picture_heb_panel3.Location = New System.Drawing.Point(1517, 8)
+            Me.Picture_heb_panel3.Location = New System.Drawing.Point(1731, 8)
             Me.Picture_heb_panel3.Name = "Picture_heb_panel3"
             Me.Picture_heb_panel3.Size = New System.Drawing.Size(32, 20)
             Me.Picture_heb_panel3.TabIndex = 62
             Me.Picture_heb_panel3.TabStop = False
-            '
-            'GroupBox_video
-            '
-            Me.GroupBox_video.Controls.Add(Me.RichTextBox_video)
-            Me.GroupBox_video.Controls.Add(Me.PictureBox_video01)
-            Me.GroupBox_video.Location = New System.Drawing.Point(20, 267)
-            Me.GroupBox_video.Name = "GroupBox_video"
-            Me.GroupBox_video.Size = New System.Drawing.Size(776, 289)
-            Me.GroupBox_video.TabIndex = 61
-            Me.GroupBox_video.TabStop = False
-            '
-            'RichTextBox_video
-            '
-            Me.RichTextBox_video.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-            Me.RichTextBox_video.AutoWordSelection = True
-            Me.RichTextBox_video.BackColor = System.Drawing.Color.WhiteSmoke
-            Me.RichTextBox_video.BorderStyle = System.Windows.Forms.BorderStyle.None
-            Me.RichTextBox_video.BulletIndent = 1
-            Me.RichTextBox_video.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-            Me.RichTextBox_video.ForeColor = System.Drawing.Color.Navy
-            Me.RichTextBox_video.Location = New System.Drawing.Point(324, 24)
-            Me.RichTextBox_video.Name = "RichTextBox_video"
-            Me.RichTextBox_video.ReadOnly = True
-            Me.RichTextBox_video.ShowSelectionMargin = True
-            Me.RichTextBox_video.Size = New System.Drawing.Size(444, 248)
-            Me.RichTextBox_video.TabIndex = 2
-            Me.RichTextBox_video.Text = resources.GetString("RichTextBox_video.Text")
-            '
-            'PictureBox_video01
-            '
-            Me.PictureBox_video01.Cursor = System.Windows.Forms.Cursors.Hand
-            Me.PictureBox_video01.Image = CType(resources.GetObject("PictureBox_video01.Image"), System.Drawing.Image)
-            Me.PictureBox_video01.Location = New System.Drawing.Point(8, 51)
-            Me.PictureBox_video01.Name = "PictureBox_video01"
-            Me.PictureBox_video01.Size = New System.Drawing.Size(336, 192)
-            Me.PictureBox_video01.TabIndex = 0
-            Me.PictureBox_video01.TabStop = False
             '
             'GroupBox_generate
             '
@@ -1442,6 +1405,44 @@ Namespace Adina_Generator
             Me.CheckBox_gen_geo.TabIndex = 0
             Me.CheckBox_gen_geo.Text = "Model only (Geometry, thicknesses and Material properties)"
             '
+            'GroupBox_video
+            '
+            Me.GroupBox_video.Controls.Add(Me.RichTextBox_video)
+            Me.GroupBox_video.Controls.Add(Me.PictureBox_video01)
+            Me.GroupBox_video.Location = New System.Drawing.Point(20, 267)
+            Me.GroupBox_video.Name = "GroupBox_video"
+            Me.GroupBox_video.Size = New System.Drawing.Size(776, 289)
+            Me.GroupBox_video.TabIndex = 61
+            Me.GroupBox_video.TabStop = False
+            '
+            'RichTextBox_video
+            '
+            Me.RichTextBox_video.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Me.RichTextBox_video.AutoWordSelection = True
+            Me.RichTextBox_video.BackColor = System.Drawing.Color.WhiteSmoke
+            Me.RichTextBox_video.BorderStyle = System.Windows.Forms.BorderStyle.None
+            Me.RichTextBox_video.BulletIndent = 1
+            Me.RichTextBox_video.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+            Me.RichTextBox_video.ForeColor = System.Drawing.Color.Navy
+            Me.RichTextBox_video.Location = New System.Drawing.Point(324, 24)
+            Me.RichTextBox_video.Name = "RichTextBox_video"
+            Me.RichTextBox_video.ReadOnly = True
+            Me.RichTextBox_video.ShowSelectionMargin = True
+            Me.RichTextBox_video.Size = New System.Drawing.Size(444, 248)
+            Me.RichTextBox_video.TabIndex = 2
+            Me.RichTextBox_video.Text = resources.GetString("RichTextBox_video.Text")
+            '
+            'PictureBox_video01
+            '
+            Me.PictureBox_video01.Cursor = System.Windows.Forms.Cursors.Hand
+            Me.PictureBox_video01.Image = CType(resources.GetObject("PictureBox_video01.Image"), System.Drawing.Image)
+            Me.PictureBox_video01.Location = New System.Drawing.Point(8, 51)
+            Me.PictureBox_video01.Name = "PictureBox_video01"
+            Me.PictureBox_video01.Size = New System.Drawing.Size(336, 192)
+            Me.PictureBox_video01.TabIndex = 0
+            Me.PictureBox_video01.TabStop = False
+            '
             'Panel_mesh_properties
             '
             Me.Panel_mesh_properties.AutoScroll = True
@@ -1453,7 +1454,7 @@ Namespace Adina_Generator
             Me.Panel_mesh_properties.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel_mesh_properties.Location = New System.Drawing.Point(0, 0)
             Me.Panel_mesh_properties.Name = "Panel_mesh_properties"
-            Me.Panel_mesh_properties.Size = New System.Drawing.Size(693, 740)
+            Me.Panel_mesh_properties.Size = New System.Drawing.Size(907, 740)
             Me.Panel_mesh_properties.TabIndex = 62
             '
             'Picture_eng_panel2
@@ -1461,7 +1462,7 @@ Namespace Adina_Generator
             Me.Picture_eng_panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Picture_eng_panel2.Cursor = System.Windows.Forms.Cursors.Hand
             Me.Picture_eng_panel2.Image = Global.SPE.My.Resources.Resources.flag_english01
-            Me.Picture_eng_panel2.Location = New System.Drawing.Point(827, 32)
+            Me.Picture_eng_panel2.Location = New System.Drawing.Point(1041, 32)
             Me.Picture_eng_panel2.Name = "Picture_eng_panel2"
             Me.Picture_eng_panel2.Size = New System.Drawing.Size(32, 16)
             Me.Picture_eng_panel2.TabIndex = 65
@@ -1472,7 +1473,7 @@ Namespace Adina_Generator
             Me.Picture_heb_panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Picture_heb_panel2.Cursor = System.Windows.Forms.Cursors.Hand
             Me.Picture_heb_panel2.Image = Global.SPE.My.Resources.Resources.flag_hebrew01
-            Me.Picture_heb_panel2.Location = New System.Drawing.Point(827, 8)
+            Me.Picture_heb_panel2.Location = New System.Drawing.Point(1041, 8)
             Me.Picture_heb_panel2.Name = "Picture_heb_panel2"
             Me.Picture_heb_panel2.Size = New System.Drawing.Size(32, 20)
             Me.Picture_heb_panel2.TabIndex = 64
@@ -1481,7 +1482,7 @@ Namespace Adina_Generator
             'GroupBox7
             '
             Me.GroupBox7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.GroupBox7.Controls.Add(Me.CheckBox_degenenrate)
             Me.GroupBox7.Controls.Add(Me.CheckBox_flip)
             Me.GroupBox7.Controls.Add(Me.Label_shape)
@@ -1497,7 +1498,7 @@ Namespace Adina_Generator
             Me.GroupBox7.Controls.Add(Me.ComboBox_shape_tri)
             Me.GroupBox7.Location = New System.Drawing.Point(12, 264)
             Me.GroupBox7.Name = "GroupBox7"
-            Me.GroupBox7.Size = New System.Drawing.Size(664, 336)
+            Me.GroupBox7.Size = New System.Drawing.Size(878, 336)
             Me.GroupBox7.TabIndex = 1
             Me.GroupBox7.TabStop = False
             Me.GroupBox7.Text = "Mesh Properties"
@@ -1528,11 +1529,11 @@ Namespace Adina_Generator
             '
             'ComboBox_shape_all
             '
-            Me.ComboBox_shape_all.ItemHeight = 16
+            Me.ComboBox_shape_all.ItemHeight = 20
             Me.ComboBox_shape_all.Items.AddRange(New Object() {"Automatic", "Triangular", "Quadrilateral"})
             Me.ComboBox_shape_all.Location = New System.Drawing.Point(244, 264)
             Me.ComboBox_shape_all.Name = "ComboBox_shape_all"
-            Me.ComboBox_shape_all.Size = New System.Drawing.Size(140, 24)
+            Me.ComboBox_shape_all.Size = New System.Drawing.Size(140, 28)
             Me.ComboBox_shape_all.TabIndex = 15
             Me.ComboBox_shape_all.Text = "Automatic"
             '
@@ -1583,7 +1584,7 @@ Namespace Adina_Generator
             Me.ComboBox_pattern.Items.AddRange(New Object() {"Automatic"})
             Me.ComboBox_pattern.Location = New System.Drawing.Point(184, 52)
             Me.ComboBox_pattern.Name = "ComboBox_pattern"
-            Me.ComboBox_pattern.Size = New System.Drawing.Size(92, 24)
+            Me.ComboBox_pattern.Size = New System.Drawing.Size(92, 28)
             Me.ComboBox_pattern.TabIndex = 14
             Me.ComboBox_pattern.Text = "Automatic"
             '
@@ -1600,7 +1601,7 @@ Namespace Adina_Generator
             Me.ComboBox_nodes.Items.AddRange(New Object() {"4", "8", "9", "16"})
             Me.ComboBox_nodes.Location = New System.Drawing.Point(184, 24)
             Me.ComboBox_nodes.Name = "ComboBox_nodes"
-            Me.ComboBox_nodes.Size = New System.Drawing.Size(92, 24)
+            Me.ComboBox_nodes.Size = New System.Drawing.Size(92, 28)
             Me.ComboBox_nodes.TabIndex = 12
             Me.ComboBox_nodes.Text = "9"
             '
@@ -1685,44 +1686,44 @@ Namespace Adina_Generator
             Me.ComboBox_type.Items.AddRange(New Object() {"2-D solid", "Shell", "Plate", "2-D Fluid", "3-D Fluid Interface", "General"})
             Me.ComboBox_type.Location = New System.Drawing.Point(77, 24)
             Me.ComboBox_type.Name = "ComboBox_type"
-            Me.ComboBox_type.Size = New System.Drawing.Size(168, 24)
+            Me.ComboBox_type.Size = New System.Drawing.Size(168, 28)
             Me.ComboBox_type.TabIndex = 9
             Me.ComboBox_type.Text = "Shell"
             '
             'ComboBox_shape_quaonly
             '
-            Me.ComboBox_shape_quaonly.ItemHeight = 16
+            Me.ComboBox_shape_quaonly.ItemHeight = 20
             Me.ComboBox_shape_quaonly.Items.AddRange(New Object() {"Quad Only"})
             Me.ComboBox_shape_quaonly.Location = New System.Drawing.Point(244, 264)
             Me.ComboBox_shape_quaonly.Name = "ComboBox_shape_quaonly"
-            Me.ComboBox_shape_quaonly.Size = New System.Drawing.Size(140, 24)
+            Me.ComboBox_shape_quaonly.Size = New System.Drawing.Size(140, 28)
             Me.ComboBox_shape_quaonly.TabIndex = 23
             Me.ComboBox_shape_quaonly.Text = "Quad Only"
             '
             'ComboBox_shape_qua
             '
-            Me.ComboBox_shape_qua.ItemHeight = 16
+            Me.ComboBox_shape_qua.ItemHeight = 20
             Me.ComboBox_shape_qua.Items.AddRange(New Object() {"Quadrilateral"})
             Me.ComboBox_shape_qua.Location = New System.Drawing.Point(244, 264)
             Me.ComboBox_shape_qua.Name = "ComboBox_shape_qua"
-            Me.ComboBox_shape_qua.Size = New System.Drawing.Size(140, 24)
+            Me.ComboBox_shape_qua.Size = New System.Drawing.Size(140, 28)
             Me.ComboBox_shape_qua.TabIndex = 22
             Me.ComboBox_shape_qua.Text = "Quadrilateral"
             '
             'ComboBox_shape_tri
             '
-            Me.ComboBox_shape_tri.ItemHeight = 16
+            Me.ComboBox_shape_tri.ItemHeight = 20
             Me.ComboBox_shape_tri.Items.AddRange(New Object() {"Triangular"})
             Me.ComboBox_shape_tri.Location = New System.Drawing.Point(244, 264)
             Me.ComboBox_shape_tri.Name = "ComboBox_shape_tri"
-            Me.ComboBox_shape_tri.Size = New System.Drawing.Size(140, 24)
+            Me.ComboBox_shape_tri.Size = New System.Drawing.Size(140, 28)
             Me.ComboBox_shape_tri.TabIndex = 21
             Me.ComboBox_shape_tri.Text = "Triangular"
             '
             'GroupBox_density
             '
             Me.GroupBox_density.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.GroupBox_density.Controls.Add(Me.Label30)
             Me.GroupBox_density.Controls.Add(Me.GroupBox_CBIAS)
             Me.GroupBox_density.Controls.Add(Me.GroupBox_ratio)
@@ -1734,7 +1735,7 @@ Namespace Adina_Generator
             Me.GroupBox_density.Controls.Add(Me.ComboBox_method)
             Me.GroupBox_density.Location = New System.Drawing.Point(12, 8)
             Me.GroupBox_density.Name = "GroupBox_density"
-            Me.GroupBox_density.Size = New System.Drawing.Size(664, 248)
+            Me.GroupBox_density.Size = New System.Drawing.Size(878, 248)
             Me.GroupBox_density.TabIndex = 0
             Me.GroupBox_density.TabStop = False
             Me.GroupBox_density.Text = "Mesh density"
@@ -1791,7 +1792,7 @@ Namespace Adina_Generator
             '
             Me.TextBox_ratio_v.Location = New System.Drawing.Point(188, 24)
             Me.TextBox_ratio_v.Name = "TextBox_ratio_v"
-            Me.TextBox_ratio_v.Size = New System.Drawing.Size(56, 22)
+            Me.TextBox_ratio_v.Size = New System.Drawing.Size(56, 27)
             Me.TextBox_ratio_v.TabIndex = 12
             Me.TextBox_ratio_v.Text = "1"
             Me.TextBox_ratio_v.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1809,7 +1810,7 @@ Namespace Adina_Generator
             '
             Me.TextBox_ratio_u.Location = New System.Drawing.Point(54, 24)
             Me.TextBox_ratio_u.Name = "TextBox_ratio_u"
-            Me.TextBox_ratio_u.Size = New System.Drawing.Size(56, 22)
+            Me.TextBox_ratio_u.Size = New System.Drawing.Size(56, 27)
             Me.TextBox_ratio_u.TabIndex = 10
             Me.TextBox_ratio_u.Text = "1"
             Me.TextBox_ratio_u.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1840,7 +1841,7 @@ Namespace Adina_Generator
             '
             Me.TextBox_div_v.Location = New System.Drawing.Point(188, 24)
             Me.TextBox_div_v.Name = "TextBox_div_v"
-            Me.TextBox_div_v.Size = New System.Drawing.Size(56, 22)
+            Me.TextBox_div_v.Size = New System.Drawing.Size(56, 27)
             Me.TextBox_div_v.TabIndex = 8
             Me.TextBox_div_v.Text = "10"
             Me.TextBox_div_v.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1858,7 +1859,7 @@ Namespace Adina_Generator
             '
             Me.TextBox_div_u.Location = New System.Drawing.Point(54, 24)
             Me.TextBox_div_u.Name = "TextBox_div_u"
-            Me.TextBox_div_u.Size = New System.Drawing.Size(56, 22)
+            Me.TextBox_div_u.Size = New System.Drawing.Size(56, 27)
             Me.TextBox_div_u.TabIndex = 6
             Me.TextBox_div_u.Text = "10"
             Me.TextBox_div_u.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1885,7 +1886,7 @@ Namespace Adina_Generator
             Me.ComboBox_progress.Items.AddRange(New Object() {"Arithmetic", "Geometric"})
             Me.ComboBox_progress.Location = New System.Drawing.Point(266, 61)
             Me.ComboBox_progress.Name = "ComboBox_progress"
-            Me.ComboBox_progress.Size = New System.Drawing.Size(100, 24)
+            Me.ComboBox_progress.Size = New System.Drawing.Size(100, 28)
             Me.ComboBox_progress.TabIndex = 3
             Me.ComboBox_progress.Text = "Geometric"
             '
@@ -1903,7 +1904,7 @@ Namespace Adina_Generator
             Me.TextBox_edge_length.Enabled = False
             Me.TextBox_edge_length.Location = New System.Drawing.Point(540, 27)
             Me.TextBox_edge_length.Name = "TextBox_edge_length"
-            Me.TextBox_edge_length.Size = New System.Drawing.Size(80, 22)
+            Me.TextBox_edge_length.Size = New System.Drawing.Size(80, 27)
             Me.TextBox_edge_length.TabIndex = 1
             Me.TextBox_edge_length.Text = "0"
             '
@@ -1912,7 +1913,7 @@ Namespace Adina_Generator
             Me.ComboBox_method.Items.AddRange(New Object() {"Use End-Point Sizes", "Use Length", "Use Number of Divisions"})
             Me.ComboBox_method.Location = New System.Drawing.Point(168, 24)
             Me.ComboBox_method.Name = "ComboBox_method"
-            Me.ComboBox_method.Size = New System.Drawing.Size(200, 24)
+            Me.ComboBox_method.Size = New System.Drawing.Size(200, 28)
             Me.ComboBox_method.TabIndex = 0
             Me.ComboBox_method.Text = "Use Number of Divisions"
             '
@@ -1929,15 +1930,16 @@ Namespace Adina_Generator
             '
             Me.ListView_steps.AutoArrange = False
             Me.ListView_steps.Dock = System.Windows.Forms.DockStyle.Fill
-            ListViewItem4.StateImageIndex = 0
-            ListViewItem5.StateImageIndex = 0
-            ListViewItem6.StateImageIndex = 0
-            Me.ListView_steps.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem4, ListViewItem5, ListViewItem6})
+            Me.ListView_steps.HideSelection = False
+            ListViewItem1.StateImageIndex = 0
+            ListViewItem2.StateImageIndex = 0
+            ListViewItem3.StateImageIndex = 0
+            Me.ListView_steps.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3})
             Me.ListView_steps.LargeImageList = Me.ImageList1
             Me.ListView_steps.Location = New System.Drawing.Point(0, 0)
             Me.ListView_steps.MultiSelect = False
             Me.ListView_steps.Name = "ListView_steps"
-            Me.ListView_steps.Size = New System.Drawing.Size(150, 740)
+            Me.ListView_steps.Size = New System.Drawing.Size(195, 740)
             Me.ListView_steps.TabIndex = 64
             Me.ListView_steps.UseCompatibleStateImageBehavior = False
             '
@@ -1964,7 +1966,7 @@ Namespace Adina_Generator
             Me.Panel_start.ForeColor = System.Drawing.Color.Red
             Me.Panel_start.Location = New System.Drawing.Point(0, 0)
             Me.Panel_start.Name = "Panel_start"
-            Me.Panel_start.Size = New System.Drawing.Size(693, 740)
+            Me.Panel_start.Size = New System.Drawing.Size(907, 740)
             Me.Panel_start.TabIndex = 67
             '
             'Picture_eng_panel0
@@ -1972,7 +1974,7 @@ Namespace Adina_Generator
             Me.Picture_eng_panel0.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Picture_eng_panel0.Cursor = System.Windows.Forms.Cursors.Hand
             Me.Picture_eng_panel0.Image = CType(resources.GetObject("Picture_eng_panel0.Image"), System.Drawing.Image)
-            Me.Picture_eng_panel0.Location = New System.Drawing.Point(651, 32)
+            Me.Picture_eng_panel0.Location = New System.Drawing.Point(865, 32)
             Me.Picture_eng_panel0.Name = "Picture_eng_panel0"
             Me.Picture_eng_panel0.Size = New System.Drawing.Size(32, 16)
             Me.Picture_eng_panel0.TabIndex = 52
@@ -1983,7 +1985,7 @@ Namespace Adina_Generator
             Me.Picture_heb_panel0.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.Picture_heb_panel0.Cursor = System.Windows.Forms.Cursors.Hand
             Me.Picture_heb_panel0.Image = Global.SPE.My.Resources.Resources.flag_hebrew01
-            Me.Picture_heb_panel0.Location = New System.Drawing.Point(651, 8)
+            Me.Picture_heb_panel0.Location = New System.Drawing.Point(865, 8)
             Me.Picture_heb_panel0.Name = "Picture_heb_panel0"
             Me.Picture_heb_panel0.Size = New System.Drawing.Size(32, 20)
             Me.Picture_heb_panel0.TabIndex = 51
@@ -1992,55 +1994,57 @@ Namespace Adina_Generator
             'Label_status
             '
             Me.Label_status.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Me.Label_status.Font = New System.Drawing.Font("Segoe UI", 12.0!)
             Me.Label_status.ForeColor = System.Drawing.Color.Black
-            Me.Label_status.Location = New System.Drawing.Point(20, 353)
+            Me.Label_status.Location = New System.Drawing.Point(18, 417)
             Me.Label_status.Name = "Label_status"
-            Me.Label_status.Size = New System.Drawing.Size(575, 52)
+            Me.Label_status.Size = New System.Drawing.Size(870, 72)
             Me.Label_status.TabIndex = 4
-            Me.Label_status.Text = "No model has been entered to ADINA Generator. To create new model select ""First S" & _
-                "tep -  Model's Geometry"" from the list on the left."
+            Me.Label_status.Text = "No model has been entered to ADINA Generator. To create new model select ""First S" &
+    "tep -  Model's Geometry"" from the list on the left."
             '
             'Label_disclaimer
             '
             Me.Label_disclaimer.Dock = System.Windows.Forms.DockStyle.Bottom
+            Me.Label_disclaimer.Font = New System.Drawing.Font("Segoe UI", 12.0!)
             Me.Label_disclaimer.Location = New System.Drawing.Point(0, 616)
             Me.Label_disclaimer.Name = "Label_disclaimer"
-            Me.Label_disclaimer.Size = New System.Drawing.Size(693, 64)
+            Me.Label_disclaimer.Size = New System.Drawing.Size(907, 64)
             Me.Label_disclaimer.TabIndex = 3
-            Me.Label_disclaimer.Text = "Disclaimer: This module is in testing stages. As so, there are no warranties of a" & _
-                "ny kind. The user should use his own discretion with regard to the results obtai" & _
-                "ned with this code."
+            Me.Label_disclaimer.Text = "Disclaimer: This module is in testing stages. As so, there are no warranties of a" &
+    "ny kind. The user should use his own discretion with regard to the results obtai" &
+    "ned with this code."
             '
             'Label_affiliated
             '
             Me.Label_affiliated.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.Label_affiliated.Font = New System.Drawing.Font("David", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+            Me.Label_affiliated.Font = New System.Drawing.Font("Segoe UI", 10.0!)
             Me.Label_affiliated.ForeColor = System.Drawing.Color.Black
             Me.Label_affiliated.Location = New System.Drawing.Point(0, 680)
             Me.Label_affiliated.Name = "Label_affiliated"
-            Me.Label_affiliated.Size = New System.Drawing.Size(693, 60)
+            Me.Label_affiliated.Size = New System.Drawing.Size(907, 60)
             Me.Label_affiliated.TabIndex = 0
-            Me.Label_affiliated.Text = """ADINA Generator"" is in no way affiliated with ADINA R & D ,Inc. All ADINA tradem" & _
-                "arks and copyrights, except ""ADINA Generator"", are the property of their respect" & _
-                "ive holders."
+            Me.Label_affiliated.Text = """ADINA Generator"" is in no way affiliated with ADINA R & D ,Inc. All ADINA tradem" &
+    "arks and copyrights, except ""ADINA Generator"", are the property of their respect" &
+    "ive holders."
             Me.Label_affiliated.UseMnemonic = False
             '
             'RichTextBox_welcome
             '
             Me.RichTextBox_welcome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                        Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
             Me.RichTextBox_welcome.AutoWordSelection = True
             Me.RichTextBox_welcome.BackColor = System.Drawing.Color.WhiteSmoke
             Me.RichTextBox_welcome.BorderStyle = System.Windows.Forms.BorderStyle.None
             Me.RichTextBox_welcome.BulletIndent = 1
-            Me.RichTextBox_welcome.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+            Me.RichTextBox_welcome.Font = New System.Drawing.Font("Segoe UI", 12.0!)
             Me.RichTextBox_welcome.ForeColor = System.Drawing.Color.Navy
             Me.RichTextBox_welcome.Location = New System.Drawing.Point(16, 10)
             Me.RichTextBox_welcome.Name = "RichTextBox_welcome"
             Me.RichTextBox_welcome.ReadOnly = True
             Me.RichTextBox_welcome.ShowSelectionMargin = True
-            Me.RichTextBox_welcome.Size = New System.Drawing.Size(573, 332)
+            Me.RichTextBox_welcome.Size = New System.Drawing.Size(843, 389)
             Me.RichTextBox_welcome.TabIndex = 1
             Me.RichTextBox_welcome.Text = resources.GetString("RichTextBox_welcome.Text")
             '
@@ -2060,15 +2064,16 @@ Namespace Adina_Generator
             Me.SplitContainer.Panel2.Controls.Add(Me.Panel_create_model)
             Me.SplitContainer.Panel2.Controls.Add(Me.Panel_model_geometry)
             Me.SplitContainer.Panel2.Controls.Add(Me.Panel_mesh_properties)
-            Me.SplitContainer.Size = New System.Drawing.Size(847, 740)
-            Me.SplitContainer.SplitterDistance = 150
+            Me.SplitContainer.Size = New System.Drawing.Size(1106, 740)
+            Me.SplitContainer.SplitterDistance = 195
             Me.SplitContainer.TabIndex = 68
             '
             'GUI_ADINA_main
             '
-            Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
-            Me.ClientSize = New System.Drawing.Size(847, 740)
+            Me.AutoScaleBaseSize = New System.Drawing.Size(7, 20)
+            Me.ClientSize = New System.Drawing.Size(1106, 740)
             Me.Controls.Add(Me.SplitContainer)
+            Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
             Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
             Me.Name = "GUI_ADINA_main"
             Me.Text = "ADINA Generator: Create FE Model for ADINA 8.1"
@@ -2093,12 +2098,12 @@ Namespace Adina_Generator
             Me.Panel_create_model.ResumeLayout(False)
             CType(Me.Picture_eng_panel3, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.Picture_heb_panel3, System.ComponentModel.ISupportInitialize).EndInit()
-            Me.GroupBox_video.ResumeLayout(False)
-            CType(Me.PictureBox_video01, System.ComponentModel.ISupportInitialize).EndInit()
             Me.GroupBox_generate.ResumeLayout(False)
             Me.GroupBox_statistics.ResumeLayout(False)
             Me.GroupBox_process.ResumeLayout(False)
             Me.GroupBox_generation.ResumeLayout(False)
+            Me.GroupBox_video.ResumeLayout(False)
+            CType(Me.PictureBox_video01, System.ComponentModel.ISupportInitialize).EndInit()
             Me.Panel_mesh_properties.ResumeLayout(False)
             CType(Me.Picture_eng_panel2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.Picture_heb_panel2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2119,6 +2124,7 @@ Namespace Adina_Generator
             CType(Me.Picture_heb_panel0, System.ComponentModel.ISupportInitialize).EndInit()
             Me.SplitContainer.Panel1.ResumeLayout(False)
             Me.SplitContainer.Panel2.ResumeLayout(False)
+            CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).EndInit()
             Me.SplitContainer.ResumeLayout(False)
             Me.ResumeLayout(False)
 
@@ -2944,12 +2950,8 @@ Namespace Adina_Generator
             general_settings.save_settings_to_registry()
         End Sub
         Private Sub Picture_heb_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Picture_heb_panel0.Click, Picture_heb_panel1.Click, Picture_heb_panel2.Click, Picture_heb_panel3.Click
-            If File.Exists("default_heb.ini") = True Then
-                GUI_set("default_heb.ini")
-                language_settings.language_current_file = "default_heb.ini"
-            Else
-                'message to follow
-            End If
+            GUI_set("default_heb.ini")
+            language_settings.language_current_file = "default_heb.ini"
             general_settings.save_settings_to_registry()
         End Sub
         Private Sub Label_time_interval_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label_time_interval.Click
