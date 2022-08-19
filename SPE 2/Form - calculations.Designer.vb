@@ -19,117 +19,117 @@ Partial Class GUI_calculations
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
-        Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Inputs", New System.Windows.Forms.TreeNode() {TreeNode9, TreeNode10, TreeNode11})
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Inputs", New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3})
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GUI_calculations))
-        Me.MenuStrip = New System.Windows.Forms.MenuStrip
-        Me.StatusStrip = New System.Windows.Forms.StatusStrip
-        Me.TreeView_steps = New System.Windows.Forms.TreeView
-        Me.Panel_plate = New System.Windows.Forms.Panel
-        Me.Button_plate_ok = New System.Windows.Forms.Button
-        Me.GroupBox_plate = New System.Windows.Forms.GroupBox
-        Me.Label_long = New System.Windows.Forms.Label
-        Me.Label_short = New System.Windows.Forms.Label
-        Me.Label_thickness = New System.Windows.Forms.Label
-        Me.numeric_plate_t = New System.Windows.Forms.NumericUpDown
-        Me.Label_breadth = New System.Windows.Forms.Label
-        Me.numeric_plate_short = New System.Windows.Forms.NumericUpDown
-        Me.Label_length = New System.Windows.Forms.Label
-        Me.numeric_plate_long = New System.Windows.Forms.NumericUpDown
-        Me.PictureBox_plate = New System.Windows.Forms.PictureBox
-        Me.Label_unit_mm01 = New System.Windows.Forms.Label
-        Me.Label_unit_m02 = New System.Windows.Forms.Label
-        Me.Label_unit_m01 = New System.Windows.Forms.Label
-        Me.panel02 = New System.Windows.Forms.Panel
-        Me.Button_panel02_back = New System.Windows.Forms.Button
-        Me.Label_type04 = New System.Windows.Forms.Label
-        Me.Label_type03 = New System.Windows.Forms.Label
-        Me.Label_type02 = New System.Windows.Forms.Label
-        Me.Label_type01 = New System.Windows.Forms.Label
-        Me.Button_type04 = New System.Windows.Forms.Button
-        Me.Button_type03 = New System.Windows.Forms.Button
-        Me.Button_type02 = New System.Windows.Forms.Button
-        Me.Button_type01 = New System.Windows.Forms.Button
-        Me.panel03 = New System.Windows.Forms.Panel
-        Me.GroupBox_stiffeners = New System.Windows.Forms.GroupBox
-        Me.GroupBox_stiffeners_mark = New System.Windows.Forms.GroupBox
-        Me.PictureBox_Inb_info = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Ib_info = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Ina_info = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Ia_info = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Inb_checked = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Ib_checked = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Ina_checked = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Ia_checked = New System.Windows.Forms.PictureBox
-        Me.CheckBox_Inb = New System.Windows.Forms.CheckBox
-        Me.CheckBox_Ib = New System.Windows.Forms.CheckBox
-        Me.CheckBox_Ina = New System.Windows.Forms.CheckBox
-        Me.CheckBox_Ia = New System.Windows.Forms.CheckBox
-        Me.GroupBox_stiffeners_number = New System.Windows.Forms.GroupBox
-        Me.Button_view_parameters = New System.Windows.Forms.Button
-        Me.numeric_short = New System.Windows.Forms.NumericUpDown
-        Me.Label_stiffeners_short = New System.Windows.Forms.Label
-        Me.numeric_long = New System.Windows.Forms.NumericUpDown
-        Me.Label_stiffeners_long = New System.Windows.Forms.Label
-        Me.GroupBox_stiffeners_data = New System.Windows.Forms.GroupBox
-        Me.GroupBox_moment_select_general = New System.Windows.Forms.GroupBox
-        Me.Radiobutton_select_geometric = New System.Windows.Forms.RadioButton
-        Me.Radiobutton_select_numeric = New System.Windows.Forms.RadioButton
-        Me.Radiobutton_select_DB = New System.Windows.Forms.RadioButton
-        Me.Groupbox_geometric_input = New System.Windows.Forms.GroupBox
-        Me.Button_Geo_selected = New System.Windows.Forms.Button
-        Me.TextBox_Geo_result = New System.Windows.Forms.TextBox
-        Me.Label_Geo_result = New System.Windows.Forms.Label
-        Me.Combobox_geo_select = New System.Windows.Forms.ComboBox
-        Me.PictureBox_Geo_L = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Geo_T = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Geo_I = New System.Windows.Forms.PictureBox
-        Me.PictureBox_Geo_blade = New System.Windows.Forms.PictureBox
-        Me.Label_Geo_type_select = New System.Windows.Forms.Label
-        Me.GroupBox_geo_input = New System.Windows.Forms.GroupBox
-        Me.MaskedTextBox_geo_w = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox_geo_t = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox_geo_d = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox_geo_b = New System.Windows.Forms.MaskedTextBox
-        Me.Label_unit_mm05 = New System.Windows.Forms.Label
-        Me.Label_geo_w = New System.Windows.Forms.Label
-        Me.Label_unit_mm04 = New System.Windows.Forms.Label
-        Me.Label_geo_t = New System.Windows.Forms.Label
-        Me.Label_unit_mm03 = New System.Windows.Forms.Label
-        Me.Label_unit_mm02 = New System.Windows.Forms.Label
-        Me.Label_geo_d = New System.Windows.Forms.Label
-        Me.Label_geo_b = New System.Windows.Forms.Label
-        Me.groupBox_DB_input = New System.Windows.Forms.GroupBox
-        Me.PictureBox_DB_pic02 = New System.Windows.Forms.PictureBox
-        Me.Button_DB_selected = New System.Windows.Forms.Button
-        Me.PictureBox_DB_pic01 = New System.Windows.Forms.PictureBox
-        Me.groupBox_DB_sub = New System.Windows.Forms.GroupBox
-        Me.Label_DB_center_unit = New System.Windows.Forms.Label
-        Me.Button_DB_select03 = New System.Windows.Forms.Button
-        Me.Label_DB_area_unit = New System.Windows.Forms.Label
-        Me.Button_DB_select02 = New System.Windows.Forms.Button
-        Me.Label_DB_moment_unit = New System.Windows.Forms.Label
-        Me.Button_DB_select01 = New System.Windows.Forms.Button
-        Me.Label_DB_center = New System.Windows.Forms.Label
-        Me.TextBox_db_center = New System.Windows.Forms.TextBox
-        Me.Label_DB_area = New System.Windows.Forms.Label
-        Me.TextBox_db_area = New System.Windows.Forms.TextBox
-        Me.Label_DB_moment = New System.Windows.Forms.Label
-        Me.TextBox_db_moment = New System.Windows.Forms.TextBox
-        Me.GroupBox_numeric_input = New System.Windows.Forms.GroupBox
-        Me.ComboBox_num_center_units = New System.Windows.Forms.ComboBox
-        Me.ComboBox_num_area_units = New System.Windows.Forms.ComboBox
-        Me.ComboBox_num_moment_units = New System.Windows.Forms.ComboBox
-        Me.Label_num_area = New System.Windows.Forms.Label
-        Me.TextBox_num_area = New System.Windows.Forms.TextBox
-        Me.Label_num_center = New System.Windows.Forms.Label
-        Me.TextBox_num_center = New System.Windows.Forms.TextBox
-        Me.Label_num_moment = New System.Windows.Forms.Label
-        Me.TextBox_num_moment = New System.Windows.Forms.TextBox
-        Me.Button_num_selected = New System.Windows.Forms.Button
-        Me.PictureBox_numeric = New System.Windows.Forms.PictureBox
+        Me.MenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.StatusStrip = New System.Windows.Forms.StatusStrip()
+        Me.TreeView_steps = New System.Windows.Forms.TreeView()
+        Me.Panel_plate = New System.Windows.Forms.Panel()
+        Me.Button_plate_ok = New System.Windows.Forms.Button()
+        Me.GroupBox_plate = New System.Windows.Forms.GroupBox()
+        Me.Label_long = New System.Windows.Forms.Label()
+        Me.Label_short = New System.Windows.Forms.Label()
+        Me.Label_thickness = New System.Windows.Forms.Label()
+        Me.numeric_plate_t = New System.Windows.Forms.NumericUpDown()
+        Me.Label_breadth = New System.Windows.Forms.Label()
+        Me.numeric_plate_short = New System.Windows.Forms.NumericUpDown()
+        Me.Label_length = New System.Windows.Forms.Label()
+        Me.numeric_plate_long = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox_plate = New System.Windows.Forms.PictureBox()
+        Me.Label_unit_mm01 = New System.Windows.Forms.Label()
+        Me.Label_unit_m02 = New System.Windows.Forms.Label()
+        Me.Label_unit_m01 = New System.Windows.Forms.Label()
+        Me.panel02 = New System.Windows.Forms.Panel()
+        Me.Button_panel02_back = New System.Windows.Forms.Button()
+        Me.Label_type04 = New System.Windows.Forms.Label()
+        Me.Label_type03 = New System.Windows.Forms.Label()
+        Me.Label_type02 = New System.Windows.Forms.Label()
+        Me.Label_type01 = New System.Windows.Forms.Label()
+        Me.Button_type04 = New System.Windows.Forms.Button()
+        Me.Button_type03 = New System.Windows.Forms.Button()
+        Me.Button_type02 = New System.Windows.Forms.Button()
+        Me.Button_type01 = New System.Windows.Forms.Button()
+        Me.panel03 = New System.Windows.Forms.Panel()
+        Me.GroupBox_stiffeners = New System.Windows.Forms.GroupBox()
+        Me.GroupBox_stiffeners_mark = New System.Windows.Forms.GroupBox()
+        Me.PictureBox_Inb_info = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Ib_info = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Ina_info = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Ia_info = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Inb_checked = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Ib_checked = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Ina_checked = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Ia_checked = New System.Windows.Forms.PictureBox()
+        Me.CheckBox_Inb = New System.Windows.Forms.CheckBox()
+        Me.CheckBox_Ib = New System.Windows.Forms.CheckBox()
+        Me.CheckBox_Ina = New System.Windows.Forms.CheckBox()
+        Me.CheckBox_Ia = New System.Windows.Forms.CheckBox()
+        Me.GroupBox_stiffeners_number = New System.Windows.Forms.GroupBox()
+        Me.Button_view_parameters = New System.Windows.Forms.Button()
+        Me.numeric_short = New System.Windows.Forms.NumericUpDown()
+        Me.Label_stiffeners_short = New System.Windows.Forms.Label()
+        Me.numeric_long = New System.Windows.Forms.NumericUpDown()
+        Me.Label_stiffeners_long = New System.Windows.Forms.Label()
+        Me.GroupBox_stiffeners_data = New System.Windows.Forms.GroupBox()
+        Me.GroupBox_moment_select_general = New System.Windows.Forms.GroupBox()
+        Me.Radiobutton_select_geometric = New System.Windows.Forms.RadioButton()
+        Me.Radiobutton_select_numeric = New System.Windows.Forms.RadioButton()
+        Me.Radiobutton_select_DB = New System.Windows.Forms.RadioButton()
+        Me.Groupbox_geometric_input = New System.Windows.Forms.GroupBox()
+        Me.Button_Geo_selected = New System.Windows.Forms.Button()
+        Me.TextBox_Geo_result = New System.Windows.Forms.TextBox()
+        Me.Label_Geo_result = New System.Windows.Forms.Label()
+        Me.Combobox_geo_select = New System.Windows.Forms.ComboBox()
+        Me.PictureBox_Geo_L = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Geo_T = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Geo_I = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_Geo_blade = New System.Windows.Forms.PictureBox()
+        Me.Label_Geo_type_select = New System.Windows.Forms.Label()
+        Me.GroupBox_geo_input = New System.Windows.Forms.GroupBox()
+        Me.MaskedTextBox_geo_w = New System.Windows.Forms.MaskedTextBox()
+        Me.MaskedTextBox_geo_t = New System.Windows.Forms.MaskedTextBox()
+        Me.MaskedTextBox_geo_d = New System.Windows.Forms.MaskedTextBox()
+        Me.MaskedTextBox_geo_b = New System.Windows.Forms.MaskedTextBox()
+        Me.Label_unit_mm05 = New System.Windows.Forms.Label()
+        Me.Label_geo_w = New System.Windows.Forms.Label()
+        Me.Label_unit_mm04 = New System.Windows.Forms.Label()
+        Me.Label_geo_t = New System.Windows.Forms.Label()
+        Me.Label_unit_mm03 = New System.Windows.Forms.Label()
+        Me.Label_unit_mm02 = New System.Windows.Forms.Label()
+        Me.Label_geo_d = New System.Windows.Forms.Label()
+        Me.Label_geo_b = New System.Windows.Forms.Label()
+        Me.groupBox_DB_input = New System.Windows.Forms.GroupBox()
+        Me.PictureBox_DB_pic02 = New System.Windows.Forms.PictureBox()
+        Me.Button_DB_selected = New System.Windows.Forms.Button()
+        Me.PictureBox_DB_pic01 = New System.Windows.Forms.PictureBox()
+        Me.groupBox_DB_sub = New System.Windows.Forms.GroupBox()
+        Me.Label_DB_center_unit = New System.Windows.Forms.Label()
+        Me.Button_DB_select03 = New System.Windows.Forms.Button()
+        Me.Label_DB_area_unit = New System.Windows.Forms.Label()
+        Me.Button_DB_select02 = New System.Windows.Forms.Button()
+        Me.Label_DB_moment_unit = New System.Windows.Forms.Label()
+        Me.Button_DB_select01 = New System.Windows.Forms.Button()
+        Me.Label_DB_center = New System.Windows.Forms.Label()
+        Me.TextBox_db_center = New System.Windows.Forms.TextBox()
+        Me.Label_DB_area = New System.Windows.Forms.Label()
+        Me.TextBox_db_area = New System.Windows.Forms.TextBox()
+        Me.Label_DB_moment = New System.Windows.Forms.Label()
+        Me.TextBox_db_moment = New System.Windows.Forms.TextBox()
+        Me.GroupBox_numeric_input = New System.Windows.Forms.GroupBox()
+        Me.ComboBox_num_center_units = New System.Windows.Forms.ComboBox()
+        Me.ComboBox_num_area_units = New System.Windows.Forms.ComboBox()
+        Me.ComboBox_num_moment_units = New System.Windows.Forms.ComboBox()
+        Me.Label_num_area = New System.Windows.Forms.Label()
+        Me.TextBox_num_area = New System.Windows.Forms.TextBox()
+        Me.Label_num_center = New System.Windows.Forms.Label()
+        Me.TextBox_num_center = New System.Windows.Forms.TextBox()
+        Me.Label_num_moment = New System.Windows.Forms.Label()
+        Me.TextBox_num_moment = New System.Windows.Forms.TextBox()
+        Me.Button_num_selected = New System.Windows.Forms.Button()
+        Me.PictureBox_numeric = New System.Windows.Forms.PictureBox()
         Me.Panel_plate.SuspendLayout()
         Me.GroupBox_plate.SuspendLayout()
         CType(Me.numeric_plate_t, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -169,17 +169,19 @@ Partial Class GUI_calculations
         '
         'MenuStrip
         '
+        Me.MenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(1028, 24)
+        Me.MenuStrip.Size = New System.Drawing.Size(1050, 24)
         Me.MenuStrip.TabIndex = 1
         Me.MenuStrip.Text = "MenuStrip1"
         '
         'StatusStrip
         '
+        Me.StatusStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip.Location = New System.Drawing.Point(0, 718)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Size = New System.Drawing.Size(1028, 22)
+        Me.StatusStrip.Size = New System.Drawing.Size(1050, 22)
         Me.StatusStrip.TabIndex = 2
         Me.StatusStrip.Text = "StatusStrip1"
         '
@@ -188,16 +190,16 @@ Partial Class GUI_calculations
         Me.TreeView_steps.Dock = System.Windows.Forms.DockStyle.Left
         Me.TreeView_steps.Location = New System.Drawing.Point(0, 24)
         Me.TreeView_steps.Name = "TreeView_steps"
-        TreeNode9.Checked = True
-        TreeNode9.Name = "Node1"
-        TreeNode9.Text = "Node1"
-        TreeNode10.Name = "Node2"
-        TreeNode10.Text = "Node2"
-        TreeNode11.Name = "Node3"
-        TreeNode11.Text = "Node3"
-        TreeNode12.Name = "inputs_root"
-        TreeNode12.Text = "Inputs"
-        Me.TreeView_steps.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode12})
+        TreeNode1.Checked = True
+        TreeNode1.Name = "Node1"
+        TreeNode1.Text = "Node1"
+        TreeNode2.Name = "Node2"
+        TreeNode2.Text = "Node2"
+        TreeNode3.Name = "Node3"
+        TreeNode3.Text = "Node3"
+        TreeNode4.Name = "inputs_root"
+        TreeNode4.Text = "Inputs"
+        Me.TreeView_steps.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode4})
         Me.TreeView_steps.Size = New System.Drawing.Size(148, 694)
         Me.TreeView_steps.TabIndex = 3
         '
@@ -209,7 +211,7 @@ Partial Class GUI_calculations
         Me.Panel_plate.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_plate.Location = New System.Drawing.Point(0, 0)
         Me.Panel_plate.Name = "Panel_plate"
-        Me.Panel_plate.Size = New System.Drawing.Size(1028, 740)
+        Me.Panel_plate.Size = New System.Drawing.Size(1050, 740)
         Me.Panel_plate.TabIndex = 49
         '
         'Button_plate_ok
@@ -218,7 +220,7 @@ Partial Class GUI_calculations
         Me.Button_plate_ok.Font = New System.Drawing.Font("David", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Button_plate_ok.Image = Global.SPE.My.Resources.Resources.icon_confirmation
         Me.Button_plate_ok.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_plate_ok.Location = New System.Drawing.Point(431, 303)
+        Me.Button_plate_ok.Location = New System.Drawing.Point(442, 303)
         Me.Button_plate_ok.Name = "Button_plate_ok"
         Me.Button_plate_ok.Size = New System.Drawing.Size(88, 53)
         Me.Button_plate_ok.TabIndex = 42
@@ -401,7 +403,7 @@ Partial Class GUI_calculations
         Me.panel02.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel02.Location = New System.Drawing.Point(0, 0)
         Me.panel02.Name = "panel02"
-        Me.panel02.Size = New System.Drawing.Size(1028, 740)
+        Me.panel02.Size = New System.Drawing.Size(1050, 740)
         Me.panel02.TabIndex = 50
         Me.panel02.Visible = False
         '
@@ -520,7 +522,7 @@ Partial Class GUI_calculations
         Me.panel03.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel03.Location = New System.Drawing.Point(148, 24)
         Me.panel03.Name = "panel03"
-        Me.panel03.Size = New System.Drawing.Size(880, 694)
+        Me.panel03.Size = New System.Drawing.Size(902, 694)
         Me.panel03.TabIndex = 51
         '
         'GroupBox_stiffeners
@@ -649,7 +651,7 @@ Partial Class GUI_calculations
         'CheckBox_Inb
         '
         Me.CheckBox_Inb.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckBox_Inb.AutoEllipsis = True
         Me.CheckBox_Inb.Font = New System.Drawing.Font("David", 10.8!)
         Me.CheckBox_Inb.Location = New System.Drawing.Point(7, 118)
@@ -661,7 +663,7 @@ Partial Class GUI_calculations
         'CheckBox_Ib
         '
         Me.CheckBox_Ib.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckBox_Ib.AutoEllipsis = True
         Me.CheckBox_Ib.Font = New System.Drawing.Font("David", 10.8!)
         Me.CheckBox_Ib.Location = New System.Drawing.Point(7, 88)
@@ -673,7 +675,7 @@ Partial Class GUI_calculations
         'CheckBox_Ina
         '
         Me.CheckBox_Ina.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckBox_Ina.AutoEllipsis = True
         Me.CheckBox_Ina.Font = New System.Drawing.Font("David", 10.8!)
         Me.CheckBox_Ina.Location = New System.Drawing.Point(7, 58)
@@ -685,7 +687,7 @@ Partial Class GUI_calculations
         'CheckBox_Ia
         '
         Me.CheckBox_Ia.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckBox_Ia.AutoEllipsis = True
         Me.CheckBox_Ia.Font = New System.Drawing.Font("David", 10.8!)
         Me.CheckBox_Ia.Location = New System.Drawing.Point(7, 28)
@@ -803,7 +805,7 @@ Partial Class GUI_calculations
         'Radiobutton_select_geometric
         '
         Me.Radiobutton_select_geometric.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Radiobutton_select_geometric.AutoEllipsis = True
         Me.Radiobutton_select_geometric.Checked = True
         Me.Radiobutton_select_geometric.Font = New System.Drawing.Font("David", 10.8!)
@@ -818,7 +820,7 @@ Partial Class GUI_calculations
         'Radiobutton_select_numeric
         '
         Me.Radiobutton_select_numeric.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Radiobutton_select_numeric.AutoEllipsis = True
         Me.Radiobutton_select_numeric.Font = New System.Drawing.Font("David", 10.8!)
         Me.Radiobutton_select_numeric.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -831,7 +833,7 @@ Partial Class GUI_calculations
         'Radiobutton_select_DB
         '
         Me.Radiobutton_select_DB.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Radiobutton_select_DB.AutoEllipsis = True
         Me.Radiobutton_select_DB.Font = New System.Drawing.Font("David", 10.8!)
         Me.Radiobutton_select_DB.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -1496,7 +1498,7 @@ Partial Class GUI_calculations
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PapayaWhip
-        Me.ClientSize = New System.Drawing.Size(1028, 740)
+        Me.ClientSize = New System.Drawing.Size(1050, 740)
         Me.Controls.Add(Me.panel03)
         Me.Controls.Add(Me.TreeView_steps)
         Me.Controls.Add(Me.StatusStrip)
