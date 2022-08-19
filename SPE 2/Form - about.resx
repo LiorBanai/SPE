@@ -112,119 +112,42 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Label_msg01.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Label_msg01.Text" xml:space="preserve">
     <value>This program (up to version 1.3) was written as part of 4th year graduate project in partial fulfillment of the requirements for the degree of B.Sc. in Mechanical Engineering from Tel Aviv University under the advisory of LCDR Omri Pedatzur of the Israeli Navy.</value>
   </data>
-  <metadata name="pic.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PictureBox1.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="copy.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="LinkLabel_mail.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Label_version.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Button_disclaimer.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TabControl.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TabPage_about.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Button1.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TabPage_contact.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PictureBox_paypal.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox_paypal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        R0lGODlhPgAfAPQAADJXgRVBcMHN2k5uktHV2oiguLTE08jT3tfh6QAhWPb4+kRli+fs8KS3yp2wxOPx
-        93CMqeHn7VZ2mHyWsef1+u7x9GiDoiRIc7u7u+np6QY0ZiI2TZSnvQAAAOr3/P///ywAAAAAPgAfAAAF
-        /yDXcGRpnmiqrixZWEPhzXRt33iu7zZQfMCgcEgsGo/I4cXyuT2eUJ4OGt09CtgCZ/bJLImCgGasCSwc
-        SSLjQh4DJhWjQAMABADACuFrm1wMgAYOFhoWMxSIPAYBDoENEHcUHoiSMxMAFQoDEjN6X0MLTEMNhQt1
-        ADEDqgMQDBKqdUQIAZunCxyaTAoAHHl7TDUPAQ0fDAsDCB8VFwEWWRJjrAOFARAQFxJAFgsGQNPOWBZm
-        F70IGgKdv0MHAQQfBgkJaBUBP0IF8h8I8cQRAb0MNCSA4G3AEANjDnxwECCIJ2A0OFxQsHAJxQOFJFwA
-        4O7AwA8RNCzwliCZAFQRPv8oMGNhYzcGAQJQhEHj4RAYsgAk8GHgAIMPHBIYXCbgQ4MEF+IIqWAB6YSe
-        PzEa/ODDoboaF34oECDgUYAE9g50+yBhpwIFxNYIBXJAgIECFxJIoBihQRwHYEEGMFBTXZCQRTGWOTbx
-        w4S1uxYE+KktwIUJytjcgZbsaIA4TbstSumLz4wGl4FeOIDAQwM8Hw44iDOLocIPcwoEKGrOAAIKc1JG
-        4MCZ2c9LNWwGgbCAgaupqTWsVnDAZ4PRGojtsjAHAQO4DqtlimCAAUYAxhcQtOrZw4I2E2pA0HCBDZkF
-        EgBQnBAAwXoynGiQctymf4PgfgFBAFdcKRUEAQ44IEDWWwdMoIE75pRDoACcBYFAgj1NSCBF5EEkxQ2z
-        ZFUAAAtU8uGJwqVRBAenkJiMijB25uGJNNaoQ4ox5qhjETbZ6OOPfX2CRAdEdhBEkUAYmeSRRCZZpJFP
-        JtHjDh3QUGWVM1yJ5ZZWdpkligEeoeQHUB5J5plKPjnmmk1KeRWVXWLpwZVZcvnlnXOCKaSYSDqZppln
-        LikomX0eMSWQiJ4IxAVDZeDoo5BGKumklFZqaQYIGLBRphh06umnoIYq6qikltopBxu0t8GqrLbq6quw
-        xirrrK6GAAA7
+        R0lGODlhPgAfAIQAADJXgRVBcMHN2k5uktHV2oiguLTE08jT3tfh6QAhWPb4+kRli+fs8KS3yp2wxOPx
+        93CMqeHn7VZ2mHyWsef1+u7x9GiDoiRIc7u7u+np6QY0ZiI2TZSnvQAAAOr3/P///yH/C05FVFNDQVBF
+        Mi4wAwEBAAAh+QQAAAAAACwAAAAAPgAfAAAI/wA5NOBAsKDBgwgTKlzIkGABCwMKeJhIsaLFixgzatxo
+        EUCBDyBDihxJsqTJkyhHXrDw4eKDlzA5aoQZc+ODAjgLcJj4IcNKkgICaBiqIcACBylJMrhAdCiACRVM
+        CtAAAEAAACArEPhpccIFA2ANOLCgwcJECmg5GgjgIGwDCFcpeEArd+IEABUUDJAwUevPkQtYjmxQdkFV
+        ABEHKB4AgYEExVVJIgiw9/ACDnpZKgDAIetWlhUfBGjwgcGCAQg+VLgQwEJOCUMZDygbAAKECxJAWlhg
+        AORs1zgtGL3QGYEGAX0/jzwQgMAHAwkSIK0Q4KPIAtI/IIhOOkKAzgw0JP+A4HvASANDD3xwECCkX9AU
+        OVxQsH4l/QNlJVwA4PzA+A8RaLCAbwmkJgBiEXyggFEW7NcbAwEEQB9EFL03EkSSAZCARwYcwMAHHCRg
+        3moCfNBAAhdEJVIFFqA4QYcf4mfeBx65p1xFF3ykgAACvBVAAtYd0NsHEmyogAKkLSUiSAcIYEABFyQg
+        AX0RNBCVA0ACGIABFSoXUoAl4lfUafN9MMGSmy0QwIe6BXDBBKoxdRVsqZ0YQFQt9rZWgp5xNVEDd4J4
+        wQEIeNAAVh8c4EBUk7Gn3gdTFRBAicYZgAAFUyUYAQd8svbhXRVZGBIECzDg2IyJarCoAgd42MCgGpD/
+        tpkFUyHAAJTu1ZZXBAYwgB8Api5Ano1+erBAUxNUBIEGFzBF1AISAEDfBAEgsCxRfFFEmJtNddtAqF6C
+        RACPPKoYEgEOOCBAkwdMoIFzxhVHrgB8hoRAuh3OSy59xMIn00WT5VgAAAvU9e/BoiZVEgeHEZyawhD3
+        6e/BFFesUcIRZ6xxSRZa7PHHXf6FUgckdxBSySCZnPLJJKdcsskvp9TxRh1QVHPNE92M884295wzwuGe
+        pPIHMJ9M9NEqvzz00i3LfCPNPePswc058/zz1VMDLbLQKLuctNFHryw20V2fNDPIaB8M0gUjZuD223DH
+        LffcdNdtdwYIGLBf3hj0H+3334AHLvjghBfeNwcbNLvB4ow37vjjkEcu+eSOBwQAOw==
 </value>
   </data>
-  <metadata name="LinkLabel_mail2.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Label_omri.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Label_lior.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="LinkLabel_mail1.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TabPage_Additional.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="RichTextBox_additional.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="RichTextBox_additional.Text" xml:space="preserve">
     <value>The use of this program is allowed under the following agreements:
 
-1)Modification of this program is strictly forbidding without written agreement from the author ("Lior Banai"). This does not apply to modifications of any language files shipped with this program.
+1)Modification of this program is allowed Under the MIT license
 
-2)Academic use of this program is subjected to acknowledgement of the authors</value>
+2)Academic use of this program (or derivative of this program) is subjected to acknowledgement of the authors</value>
   </data>
-  <metadata name="TabPage_email.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="email_contact5.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="email_contact6.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="email_contact4.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="email_contact3.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="email_contact2.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="email_contact1.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
