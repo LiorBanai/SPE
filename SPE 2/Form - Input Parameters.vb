@@ -38,8 +38,6 @@ Public Class GUI_Input_Parameters
     'System.Windows.Forms.Panel
     Friend WithEvents RadioButton_fast As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton_full As System.Windows.Forms.RadioButton
-
-    Friend WithEvents GroupBox_stiffeners As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox_stiffeners_number As System.Windows.Forms.GroupBox
     Friend WithEvents Label_stiffeners_short As System.Windows.Forms.Label
     Friend WithEvents Label_stiffeners_long As System.Windows.Forms.Label
@@ -176,6 +174,12 @@ Public Class GUI_Input_Parameters
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents PanelTop As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TabControl2 As TabControl
+    Friend WithEvents tpNumericInput As TabPage
+    Friend WithEvents tpGeometricInput As TabPage
+    Friend WithEvents tpDBInput As TabPage
     Friend WithEvents Label_long As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -209,7 +213,6 @@ Public Class GUI_Input_Parameters
         Me.Button_type02 = New System.Windows.Forms.Button()
         Me.Button_type01 = New System.Windows.Forms.Button()
         Me.panel03 = New System.Windows.Forms.Panel()
-        Me.GroupBox_stiffeners = New System.Windows.Forms.GroupBox()
         Me.GroupBox_stiffeners_mark = New System.Windows.Forms.GroupBox()
         Me.PictureBox_Inb_info = New System.Windows.Forms.PictureBox()
         Me.PictureBox_Ib_info = New System.Windows.Forms.PictureBox()
@@ -319,6 +322,12 @@ Public Class GUI_Input_Parameters
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.PanelTop = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TabControl2 = New System.Windows.Forms.TabControl()
+        Me.tpNumericInput = New System.Windows.Forms.TabPage()
+        Me.tpGeometricInput = New System.Windows.Forms.TabPage()
+        Me.tpDBInput = New System.Windows.Forms.TabPage()
         Me.Panel01.SuspendLayout()
         Me.GroupBox_plate.SuspendLayout()
         CType(Me.numeric_plate_t, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -327,7 +336,6 @@ Public Class GUI_Input_Parameters
         CType(Me.PictureBox_plate, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panel02.SuspendLayout()
         Me.panel03.SuspendLayout()
-        Me.GroupBox_stiffeners.SuspendLayout()
         Me.GroupBox_stiffeners_mark.SuspendLayout()
         CType(Me.PictureBox_Inb_info, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_Ib_info, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -368,6 +376,11 @@ Public Class GUI_Input_Parameters
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
+        Me.PanelTop.SuspendLayout()
+        Me.TabControl2.SuspendLayout()
+        Me.tpNumericInput.SuspendLayout()
+        Me.tpGeometricInput.SuspendLayout()
+        Me.tpDBInput.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel01
@@ -381,7 +394,7 @@ Public Class GUI_Input_Parameters
         Me.Panel01.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel01.Location = New System.Drawing.Point(3, 3)
         Me.Panel01.Name = "Panel01"
-        Me.Panel01.Size = New System.Drawing.Size(1136, 562)
+        Me.Panel01.Size = New System.Drawing.Size(1195, 761)
         Me.Panel01.TabIndex = 47
         '
         'RichTextBox_fast
@@ -399,7 +412,7 @@ Public Class GUI_Input_Parameters
         Me.RichTextBox_fast.ReadOnly = True
         Me.RichTextBox_fast.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical
         Me.RichTextBox_fast.ShowSelectionMargin = True
-        Me.RichTextBox_fast.Size = New System.Drawing.Size(1090, 129)
+        Me.RichTextBox_fast.Size = New System.Drawing.Size(1149, 129)
         Me.RichTextBox_fast.TabIndex = 45
         Me.RichTextBox_fast.Text = resources.GetString("RichTextBox_fast.Text")
         '
@@ -412,7 +425,7 @@ Public Class GUI_Input_Parameters
         Me.RadioButton_full.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.RadioButton_full.Location = New System.Drawing.Point(28, 188)
         Me.RadioButton_full.Name = "RadioButton_full"
-        Me.RadioButton_full.Size = New System.Drawing.Size(1090, 32)
+        Me.RadioButton_full.Size = New System.Drawing.Size(1149, 32)
         Me.RadioButton_full.TabIndex = 44
         Me.RadioButton_full.TabStop = True
         Me.RadioButton_full.Text = "Full Process"
@@ -423,7 +436,7 @@ Public Class GUI_Input_Parameters
         Me.Button_next_panel01.AutoEllipsis = True
         Me.Button_next_panel01.Font = New System.Drawing.Font("David", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Button_next_panel01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_next_panel01.Location = New System.Drawing.Point(487, 449)
+        Me.Button_next_panel01.Location = New System.Drawing.Point(516, 449)
         Me.Button_next_panel01.Name = "Button_next_panel01"
         Me.Button_next_panel01.Size = New System.Drawing.Size(88, 28)
         Me.Button_next_panel01.TabIndex = 42
@@ -448,7 +461,7 @@ Public Class GUI_Input_Parameters
         Me.GroupBox_plate.Font = New System.Drawing.Font("David", 13.8!)
         Me.GroupBox_plate.Location = New System.Drawing.Point(28, 239)
         Me.GroupBox_plate.Name = "GroupBox_plate"
-        Me.GroupBox_plate.Size = New System.Drawing.Size(1090, 204)
+        Me.GroupBox_plate.Size = New System.Drawing.Size(1149, 204)
         Me.GroupBox_plate.TabIndex = 40
         Me.GroupBox_plate.TabStop = False
         Me.GroupBox_plate.Text = "Plate's Geometry's Parameters"
@@ -459,7 +472,7 @@ Public Class GUI_Input_Parameters
         Me.Label_long.AutoEllipsis = True
         Me.Label_long.BackColor = System.Drawing.Color.White
         Me.Label_long.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.Label_long.Location = New System.Drawing.Point(997, 115)
+        Me.Label_long.Location = New System.Drawing.Point(1056, 115)
         Me.Label_long.Name = "Label_long"
         Me.Label_long.Size = New System.Drawing.Size(51, 19)
         Me.Label_long.TabIndex = 44
@@ -472,7 +485,7 @@ Public Class GUI_Input_Parameters
         Me.Label_short.AutoEllipsis = True
         Me.Label_short.BackColor = System.Drawing.Color.White
         Me.Label_short.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.Label_short.Location = New System.Drawing.Point(953, 47)
+        Me.Label_short.Location = New System.Drawing.Point(1012, 47)
         Me.Label_short.Name = "Label_short"
         Me.Label_short.Size = New System.Drawing.Size(113, 27)
         Me.Label_short.TabIndex = 43
@@ -488,7 +501,7 @@ Public Class GUI_Input_Parameters
         Me.Label_thickness.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label_thickness.Location = New System.Drawing.Point(8, 142)
         Me.Label_thickness.Name = "Label_thickness"
-        Me.Label_thickness.Size = New System.Drawing.Size(644, 25)
+        Me.Label_thickness.Size = New System.Drawing.Size(703, 25)
         Me.Label_thickness.TabIndex = 12
         Me.Label_thickness.Text = "Thickness t"
         Me.Label_thickness.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -498,7 +511,7 @@ Public Class GUI_Input_Parameters
         Me.numeric_plate_t.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.numeric_plate_t.DecimalPlaces = 2
         Me.numeric_plate_t.Font = New System.Drawing.Font("David", 10.8!)
-        Me.numeric_plate_t.Location = New System.Drawing.Point(676, 144)
+        Me.numeric_plate_t.Location = New System.Drawing.Point(735, 144)
         Me.numeric_plate_t.Name = "numeric_plate_t"
         Me.numeric_plate_t.Size = New System.Drawing.Size(98, 25)
         Me.numeric_plate_t.TabIndex = 11
@@ -514,7 +527,7 @@ Public Class GUI_Input_Parameters
         Me.Label_breadth.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label_breadth.Location = New System.Drawing.Point(8, 94)
         Me.Label_breadth.Name = "Label_breadth"
-        Me.Label_breadth.Size = New System.Drawing.Size(644, 25)
+        Me.Label_breadth.Size = New System.Drawing.Size(703, 25)
         Me.Label_breadth.TabIndex = 10
         Me.Label_breadth.Text = "Breadth b"
         Me.Label_breadth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -524,7 +537,7 @@ Public Class GUI_Input_Parameters
         Me.numeric_plate_short.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.numeric_plate_short.DecimalPlaces = 4
         Me.numeric_plate_short.Font = New System.Drawing.Font("David", 10.8!)
-        Me.numeric_plate_short.Location = New System.Drawing.Point(676, 96)
+        Me.numeric_plate_short.Location = New System.Drawing.Point(735, 96)
         Me.numeric_plate_short.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.numeric_plate_short.Name = "numeric_plate_short"
         Me.numeric_plate_short.Size = New System.Drawing.Size(98, 25)
@@ -541,7 +554,7 @@ Public Class GUI_Input_Parameters
         Me.Label_length.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label_length.Location = New System.Drawing.Point(8, 43)
         Me.Label_length.Name = "Label_length"
-        Me.Label_length.Size = New System.Drawing.Size(644, 25)
+        Me.Label_length.Size = New System.Drawing.Size(703, 25)
         Me.Label_length.TabIndex = 8
         Me.Label_length.Text = "Length a"
         Me.Label_length.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -551,7 +564,7 @@ Public Class GUI_Input_Parameters
         Me.numeric_plate_long.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.numeric_plate_long.DecimalPlaces = 4
         Me.numeric_plate_long.Font = New System.Drawing.Font("David", 10.8!)
-        Me.numeric_plate_long.Location = New System.Drawing.Point(676, 45)
+        Me.numeric_plate_long.Location = New System.Drawing.Point(735, 45)
         Me.numeric_plate_long.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.numeric_plate_long.Name = "numeric_plate_long"
         Me.numeric_plate_long.Size = New System.Drawing.Size(98, 25)
@@ -564,7 +577,7 @@ Public Class GUI_Input_Parameters
         Me.PictureBox_plate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_plate.Image = Global.SPE.My.Resources.Resources.plate_empty_text
         Me.PictureBox_plate.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox_plate.Location = New System.Drawing.Point(868, 38)
+        Me.PictureBox_plate.Location = New System.Drawing.Point(927, 38)
         Me.PictureBox_plate.Name = "PictureBox_plate"
         Me.PictureBox_plate.Size = New System.Drawing.Size(206, 144)
         Me.PictureBox_plate.TabIndex = 42
@@ -576,7 +589,7 @@ Public Class GUI_Input_Parameters
         Me.Label_unit_mm01.AutoEllipsis = True
         Me.Label_unit_mm01.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_unit_mm01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_unit_mm01.Location = New System.Drawing.Point(786, 144)
+        Me.Label_unit_mm01.Location = New System.Drawing.Point(845, 144)
         Me.Label_unit_mm01.Name = "Label_unit_mm01"
         Me.Label_unit_mm01.Size = New System.Drawing.Size(69, 25)
         Me.Label_unit_mm01.TabIndex = 41
@@ -589,7 +602,7 @@ Public Class GUI_Input_Parameters
         Me.Label_unit_m02.AutoEllipsis = True
         Me.Label_unit_m02.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_unit_m02.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_unit_m02.Location = New System.Drawing.Point(786, 96)
+        Me.Label_unit_m02.Location = New System.Drawing.Point(845, 96)
         Me.Label_unit_m02.Name = "Label_unit_m02"
         Me.Label_unit_m02.Size = New System.Drawing.Size(66, 25)
         Me.Label_unit_m02.TabIndex = 40
@@ -602,7 +615,7 @@ Public Class GUI_Input_Parameters
         Me.Label_unit_m01.AutoEllipsis = True
         Me.Label_unit_m01.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_unit_m01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_unit_m01.Location = New System.Drawing.Point(786, 45)
+        Me.Label_unit_m01.Location = New System.Drawing.Point(845, 45)
         Me.Label_unit_m01.Name = "Label_unit_m01"
         Me.Label_unit_m01.Size = New System.Drawing.Size(66, 25)
         Me.Label_unit_m01.TabIndex = 39
@@ -617,7 +630,7 @@ Public Class GUI_Input_Parameters
         Me.RadioButton_fast.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.RadioButton_fast.Location = New System.Drawing.Point(28, 20)
         Me.RadioButton_fast.Name = "RadioButton_fast"
-        Me.RadioButton_fast.Size = New System.Drawing.Size(1090, 32)
+        Me.RadioButton_fast.Size = New System.Drawing.Size(1149, 32)
         Me.RadioButton_fast.TabIndex = 43
         Me.RadioButton_fast.Text = "Fast Process"
         '
@@ -636,7 +649,7 @@ Public Class GUI_Input_Parameters
         Me.panel02.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel02.Location = New System.Drawing.Point(3, 3)
         Me.panel02.Name = "panel02"
-        Me.panel02.Size = New System.Drawing.Size(1136, 562)
+        Me.panel02.Size = New System.Drawing.Size(1195, 761)
         Me.panel02.TabIndex = 2
         '
         'Button_panel02_back
@@ -749,28 +762,13 @@ Public Class GUI_Input_Parameters
         Me.panel03.AutoScroll = True
         Me.panel03.AutoScrollMargin = New System.Drawing.Size(10, 10)
         Me.panel03.AutoScrollMinSize = New System.Drawing.Size(10, 10)
-        Me.panel03.Controls.Add(Me.GroupBox_stiffeners)
         Me.panel03.Controls.Add(Me.GroupBox_stiffeners_data)
+        Me.panel03.Controls.Add(Me.PanelTop)
         Me.panel03.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel03.Location = New System.Drawing.Point(3, 3)
         Me.panel03.Name = "panel03"
-        Me.panel03.Size = New System.Drawing.Size(1136, 562)
+        Me.panel03.Size = New System.Drawing.Size(1195, 761)
         Me.panel03.TabIndex = 44
-        '
-        'GroupBox_stiffeners
-        '
-        Me.GroupBox_stiffeners.Controls.Add(Me.GroupBox_stiffeners_mark)
-        Me.GroupBox_stiffeners.Controls.Add(Me.button_panel03_back)
-        Me.GroupBox_stiffeners.Controls.Add(Me.button_panel03_next)
-        Me.GroupBox_stiffeners.Controls.Add(Me.GroupBox_stiffeners_number)
-        Me.GroupBox_stiffeners.Font = New System.Drawing.Font("David", 13.8!)
-        Me.GroupBox_stiffeners.Location = New System.Drawing.Point(11, 17)
-        Me.GroupBox_stiffeners.Name = "GroupBox_stiffeners"
-        Me.GroupBox_stiffeners.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupBox_stiffeners.Size = New System.Drawing.Size(904, 197)
-        Me.GroupBox_stiffeners.TabIndex = 41
-        Me.GroupBox_stiffeners.TabStop = False
-        Me.GroupBox_stiffeners.Text = "Selection of Stiffeners"
         '
         'GroupBox_stiffeners_mark
         '
@@ -786,9 +784,10 @@ Public Class GUI_Input_Parameters
         Me.GroupBox_stiffeners_mark.Controls.Add(Me.CheckBox_Ib)
         Me.GroupBox_stiffeners_mark.Controls.Add(Me.CheckBox_Ina)
         Me.GroupBox_stiffeners_mark.Controls.Add(Me.CheckBox_Ia)
-        Me.GroupBox_stiffeners_mark.Location = New System.Drawing.Point(410, 25)
+        Me.GroupBox_stiffeners_mark.Font = New System.Drawing.Font("Segoe UI", 12.8!)
+        Me.GroupBox_stiffeners_mark.Location = New System.Drawing.Point(494, 50)
         Me.GroupBox_stiffeners_mark.Name = "GroupBox_stiffeners_mark"
-        Me.GroupBox_stiffeners_mark.Size = New System.Drawing.Size(376, 159)
+        Me.GroupBox_stiffeners_mark.Size = New System.Drawing.Size(528, 203)
         Me.GroupBox_stiffeners_mark.TabIndex = 52
         Me.GroupBox_stiffeners_mark.TabStop = False
         Me.GroupBox_stiffeners_mark.Tag = ""
@@ -796,8 +795,9 @@ Public Class GUI_Input_Parameters
         '
         'PictureBox_Inb_info
         '
+        Me.PictureBox_Inb_info.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_Inb_info.Image = CType(resources.GetObject("PictureBox_Inb_info.Image"), System.Drawing.Image)
-        Me.PictureBox_Inb_info.Location = New System.Drawing.Point(342, 118)
+        Me.PictureBox_Inb_info.Location = New System.Drawing.Point(459, 145)
         Me.PictureBox_Inb_info.Name = "PictureBox_Inb_info"
         Me.PictureBox_Inb_info.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox_Inb_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -807,8 +807,9 @@ Public Class GUI_Input_Parameters
         '
         'PictureBox_Ib_info
         '
+        Me.PictureBox_Ib_info.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_Ib_info.Image = CType(resources.GetObject("PictureBox_Ib_info.Image"), System.Drawing.Image)
-        Me.PictureBox_Ib_info.Location = New System.Drawing.Point(342, 88)
+        Me.PictureBox_Ib_info.Location = New System.Drawing.Point(459, 109)
         Me.PictureBox_Ib_info.Name = "PictureBox_Ib_info"
         Me.PictureBox_Ib_info.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox_Ib_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -818,8 +819,9 @@ Public Class GUI_Input_Parameters
         '
         'PictureBox_Ina_info
         '
+        Me.PictureBox_Ina_info.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_Ina_info.Image = CType(resources.GetObject("PictureBox_Ina_info.Image"), System.Drawing.Image)
-        Me.PictureBox_Ina_info.Location = New System.Drawing.Point(342, 58)
+        Me.PictureBox_Ina_info.Location = New System.Drawing.Point(459, 69)
         Me.PictureBox_Ina_info.Name = "PictureBox_Ina_info"
         Me.PictureBox_Ina_info.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox_Ina_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -829,8 +831,9 @@ Public Class GUI_Input_Parameters
         '
         'PictureBox_Ia_info
         '
+        Me.PictureBox_Ia_info.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_Ia_info.Image = CType(resources.GetObject("PictureBox_Ia_info.Image"), System.Drawing.Image)
-        Me.PictureBox_Ia_info.Location = New System.Drawing.Point(342, 28)
+        Me.PictureBox_Ia_info.Location = New System.Drawing.Point(459, 28)
         Me.PictureBox_Ia_info.Name = "PictureBox_Ia_info"
         Me.PictureBox_Ia_info.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox_Ia_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -840,8 +843,9 @@ Public Class GUI_Input_Parameters
         '
         'PictureBox_Inb_checked
         '
+        Me.PictureBox_Inb_checked.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_Inb_checked.Image = CType(resources.GetObject("PictureBox_Inb_checked.Image"), System.Drawing.Image)
-        Me.PictureBox_Inb_checked.Location = New System.Drawing.Point(305, 118)
+        Me.PictureBox_Inb_checked.Location = New System.Drawing.Point(422, 145)
         Me.PictureBox_Inb_checked.Name = "PictureBox_Inb_checked"
         Me.PictureBox_Inb_checked.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox_Inb_checked.TabIndex = 8
@@ -849,8 +853,9 @@ Public Class GUI_Input_Parameters
         '
         'PictureBox_Ib_checked
         '
+        Me.PictureBox_Ib_checked.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_Ib_checked.Image = CType(resources.GetObject("PictureBox_Ib_checked.Image"), System.Drawing.Image)
-        Me.PictureBox_Ib_checked.Location = New System.Drawing.Point(305, 88)
+        Me.PictureBox_Ib_checked.Location = New System.Drawing.Point(422, 109)
         Me.PictureBox_Ib_checked.Name = "PictureBox_Ib_checked"
         Me.PictureBox_Ib_checked.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox_Ib_checked.TabIndex = 7
@@ -858,8 +863,9 @@ Public Class GUI_Input_Parameters
         '
         'PictureBox_Ina_checked
         '
+        Me.PictureBox_Ina_checked.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_Ina_checked.Image = CType(resources.GetObject("PictureBox_Ina_checked.Image"), System.Drawing.Image)
-        Me.PictureBox_Ina_checked.Location = New System.Drawing.Point(305, 58)
+        Me.PictureBox_Ina_checked.Location = New System.Drawing.Point(422, 69)
         Me.PictureBox_Ina_checked.Name = "PictureBox_Ina_checked"
         Me.PictureBox_Ina_checked.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox_Ina_checked.TabIndex = 6
@@ -867,8 +873,9 @@ Public Class GUI_Input_Parameters
         '
         'PictureBox_Ia_checked
         '
+        Me.PictureBox_Ia_checked.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_Ia_checked.Image = CType(resources.GetObject("PictureBox_Ia_checked.Image"), System.Drawing.Image)
-        Me.PictureBox_Ia_checked.Location = New System.Drawing.Point(305, 28)
+        Me.PictureBox_Ia_checked.Location = New System.Drawing.Point(422, 28)
         Me.PictureBox_Ia_checked.Name = "PictureBox_Ia_checked"
         Me.PictureBox_Ia_checked.Size = New System.Drawing.Size(28, 24)
         Me.PictureBox_Ia_checked.TabIndex = 5
@@ -877,40 +884,40 @@ Public Class GUI_Input_Parameters
         'CheckBox_Inb
         '
         Me.CheckBox_Inb.AutoEllipsis = True
-        Me.CheckBox_Inb.Font = New System.Drawing.Font("David", 10.8!)
-        Me.CheckBox_Inb.Location = New System.Drawing.Point(7, 118)
+        Me.CheckBox_Inb.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox_Inb.Location = New System.Drawing.Point(7, 145)
         Me.CheckBox_Inb.Name = "CheckBox_Inb"
-        Me.CheckBox_Inb.Size = New System.Drawing.Size(292, 24)
+        Me.CheckBox_Inb.Size = New System.Drawing.Size(438, 24)
         Me.CheckBox_Inb.TabIndex = 3
         Me.CheckBox_Inb.Text = "Non-Central Transverse Stiffeners"
         '
         'CheckBox_Ib
         '
         Me.CheckBox_Ib.AutoEllipsis = True
-        Me.CheckBox_Ib.Font = New System.Drawing.Font("David", 10.8!)
-        Me.CheckBox_Ib.Location = New System.Drawing.Point(7, 88)
+        Me.CheckBox_Ib.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox_Ib.Location = New System.Drawing.Point(7, 109)
         Me.CheckBox_Ib.Name = "CheckBox_Ib"
-        Me.CheckBox_Ib.Size = New System.Drawing.Size(292, 24)
+        Me.CheckBox_Ib.Size = New System.Drawing.Size(438, 24)
         Me.CheckBox_Ib.TabIndex = 2
         Me.CheckBox_Ib.Text = "Central Transverse Stiffeners"
         '
         'CheckBox_Ina
         '
         Me.CheckBox_Ina.AutoEllipsis = True
-        Me.CheckBox_Ina.Font = New System.Drawing.Font("David", 10.8!)
-        Me.CheckBox_Ina.Location = New System.Drawing.Point(7, 58)
+        Me.CheckBox_Ina.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox_Ina.Location = New System.Drawing.Point(7, 69)
         Me.CheckBox_Ina.Name = "CheckBox_Ina"
-        Me.CheckBox_Ina.Size = New System.Drawing.Size(292, 24)
+        Me.CheckBox_Ina.Size = New System.Drawing.Size(438, 24)
         Me.CheckBox_Ina.TabIndex = 1
         Me.CheckBox_Ina.Text = "Non-Central Longitudinal Stiffeners"
         '
         'CheckBox_Ia
         '
         Me.CheckBox_Ia.AutoEllipsis = True
-        Me.CheckBox_Ia.Font = New System.Drawing.Font("David", 10.8!)
+        Me.CheckBox_Ia.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox_Ia.Location = New System.Drawing.Point(7, 28)
         Me.CheckBox_Ia.Name = "CheckBox_Ia"
-        Me.CheckBox_Ia.Size = New System.Drawing.Size(292, 24)
+        Me.CheckBox_Ia.Size = New System.Drawing.Size(438, 24)
         Me.CheckBox_Ia.TabIndex = 0
         Me.CheckBox_Ia.Text = "Central Longitudinal Stiffener"
         '
@@ -919,7 +926,7 @@ Public Class GUI_Input_Parameters
         Me.button_panel03_back.AutoEllipsis = True
         Me.button_panel03_back.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.button_panel03_back.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.button_panel03_back.Location = New System.Drawing.Point(800, 36)
+        Me.button_panel03_back.Location = New System.Drawing.Point(1056, 75)
         Me.button_panel03_back.Name = "button_panel03_back"
         Me.button_panel03_back.Size = New System.Drawing.Size(92, 48)
         Me.button_panel03_back.TabIndex = 43
@@ -932,7 +939,7 @@ Public Class GUI_Input_Parameters
         Me.button_panel03_next.Image = CType(resources.GetObject("button_panel03_next.Image"), System.Drawing.Image)
         Me.button_panel03_next.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.button_panel03_next.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.button_panel03_next.Location = New System.Drawing.Point(800, 104)
+        Me.button_panel03_next.Location = New System.Drawing.Point(1056, 129)
         Me.button_panel03_next.Name = "button_panel03_next"
         Me.button_panel03_next.Size = New System.Drawing.Size(92, 84)
         Me.button_panel03_next.TabIndex = 42
@@ -947,10 +954,10 @@ Public Class GUI_Input_Parameters
         Me.GroupBox_stiffeners_number.Controls.Add(Me.Label_stiffeners_short)
         Me.GroupBox_stiffeners_number.Controls.Add(Me.numeric_long)
         Me.GroupBox_stiffeners_number.Controls.Add(Me.Label_stiffeners_long)
-        Me.GroupBox_stiffeners_number.Font = New System.Drawing.Font("David", 13.8!)
-        Me.GroupBox_stiffeners_number.Location = New System.Drawing.Point(20, 25)
+        Me.GroupBox_stiffeners_number.Font = New System.Drawing.Font("Segoe UI", 12.8!)
+        Me.GroupBox_stiffeners_number.Location = New System.Drawing.Point(5, 50)
         Me.GroupBox_stiffeners_number.Name = "GroupBox_stiffeners_number"
-        Me.GroupBox_stiffeners_number.Size = New System.Drawing.Size(376, 159)
+        Me.GroupBox_stiffeners_number.Size = New System.Drawing.Size(475, 153)
         Me.GroupBox_stiffeners_number.TabIndex = 51
         Me.GroupBox_stiffeners_number.TabStop = False
         Me.GroupBox_stiffeners_number.Text = "Number of Stiffeners"
@@ -958,33 +965,31 @@ Public Class GUI_Input_Parameters
         'Button_view_parameters
         '
         Me.Button_view_parameters.Font = New System.Drawing.Font("David", 12.0!)
-        Me.Button_view_parameters.Location = New System.Drawing.Point(12, 106)
+        Me.Button_view_parameters.Location = New System.Drawing.Point(6, 107)
         Me.Button_view_parameters.Name = "Button_view_parameters"
-        Me.Button_view_parameters.Size = New System.Drawing.Size(358, 37)
+        Me.Button_view_parameters.Size = New System.Drawing.Size(444, 37)
         Me.Button_view_parameters.TabIndex = 59
         Me.Button_view_parameters.Text = "View model parameters"
         Me.Button_view_parameters.UseVisualStyleBackColor = True
         '
         'numeric_short
         '
-        Me.numeric_short.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.numeric_short.Font = New System.Drawing.Font("David", 10.8!)
-        Me.numeric_short.Location = New System.Drawing.Point(295, 65)
+        Me.numeric_short.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.numeric_short.Location = New System.Drawing.Point(355, 70)
         Me.numeric_short.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.numeric_short.Name = "numeric_short"
         Me.numeric_short.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.numeric_short.Size = New System.Drawing.Size(64, 25)
+        Me.numeric_short.Size = New System.Drawing.Size(96, 31)
         Me.numeric_short.TabIndex = 58
         Me.numeric_short.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.numeric_short.Value = New Decimal(New Integer() {3, 0, 0, 0})
         '
         'Label_stiffeners_short
         '
-        Me.Label_stiffeners_short.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label_stiffeners_short.AutoEllipsis = True
-        Me.Label_stiffeners_short.Font = New System.Drawing.Font("David", 10.8!)
+        Me.Label_stiffeners_short.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_stiffeners_short.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_stiffeners_short.Location = New System.Drawing.Point(8, 65)
+        Me.Label_stiffeners_short.Location = New System.Drawing.Point(7, 70)
         Me.Label_stiffeners_short.Name = "Label_stiffeners_short"
         Me.Label_stiffeners_short.Size = New System.Drawing.Size(281, 25)
         Me.Label_stiffeners_short.TabIndex = 57
@@ -993,24 +998,22 @@ Public Class GUI_Input_Parameters
         '
         'numeric_long
         '
-        Me.numeric_long.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.numeric_long.Font = New System.Drawing.Font("David", 10.8!)
-        Me.numeric_long.Location = New System.Drawing.Point(295, 32)
+        Me.numeric_long.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.numeric_long.Location = New System.Drawing.Point(355, 32)
         Me.numeric_long.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.numeric_long.Name = "numeric_long"
         Me.numeric_long.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.numeric_long.Size = New System.Drawing.Size(63, 25)
+        Me.numeric_long.Size = New System.Drawing.Size(95, 31)
         Me.numeric_long.TabIndex = 56
         Me.numeric_long.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.numeric_long.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'Label_stiffeners_long
         '
-        Me.Label_stiffeners_long.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label_stiffeners_long.AutoEllipsis = True
-        Me.Label_stiffeners_long.Font = New System.Drawing.Font("David", 10.8!)
+        Me.Label_stiffeners_long.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_stiffeners_long.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_stiffeners_long.Location = New System.Drawing.Point(8, 32)
+        Me.Label_stiffeners_long.Location = New System.Drawing.Point(7, 32)
         Me.Label_stiffeners_long.Name = "Label_stiffeners_long"
         Me.Label_stiffeners_long.Size = New System.Drawing.Size(281, 25)
         Me.Label_stiffeners_long.TabIndex = 55
@@ -1019,14 +1022,13 @@ Public Class GUI_Input_Parameters
         '
         'GroupBox_stiffeners_data
         '
+        Me.GroupBox_stiffeners_data.Controls.Add(Me.TabControl2)
         Me.GroupBox_stiffeners_data.Controls.Add(Me.GroupBox_moment_select_general)
-        Me.GroupBox_stiffeners_data.Controls.Add(Me.GroupBox_numeric_input)
-        Me.GroupBox_stiffeners_data.Controls.Add(Me.Groupbox_geometric_input)
-        Me.GroupBox_stiffeners_data.Controls.Add(Me.groupBox_DB_input)
-        Me.GroupBox_stiffeners_data.Font = New System.Drawing.Font("David", 13.8!)
-        Me.GroupBox_stiffeners_data.Location = New System.Drawing.Point(6, 228)
+        Me.GroupBox_stiffeners_data.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox_stiffeners_data.Font = New System.Drawing.Font("Segoe UI", 12.8!)
+        Me.GroupBox_stiffeners_data.Location = New System.Drawing.Point(0, 276)
         Me.GroupBox_stiffeners_data.Name = "GroupBox_stiffeners_data"
-        Me.GroupBox_stiffeners_data.Size = New System.Drawing.Size(912, 304)
+        Me.GroupBox_stiffeners_data.Size = New System.Drawing.Size(1195, 485)
         Me.GroupBox_stiffeners_data.TabIndex = 48
         Me.GroupBox_stiffeners_data.TabStop = False
         Me.GroupBox_stiffeners_data.Text = "Stiffeners' Properties"
@@ -1034,14 +1036,15 @@ Public Class GUI_Input_Parameters
         '
         'GroupBox_moment_select_general
         '
-        Me.GroupBox_moment_select_general.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox_moment_select_general.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_moment_select_general.Controls.Add(Me.Radiobutton_select_geometric)
         Me.GroupBox_moment_select_general.Controls.Add(Me.Radiobutton_select_numeric)
         Me.GroupBox_moment_select_general.Controls.Add(Me.Radiobutton_select_DB)
-        Me.GroupBox_moment_select_general.Font = New System.Drawing.Font("David", 12.0!)
-        Me.GroupBox_moment_select_general.Location = New System.Drawing.Point(660, 29)
+        Me.GroupBox_moment_select_general.Font = New System.Drawing.Font("Segoe UI", 12.8!)
+        Me.GroupBox_moment_select_general.Location = New System.Drawing.Point(6, 31)
         Me.GroupBox_moment_select_general.Name = "GroupBox_moment_select_general"
-        Me.GroupBox_moment_select_general.Size = New System.Drawing.Size(240, 248)
+        Me.GroupBox_moment_select_general.Size = New System.Drawing.Size(240, 448)
         Me.GroupBox_moment_select_general.TabIndex = 44
         Me.GroupBox_moment_select_general.TabStop = False
         Me.GroupBox_moment_select_general.Text = "הכנסת מומנטי אינרציה"
@@ -1083,7 +1086,6 @@ Public Class GUI_Input_Parameters
         '
         'GroupBox_numeric_input
         '
-        Me.GroupBox_numeric_input.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_numeric_input.Controls.Add(Me.ComboBox_num_center_units)
         Me.GroupBox_numeric_input.Controls.Add(Me.ComboBox_num_area_units)
         Me.GroupBox_numeric_input.Controls.Add(Me.ComboBox_num_moment_units)
@@ -1095,14 +1097,14 @@ Public Class GUI_Input_Parameters
         Me.GroupBox_numeric_input.Controls.Add(Me.TextBox_num_moment)
         Me.GroupBox_numeric_input.Controls.Add(Me.Button_num_selected)
         Me.GroupBox_numeric_input.Controls.Add(Me.PictureBox_numeric)
-        Me.GroupBox_numeric_input.Font = New System.Drawing.Font("David", 12.0!)
-        Me.GroupBox_numeric_input.Location = New System.Drawing.Point(12, 29)
+        Me.GroupBox_numeric_input.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox_numeric_input.Font = New System.Drawing.Font("Segoe UI", 12.8!)
+        Me.GroupBox_numeric_input.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox_numeric_input.Name = "GroupBox_numeric_input"
         Me.GroupBox_numeric_input.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupBox_numeric_input.Size = New System.Drawing.Size(637, 248)
+        Me.GroupBox_numeric_input.Size = New System.Drawing.Size(904, 379)
         Me.GroupBox_numeric_input.TabIndex = 45
         Me.GroupBox_numeric_input.TabStop = False
-        Me.GroupBox_numeric_input.Visible = False
         '
         'ComboBox_num_center_units
         '
@@ -1111,7 +1113,7 @@ Public Class GUI_Input_Parameters
         Me.ComboBox_num_center_units.Font = New System.Drawing.Font("David", 10.8!)
         Me.ComboBox_num_center_units.ItemHeight = 17
         Me.ComboBox_num_center_units.Items.AddRange(New Object() {"mm", "cm", "m"})
-        Me.ComboBox_num_center_units.Location = New System.Drawing.Point(229, 135)
+        Me.ComboBox_num_center_units.Location = New System.Drawing.Point(558, 136)
         Me.ComboBox_num_center_units.Name = "ComboBox_num_center_units"
         Me.ComboBox_num_center_units.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.ComboBox_num_center_units.Size = New System.Drawing.Size(84, 25)
@@ -1124,7 +1126,7 @@ Public Class GUI_Input_Parameters
         Me.ComboBox_num_area_units.Font = New System.Drawing.Font("David", 10.8!)
         Me.ComboBox_num_area_units.ItemHeight = 17
         Me.ComboBox_num_area_units.Items.AddRange(New Object() {"mm^2", "cm^2", "m^2"})
-        Me.ComboBox_num_area_units.Location = New System.Drawing.Point(229, 79)
+        Me.ComboBox_num_area_units.Location = New System.Drawing.Point(558, 80)
         Me.ComboBox_num_area_units.Name = "ComboBox_num_area_units"
         Me.ComboBox_num_area_units.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.ComboBox_num_area_units.Size = New System.Drawing.Size(84, 25)
@@ -1137,7 +1139,7 @@ Public Class GUI_Input_Parameters
         Me.ComboBox_num_moment_units.Font = New System.Drawing.Font("David", 10.8!)
         Me.ComboBox_num_moment_units.ItemHeight = 17
         Me.ComboBox_num_moment_units.Items.AddRange(New Object() {"mm^4", "cm^4", "m^4"})
-        Me.ComboBox_num_moment_units.Location = New System.Drawing.Point(229, 36)
+        Me.ComboBox_num_moment_units.Location = New System.Drawing.Point(558, 37)
         Me.ComboBox_num_moment_units.Name = "ComboBox_num_moment_units"
         Me.ComboBox_num_moment_units.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.ComboBox_num_moment_units.Size = New System.Drawing.Size(84, 25)
@@ -1149,9 +1151,8 @@ Public Class GUI_Input_Parameters
         Me.Label_num_area.AutoEllipsis = True
         Me.Label_num_area.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_num_area.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_num_area.Location = New System.Drawing.Point(412, 79)
+        Me.Label_num_area.Location = New System.Drawing.Point(6, 79)
         Me.Label_num_area.Name = "Label_num_area"
-        Me.Label_num_area.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_num_area.Size = New System.Drawing.Size(217, 25)
         Me.Label_num_area.TabIndex = 10
         Me.Label_num_area.Text = "Area of cross section"
@@ -1161,7 +1162,7 @@ Public Class GUI_Input_Parameters
         '
         Me.TextBox_num_area.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox_num_area.Font = New System.Drawing.Font("David", 10.8!)
-        Me.TextBox_num_area.Location = New System.Drawing.Point(319, 79)
+        Me.TextBox_num_area.Location = New System.Drawing.Point(353, 80)
         Me.TextBox_num_area.Name = "TextBox_num_area"
         Me.TextBox_num_area.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_num_area.Size = New System.Drawing.Size(88, 25)
@@ -1175,9 +1176,8 @@ Public Class GUI_Input_Parameters
         Me.Label_num_center.AutoEllipsis = True
         Me.Label_num_center.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_num_center.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_num_center.Location = New System.Drawing.Point(412, 120)
+        Me.Label_num_center.Location = New System.Drawing.Point(6, 120)
         Me.Label_num_center.Name = "Label_num_center"
-        Me.Label_num_center.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_num_center.Size = New System.Drawing.Size(217, 57)
         Me.Label_num_center.TabIndex = 7
         Me.Label_num_center.Text = "Center of area with respect to base of stiffener"
@@ -1187,7 +1187,7 @@ Public Class GUI_Input_Parameters
         '
         Me.TextBox_num_center.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox_num_center.Font = New System.Drawing.Font("David", 10.8!)
-        Me.TextBox_num_center.Location = New System.Drawing.Point(319, 135)
+        Me.TextBox_num_center.Location = New System.Drawing.Point(353, 136)
         Me.TextBox_num_center.Name = "TextBox_num_center"
         Me.TextBox_num_center.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_num_center.Size = New System.Drawing.Size(88, 25)
@@ -1201,9 +1201,8 @@ Public Class GUI_Input_Parameters
         Me.Label_num_moment.AutoEllipsis = True
         Me.Label_num_moment.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_num_moment.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_num_moment.Location = New System.Drawing.Point(412, 36)
+        Me.Label_num_moment.Location = New System.Drawing.Point(6, 36)
         Me.Label_num_moment.Name = "Label_num_moment"
-        Me.Label_num_moment.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_num_moment.Size = New System.Drawing.Size(217, 25)
         Me.Label_num_moment.TabIndex = 5
         Me.Label_num_moment.Text = "Moment of Inertia"
@@ -1213,7 +1212,7 @@ Public Class GUI_Input_Parameters
         '
         Me.TextBox_num_moment.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox_num_moment.Font = New System.Drawing.Font("David", 10.8!)
-        Me.TextBox_num_moment.Location = New System.Drawing.Point(319, 36)
+        Me.TextBox_num_moment.Location = New System.Drawing.Point(353, 37)
         Me.TextBox_num_moment.Name = "TextBox_num_moment"
         Me.TextBox_num_moment.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_num_moment.Size = New System.Drawing.Size(88, 25)
@@ -1225,11 +1224,11 @@ Public Class GUI_Input_Parameters
         '
         Me.Button_num_selected.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button_num_selected.AutoEllipsis = True
-        Me.Button_num_selected.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
+        Me.Button_num_selected.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.Button_num_selected.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_num_selected.Location = New System.Drawing.Point(397, 200)
+        Me.Button_num_selected.Location = New System.Drawing.Point(377, 308)
         Me.Button_num_selected.Name = "Button_num_selected"
-        Me.Button_num_selected.Size = New System.Drawing.Size(68, 28)
+        Me.Button_num_selected.Size = New System.Drawing.Size(75, 37)
         Me.Button_num_selected.TabIndex = 3
         Me.Button_num_selected.Text = "OK"
         '
@@ -1238,7 +1237,7 @@ Public Class GUI_Input_Parameters
         Me.PictureBox_numeric.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_numeric.Image = CType(resources.GetObject("PictureBox_numeric.Image"), System.Drawing.Image)
         Me.PictureBox_numeric.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox_numeric.Location = New System.Drawing.Point(12, 18)
+        Me.PictureBox_numeric.Location = New System.Drawing.Point(681, 25)
         Me.PictureBox_numeric.Name = "PictureBox_numeric"
         Me.PictureBox_numeric.Size = New System.Drawing.Size(208, 216)
         Me.PictureBox_numeric.TabIndex = 8
@@ -1246,7 +1245,6 @@ Public Class GUI_Input_Parameters
         '
         'Groupbox_geometric_input
         '
-        Me.Groupbox_geometric_input.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Groupbox_geometric_input.Controls.Add(Me.Button_Geo_selected)
         Me.Groupbox_geometric_input.Controls.Add(Me.TextBox_Geo_result)
         Me.Groupbox_geometric_input.Controls.Add(Me.Label_Geo_result)
@@ -1257,20 +1255,21 @@ Public Class GUI_Input_Parameters
         Me.Groupbox_geometric_input.Controls.Add(Me.PictureBox_Geo_blade)
         Me.Groupbox_geometric_input.Controls.Add(Me.Label_Geo_type_select)
         Me.Groupbox_geometric_input.Controls.Add(Me.GroupBox_geo_input)
-        Me.Groupbox_geometric_input.Font = New System.Drawing.Font("David", 12.0!)
-        Me.Groupbox_geometric_input.Location = New System.Drawing.Point(12, 29)
+        Me.Groupbox_geometric_input.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Groupbox_geometric_input.Font = New System.Drawing.Font("Segoe UI", 12.8!)
+        Me.Groupbox_geometric_input.Location = New System.Drawing.Point(3, 3)
         Me.Groupbox_geometric_input.Name = "Groupbox_geometric_input"
         Me.Groupbox_geometric_input.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Groupbox_geometric_input.Size = New System.Drawing.Size(637, 248)
+        Me.Groupbox_geometric_input.Size = New System.Drawing.Size(904, 379)
         Me.Groupbox_geometric_input.TabIndex = 46
         Me.Groupbox_geometric_input.TabStop = False
         '
         'Button_Geo_selected
         '
         Me.Button_Geo_selected.AutoEllipsis = True
-        Me.Button_Geo_selected.Font = New System.Drawing.Font("David", 10.8!)
+        Me.Button_Geo_selected.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.Button_Geo_selected.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_Geo_selected.Location = New System.Drawing.Point(398, 204)
+        Me.Button_Geo_selected.Location = New System.Drawing.Point(710, 137)
         Me.Button_Geo_selected.Name = "Button_Geo_selected"
         Me.Button_Geo_selected.Size = New System.Drawing.Size(85, 37)
         Me.Button_Geo_selected.TabIndex = 3
@@ -1278,11 +1277,11 @@ Public Class GUI_Input_Parameters
         '
         'TextBox_Geo_result
         '
-        Me.TextBox_Geo_result.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.TextBox_Geo_result.Location = New System.Drawing.Point(57, 216)
+        Me.TextBox_Geo_result.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox_Geo_result.Location = New System.Drawing.Point(64, 272)
         Me.TextBox_Geo_result.Name = "TextBox_Geo_result"
         Me.TextBox_Geo_result.ReadOnly = True
-        Me.TextBox_Geo_result.Size = New System.Drawing.Size(184, 27)
+        Me.TextBox_Geo_result.Size = New System.Drawing.Size(184, 36)
         Me.TextBox_Geo_result.TabIndex = 17
         Me.TextBox_Geo_result.Text = "N/A"
         Me.TextBox_Geo_result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1290,9 +1289,10 @@ Public Class GUI_Input_Parameters
         'Label_Geo_result
         '
         Me.Label_Geo_result.AutoEllipsis = True
-        Me.Label_Geo_result.Location = New System.Drawing.Point(16, 176)
+        Me.Label_Geo_result.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Label_Geo_result.Location = New System.Drawing.Point(12, 229)
         Me.Label_Geo_result.Name = "Label_Geo_result"
-        Me.Label_Geo_result.Size = New System.Drawing.Size(263, 40)
+        Me.Label_Geo_result.Size = New System.Drawing.Size(376, 40)
         Me.Label_Geo_result.TabIndex = 18
         Me.Label_Geo_result.Text = "Current Moment of Inertia [cm^4]"
         '
@@ -1302,16 +1302,16 @@ Public Class GUI_Input_Parameters
         Me.Combobox_geo_select.Font = New System.Drawing.Font("David", 10.8!)
         Me.Combobox_geo_select.ItemHeight = 17
         Me.Combobox_geo_select.Items.AddRange(New Object() {"Blade Stiffener (|)", "L Stiffener", "T Stiffener", "I Stiffener"})
-        Me.Combobox_geo_select.Location = New System.Drawing.Point(254, 17)
+        Me.Combobox_geo_select.Location = New System.Drawing.Point(239, 23)
         Me.Combobox_geo_select.Name = "Combobox_geo_select"
-        Me.Combobox_geo_select.Size = New System.Drawing.Size(172, 25)
+        Me.Combobox_geo_select.Size = New System.Drawing.Size(403, 25)
         Me.Combobox_geo_select.TabIndex = 19
         '
         'PictureBox_Geo_L
         '
         Me.PictureBox_Geo_L.Image = CType(resources.GetObject("PictureBox_Geo_L.Image"), System.Drawing.Image)
         Me.PictureBox_Geo_L.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox_Geo_L.Location = New System.Drawing.Point(20, 19)
+        Me.PictureBox_Geo_L.Location = New System.Drawing.Point(430, 71)
         Me.PictureBox_Geo_L.Name = "PictureBox_Geo_L"
         Me.PictureBox_Geo_L.Size = New System.Drawing.Size(212, 151)
         Me.PictureBox_Geo_L.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1323,7 +1323,7 @@ Public Class GUI_Input_Parameters
         '
         Me.PictureBox_Geo_T.Image = CType(resources.GetObject("PictureBox_Geo_T.Image"), System.Drawing.Image)
         Me.PictureBox_Geo_T.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox_Geo_T.Location = New System.Drawing.Point(20, 19)
+        Me.PictureBox_Geo_T.Location = New System.Drawing.Point(430, 71)
         Me.PictureBox_Geo_T.Name = "PictureBox_Geo_T"
         Me.PictureBox_Geo_T.Size = New System.Drawing.Size(212, 151)
         Me.PictureBox_Geo_T.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1335,7 +1335,7 @@ Public Class GUI_Input_Parameters
         '
         Me.PictureBox_Geo_I.Image = CType(resources.GetObject("PictureBox_Geo_I.Image"), System.Drawing.Image)
         Me.PictureBox_Geo_I.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox_Geo_I.Location = New System.Drawing.Point(20, 19)
+        Me.PictureBox_Geo_I.Location = New System.Drawing.Point(430, 71)
         Me.PictureBox_Geo_I.Name = "PictureBox_Geo_I"
         Me.PictureBox_Geo_I.Size = New System.Drawing.Size(212, 151)
         Me.PictureBox_Geo_I.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1347,7 +1347,7 @@ Public Class GUI_Input_Parameters
         '
         Me.PictureBox_Geo_blade.Image = CType(resources.GetObject("PictureBox_Geo_blade.Image"), System.Drawing.Image)
         Me.PictureBox_Geo_blade.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox_Geo_blade.Location = New System.Drawing.Point(20, 19)
+        Me.PictureBox_Geo_blade.Location = New System.Drawing.Point(430, 71)
         Me.PictureBox_Geo_blade.Name = "PictureBox_Geo_blade"
         Me.PictureBox_Geo_blade.Size = New System.Drawing.Size(212, 151)
         Me.PictureBox_Geo_blade.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1359,9 +1359,9 @@ Public Class GUI_Input_Parameters
         Me.Label_Geo_type_select.AutoEllipsis = True
         Me.Label_Geo_type_select.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_Geo_type_select.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_Geo_type_select.Location = New System.Drawing.Point(445, 20)
+        Me.Label_Geo_type_select.Location = New System.Drawing.Point(3, 23)
         Me.Label_Geo_type_select.Name = "Label_Geo_type_select"
-        Me.Label_Geo_type_select.Size = New System.Drawing.Size(177, 19)
+        Me.Label_Geo_type_select.Size = New System.Drawing.Size(221, 25)
         Me.Label_Geo_type_select.TabIndex = 5
         Me.Label_Geo_type_select.Text = "Type of stiffener/s"
         Me.Label_Geo_type_select.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1381,7 +1381,7 @@ Public Class GUI_Input_Parameters
         Me.GroupBox_geo_input.Controls.Add(Me.Label_geo_d)
         Me.GroupBox_geo_input.Controls.Add(Me.Label_geo_b)
         Me.GroupBox_geo_input.Font = New System.Drawing.Font("David", 10.8!)
-        Me.GroupBox_geo_input.Location = New System.Drawing.Point(285, 48)
+        Me.GroupBox_geo_input.Location = New System.Drawing.Point(6, 67)
         Me.GroupBox_geo_input.Name = "GroupBox_geo_input"
         Me.GroupBox_geo_input.Size = New System.Drawing.Size(338, 148)
         Me.GroupBox_geo_input.TabIndex = 14
@@ -1530,20 +1530,19 @@ Public Class GUI_Input_Parameters
         '
         'groupBox_DB_input
         '
-        Me.groupBox_DB_input.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.groupBox_DB_input.Controls.Add(Me.PictureBox_DB_pic02)
         Me.groupBox_DB_input.Controls.Add(Me.Button_DB_selected)
         Me.groupBox_DB_input.Controls.Add(Me.PictureBox_DB_pic01)
         Me.groupBox_DB_input.Controls.Add(Me.groupBox_DB_sub)
-        Me.groupBox_DB_input.Font = New System.Drawing.Font("David", 12.0!)
-        Me.groupBox_DB_input.Location = New System.Drawing.Point(12, 29)
+        Me.groupBox_DB_input.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.groupBox_DB_input.Font = New System.Drawing.Font("Segoe UI", 12.8!)
+        Me.groupBox_DB_input.Location = New System.Drawing.Point(3, 3)
         Me.groupBox_DB_input.Name = "groupBox_DB_input"
         Me.groupBox_DB_input.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.groupBox_DB_input.Size = New System.Drawing.Size(637, 248)
+        Me.groupBox_DB_input.Size = New System.Drawing.Size(904, 379)
         Me.groupBox_DB_input.TabIndex = 47
         Me.groupBox_DB_input.TabStop = False
         Me.groupBox_DB_input.Text = "Selection from database of known standards"
-        Me.groupBox_DB_input.Visible = False
         '
         'PictureBox_DB_pic02
         '
@@ -1562,7 +1561,7 @@ Public Class GUI_Input_Parameters
         Me.Button_DB_selected.AutoEllipsis = True
         Me.Button_DB_selected.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.Button_DB_selected.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_DB_selected.Location = New System.Drawing.Point(325, 200)
+        Me.Button_DB_selected.Location = New System.Drawing.Point(325, 247)
         Me.Button_DB_selected.Name = "Button_DB_selected"
         Me.Button_DB_selected.Size = New System.Drawing.Size(109, 28)
         Me.Button_DB_selected.TabIndex = 3
@@ -1597,7 +1596,7 @@ Public Class GUI_Input_Parameters
         Me.groupBox_DB_sub.Location = New System.Drawing.Point(136, 29)
         Me.groupBox_DB_sub.Name = "groupBox_DB_sub"
         Me.groupBox_DB_sub.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.groupBox_DB_sub.Size = New System.Drawing.Size(491, 159)
+        Me.groupBox_DB_sub.Size = New System.Drawing.Size(762, 205)
         Me.groupBox_DB_sub.TabIndex = 2
         Me.groupBox_DB_sub.TabStop = False
         Me.groupBox_DB_sub.Text = "Properties of selected stiffener"
@@ -1607,7 +1606,7 @@ Public Class GUI_Input_Parameters
         Me.Label_DB_center_unit.AutoEllipsis = True
         Me.Label_DB_center_unit.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_DB_center_unit.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_DB_center_unit.Location = New System.Drawing.Point(15, 125)
+        Me.Label_DB_center_unit.Location = New System.Drawing.Point(452, 135)
         Me.Label_DB_center_unit.Name = "Label_DB_center_unit"
         Me.Label_DB_center_unit.Size = New System.Drawing.Size(75, 27)
         Me.Label_DB_center_unit.TabIndex = 12
@@ -1617,9 +1616,9 @@ Public Class GUI_Input_Parameters
         'Button_DB_select03
         '
         Me.Button_DB_select03.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_DB_select03.Location = New System.Drawing.Point(102, 125)
+        Me.Button_DB_select03.Location = New System.Drawing.Point(250, 129)
         Me.Button_DB_select03.Name = "Button_DB_select03"
-        Me.Button_DB_select03.Size = New System.Drawing.Size(32, 27)
+        Me.Button_DB_select03.Size = New System.Drawing.Size(42, 36)
         Me.Button_DB_select03.TabIndex = 11
         Me.Button_DB_select03.Text = "..."
         '
@@ -1628,7 +1627,7 @@ Public Class GUI_Input_Parameters
         Me.Label_DB_area_unit.AutoEllipsis = True
         Me.Label_DB_area_unit.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_DB_area_unit.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_DB_area_unit.Location = New System.Drawing.Point(15, 80)
+        Me.Label_DB_area_unit.Location = New System.Drawing.Point(452, 90)
         Me.Label_DB_area_unit.Name = "Label_DB_area_unit"
         Me.Label_DB_area_unit.Size = New System.Drawing.Size(75, 27)
         Me.Label_DB_area_unit.TabIndex = 10
@@ -1638,9 +1637,9 @@ Public Class GUI_Input_Parameters
         'Button_DB_select02
         '
         Me.Button_DB_select02.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_DB_select02.Location = New System.Drawing.Point(102, 80)
+        Me.Button_DB_select02.Location = New System.Drawing.Point(250, 84)
         Me.Button_DB_select02.Name = "Button_DB_select02"
-        Me.Button_DB_select02.Size = New System.Drawing.Size(32, 27)
+        Me.Button_DB_select02.Size = New System.Drawing.Size(42, 36)
         Me.Button_DB_select02.TabIndex = 9
         Me.Button_DB_select02.Text = "..."
         '
@@ -1649,7 +1648,7 @@ Public Class GUI_Input_Parameters
         Me.Label_DB_moment_unit.AutoEllipsis = True
         Me.Label_DB_moment_unit.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_DB_moment_unit.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_DB_moment_unit.Location = New System.Drawing.Point(15, 30)
+        Me.Label_DB_moment_unit.Location = New System.Drawing.Point(452, 40)
         Me.Label_DB_moment_unit.Name = "Label_DB_moment_unit"
         Me.Label_DB_moment_unit.Size = New System.Drawing.Size(75, 27)
         Me.Label_DB_moment_unit.TabIndex = 8
@@ -1659,9 +1658,9 @@ Public Class GUI_Input_Parameters
         'Button_DB_select01
         '
         Me.Button_DB_select01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_DB_select01.Location = New System.Drawing.Point(102, 30)
+        Me.Button_DB_select01.Location = New System.Drawing.Point(253, 34)
         Me.Button_DB_select01.Name = "Button_DB_select01"
-        Me.Button_DB_select01.Size = New System.Drawing.Size(32, 27)
+        Me.Button_DB_select01.Size = New System.Drawing.Size(39, 38)
         Me.Button_DB_select01.TabIndex = 7
         Me.Button_DB_select01.Text = "..."
         '
@@ -1670,7 +1669,7 @@ Public Class GUI_Input_Parameters
         Me.Label_DB_center.AutoEllipsis = True
         Me.Label_DB_center.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_DB_center.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_DB_center.Location = New System.Drawing.Point(263, 125)
+        Me.Label_DB_center.Location = New System.Drawing.Point(18, 133)
         Me.Label_DB_center.Name = "Label_DB_center"
         Me.Label_DB_center.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_DB_center.Size = New System.Drawing.Size(216, 27)
@@ -1681,10 +1680,10 @@ Public Class GUI_Input_Parameters
         'TextBox_db_center
         '
         Me.TextBox_db_center.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.TextBox_db_center.Location = New System.Drawing.Point(138, 125)
+        Me.TextBox_db_center.Location = New System.Drawing.Point(296, 129)
         Me.TextBox_db_center.Name = "TextBox_db_center"
         Me.TextBox_db_center.ReadOnly = True
-        Me.TextBox_db_center.Size = New System.Drawing.Size(119, 27)
+        Me.TextBox_db_center.Size = New System.Drawing.Size(119, 36)
         Me.TextBox_db_center.TabIndex = 5
         '
         'Label_DB_area
@@ -1692,7 +1691,7 @@ Public Class GUI_Input_Parameters
         Me.Label_DB_area.AutoEllipsis = True
         Me.Label_DB_area.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_DB_area.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_DB_area.Location = New System.Drawing.Point(263, 70)
+        Me.Label_DB_area.Location = New System.Drawing.Point(18, 78)
         Me.Label_DB_area.Name = "Label_DB_area"
         Me.Label_DB_area.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_DB_area.Size = New System.Drawing.Size(216, 44)
@@ -1703,10 +1702,10 @@ Public Class GUI_Input_Parameters
         'TextBox_db_area
         '
         Me.TextBox_db_area.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.TextBox_db_area.Location = New System.Drawing.Point(138, 80)
+        Me.TextBox_db_area.Location = New System.Drawing.Point(296, 84)
         Me.TextBox_db_area.Name = "TextBox_db_area"
         Me.TextBox_db_area.ReadOnly = True
-        Me.TextBox_db_area.Size = New System.Drawing.Size(119, 27)
+        Me.TextBox_db_area.Size = New System.Drawing.Size(119, 36)
         Me.TextBox_db_area.TabIndex = 3
         '
         'Label_DB_moment
@@ -1714,7 +1713,7 @@ Public Class GUI_Input_Parameters
         Me.Label_DB_moment.AutoEllipsis = True
         Me.Label_DB_moment.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_DB_moment.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_DB_moment.Location = New System.Drawing.Point(263, 26)
+        Me.Label_DB_moment.Location = New System.Drawing.Point(18, 34)
         Me.Label_DB_moment.Name = "Label_DB_moment"
         Me.Label_DB_moment.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_DB_moment.Size = New System.Drawing.Size(216, 38)
@@ -1725,10 +1724,10 @@ Public Class GUI_Input_Parameters
         'TextBox_db_moment
         '
         Me.TextBox_db_moment.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.TextBox_db_moment.Location = New System.Drawing.Point(138, 30)
+        Me.TextBox_db_moment.Location = New System.Drawing.Point(296, 34)
         Me.TextBox_db_moment.Name = "TextBox_db_moment"
         Me.TextBox_db_moment.ReadOnly = True
-        Me.TextBox_db_moment.Size = New System.Drawing.Size(119, 27)
+        Me.TextBox_db_moment.Size = New System.Drawing.Size(119, 36)
         Me.TextBox_db_moment.TabIndex = 1
         '
         'panel04
@@ -1747,9 +1746,8 @@ Public Class GUI_Input_Parameters
         Me.panel04.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel04.Location = New System.Drawing.Point(3, 3)
         Me.panel04.Name = "panel04"
-        Me.panel04.Size = New System.Drawing.Size(1136, 562)
+        Me.panel04.Size = New System.Drawing.Size(1195, 761)
         Me.panel04.TabIndex = 41
-        Me.panel04.Visible = False
         '
         'label_BC_title
         '
@@ -1767,7 +1765,7 @@ Public Class GUI_Input_Parameters
         'Button_panel04_back
         '
         Me.Button_panel04_back.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_panel04_back.Location = New System.Drawing.Point(313, 303)
+        Me.Button_panel04_back.Location = New System.Drawing.Point(313, 304)
         Me.Button_panel04_back.Name = "Button_panel04_back"
         Me.Button_panel04_back.Size = New System.Drawing.Size(116, 28)
         Me.Button_panel04_back.TabIndex = 43
@@ -1988,7 +1986,7 @@ Public Class GUI_Input_Parameters
         Me.Picture_eng.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Picture_eng.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Picture_eng.Image = Global.SPE.My.Resources.Resources.flag_english01
-        Me.Picture_eng.Location = New System.Drawing.Point(1103, 32)
+        Me.Picture_eng.Location = New System.Drawing.Point(1162, 32)
         Me.Picture_eng.Name = "Picture_eng"
         Me.Picture_eng.Size = New System.Drawing.Size(32, 16)
         Me.Picture_eng.TabIndex = 22
@@ -1999,7 +1997,7 @@ Public Class GUI_Input_Parameters
         Me.Picture_heb.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Picture_heb.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Picture_heb.Image = Global.SPE.My.Resources.Resources.flag_hebrew01
-        Me.Picture_heb.Location = New System.Drawing.Point(1103, 9)
+        Me.Picture_heb.Location = New System.Drawing.Point(1162, 9)
         Me.Picture_heb.Name = "Picture_heb"
         Me.Picture_heb.Size = New System.Drawing.Size(32, 20)
         Me.Picture_heb.TabIndex = 21
@@ -2012,7 +2010,7 @@ Public Class GUI_Input_Parameters
         Me.Button_status.Enabled = False
         Me.Button_status.Font = New System.Drawing.Font("David", 10.8!)
         Me.Button_status.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_status.Location = New System.Drawing.Point(905, 9)
+        Me.Button_status.Location = New System.Drawing.Point(964, 9)
         Me.Button_status.Name = "Button_status"
         Me.Button_status.Size = New System.Drawing.Size(114, 34)
         Me.Button_status.TabIndex = 1
@@ -2029,7 +2027,7 @@ Public Class GUI_Input_Parameters
         Me.Label_status.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label_status.Location = New System.Drawing.Point(2, 5)
         Me.Label_status.Name = "Label_status"
-        Me.Label_status.Size = New System.Drawing.Size(1095, 44)
+        Me.Label_status.Size = New System.Drawing.Size(1154, 44)
         Me.Label_status.TabIndex = 0
         Me.Label_status.Text = "First Step: Process selection & Plate's parameters"
         Me.Label_status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2069,8 +2067,8 @@ Public Class GUI_Input_Parameters
         '
         Me.SplitContainer.Panel2.AutoScroll = True
         Me.SplitContainer.Panel2.Controls.Add(Me.TabControl1)
-        Me.SplitContainer.Size = New System.Drawing.Size(1150, 666)
-        Me.SplitContainer.SplitterDistance = 64
+        Me.SplitContainer.Size = New System.Drawing.Size(1209, 887)
+        Me.SplitContainer.SplitterDistance = 85
         Me.SplitContainer.SplitterWidth = 5
         Me.SplitContainer.TabIndex = 46
         '
@@ -2084,16 +2082,16 @@ Public Class GUI_Input_Parameters
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1150, 597)
+        Me.TabControl1.Size = New System.Drawing.Size(1209, 797)
         Me.TabControl1.TabIndex = 48
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.Panel01)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 26)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1142, 568)
+        Me.TabPage1.Size = New System.Drawing.Size(1201, 767)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -2101,10 +2099,10 @@ Public Class GUI_Input_Parameters
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.panel02)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 26)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1142, 568)
+        Me.TabPage2.Size = New System.Drawing.Size(1201, 767)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -2112,10 +2110,10 @@ Public Class GUI_Input_Parameters
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.panel03)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 26)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1142, 568)
+        Me.TabPage3.Size = New System.Drawing.Size(1201, 767)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -2123,20 +2121,92 @@ Public Class GUI_Input_Parameters
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.panel04)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 26)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1142, 568)
+        Me.TabPage4.Size = New System.Drawing.Size(1201, 767)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "TabPage4"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
+        'PanelTop
+        '
+        Me.PanelTop.Controls.Add(Me.button_panel03_next)
+        Me.PanelTop.Controls.Add(Me.button_panel03_back)
+        Me.PanelTop.Controls.Add(Me.GroupBox_stiffeners_mark)
+        Me.PanelTop.Controls.Add(Me.Label1)
+        Me.PanelTop.Controls.Add(Me.GroupBox_stiffeners_number)
+        Me.PanelTop.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelTop.Location = New System.Drawing.Point(0, 0)
+        Me.PanelTop.Name = "PanelTop"
+        Me.PanelTop.Size = New System.Drawing.Size(1195, 276)
+        Me.PanelTop.TabIndex = 49
+        '
+        'Label1
+        '
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.8!)
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(1195, 25)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Stiffeners Selection"
+        '
+        'TabControl2
+        '
+        Me.TabControl2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabControl2.Controls.Add(Me.tpNumericInput)
+        Me.TabControl2.Controls.Add(Me.tpGeometricInput)
+        Me.TabControl2.Controls.Add(Me.tpDBInput)
+        Me.TabControl2.Location = New System.Drawing.Point(269, 41)
+        Me.TabControl2.Name = "TabControl2"
+        Me.TabControl2.SelectedIndex = 0
+        Me.TabControl2.Size = New System.Drawing.Size(918, 428)
+        Me.TabControl2.TabIndex = 48
+        '
+        'tpNumericInput
+        '
+        Me.tpNumericInput.Controls.Add(Me.GroupBox_numeric_input)
+        Me.tpNumericInput.Location = New System.Drawing.Point(4, 39)
+        Me.tpNumericInput.Name = "tpNumericInput"
+        Me.tpNumericInput.Padding = New System.Windows.Forms.Padding(3)
+        Me.tpNumericInput.Size = New System.Drawing.Size(910, 385)
+        Me.tpNumericInput.TabIndex = 0
+        Me.tpNumericInput.Text = "numericInput"
+        Me.tpNumericInput.UseVisualStyleBackColor = True
+        '
+        'tpGeometricInput
+        '
+        Me.tpGeometricInput.Controls.Add(Me.Groupbox_geometric_input)
+        Me.tpGeometricInput.Location = New System.Drawing.Point(4, 39)
+        Me.tpGeometricInput.Name = "tpGeometricInput"
+        Me.tpGeometricInput.Padding = New System.Windows.Forms.Padding(3)
+        Me.tpGeometricInput.Size = New System.Drawing.Size(910, 385)
+        Me.tpGeometricInput.TabIndex = 1
+        Me.tpGeometricInput.Text = "GeometricInput"
+        Me.tpGeometricInput.UseVisualStyleBackColor = True
+        '
+        'tpDBInput
+        '
+        Me.tpDBInput.Controls.Add(Me.groupBox_DB_input)
+        Me.tpDBInput.Location = New System.Drawing.Point(4, 39)
+        Me.tpDBInput.Name = "tpDBInput"
+        Me.tpDBInput.Padding = New System.Windows.Forms.Padding(3)
+        Me.tpDBInput.Size = New System.Drawing.Size(910, 385)
+        Me.tpDBInput.TabIndex = 2
+        Me.tpDBInput.Text = "tpInput"
+        Me.tpDBInput.UseVisualStyleBackColor = True
+        '
         'GUI_Input_Parameters
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1150, 666)
+        Me.ClientSize = New System.Drawing.Size(1209, 887)
         Me.Controls.Add(Me.SplitContainer)
+        Me.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(507, 572)
         Me.Name = "GUI_Input_Parameters"
@@ -2151,7 +2221,6 @@ Public Class GUI_Input_Parameters
         CType(Me.PictureBox_plate, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panel02.ResumeLayout(False)
         Me.panel03.ResumeLayout(False)
-        Me.GroupBox_stiffeners.ResumeLayout(False)
         Me.GroupBox_stiffeners_mark.ResumeLayout(False)
         CType(Me.PictureBox_Inb_info, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_Ib_info, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2197,6 +2266,11 @@ Public Class GUI_Input_Parameters
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
+        Me.PanelTop.ResumeLayout(False)
+        Me.TabControl2.ResumeLayout(False)
+        Me.tpNumericInput.ResumeLayout(False)
+        Me.tpGeometricInput.ResumeLayout(False)
+        Me.tpDBInput.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -2275,6 +2349,10 @@ Public Class GUI_Input_Parameters
         TabControl1.Appearance = TabAppearance.FlatButtons
         TabControl1.ItemSize = New Size(0, 1)
         TabControl1.SizeMode = TabSizeMode.Fixed
+
+        TabControl2.Appearance = TabAppearance.FlatButtons
+        TabControl2.ItemSize = New Size(0, 1)
+        TabControl2.SizeMode = TabSizeMode.Fixed
         language_settings.read_language(new_lang)
         update_label_BC_step()
         Me.Text = language_settings.input_text
@@ -2323,8 +2401,7 @@ Public Class GUI_Input_Parameters
         button_panel03_next.Text = language_settings.input_panel3_button_panel03_next
         numeric_short.RightToLeft = language_settings.language_RTL
         numeric_long.RightToLeft = language_settings.language_RTL
-        GroupBox_stiffeners.RightToLeft = language_settings.language_RTL
-        GroupBox_stiffeners.Text = language_settings.input_panel3_GroupBox_stiffeners
+        PanelTop.RightToLeft = language_settings.language_RTL
         GroupBox_stiffeners_number.RightToLeft = language_settings.language_RTL
         GroupBox_stiffeners_number.Text = language_settings.input_panel3_GroupBox_stiffeners_number
         GroupBox_stiffeners_mark.RightToLeft = language_settings.language_RTL
@@ -2454,7 +2531,6 @@ Public Class GUI_Input_Parameters
             Button_type04.Anchor = AnchorStyles.Left + AnchorStyles.Top
             Button_panel02_back.Anchor = AnchorStyles.Left + AnchorStyles.Top
             '******Panel 03 ******************
-            GroupBox_stiffeners.Anchor = AnchorStyles.Left + AnchorStyles.Top
             GroupBox_stiffeners_data.Anchor = AnchorStyles.Left + AnchorStyles.Top
             GroupBox_stiffeners_number.Location = New Point(20, 25)
             GroupBox_stiffeners_mark.Location = New Point(410, 25)
@@ -2571,7 +2647,6 @@ Public Class GUI_Input_Parameters
             Button_type04.Anchor = AnchorStyles.Left + AnchorStyles.Top
             Button_panel02_back.Anchor = AnchorStyles.Left + AnchorStyles.Top
             '******Panel 03 ******************
-            GroupBox_stiffeners.Anchor = AnchorStyles.Left + AnchorStyles.Top
             GroupBox_stiffeners_data.Anchor = AnchorStyles.Left + AnchorStyles.Top
             GroupBox_stiffeners_number.Location = New Point(520, 25)
             GroupBox_stiffeners_mark.Location = New Point(130, 25)
@@ -3231,9 +3306,6 @@ Public Class GUI_Input_Parameters
         '************ show panel ****************
         geo_type = 2
         gui_update_stiffeners()
-        Groupbox_geometric_input.Visible = False
-        GroupBox_numeric_input.Visible = False
-        groupBox_DB_input.Visible = False
         TabControl1.SelectedIndex = 2
         GUI_Update_steps()
     End Sub
@@ -3286,17 +3358,11 @@ Public Class GUI_Input_Parameters
     End Sub
     Private Sub select_type_of_input(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Radiobutton_select_geometric.CheckedChanged, Radiobutton_select_DB.CheckedChanged, Radiobutton_select_numeric.CheckedChanged
         If Radiobutton_select_DB.Checked = True Then
-            Groupbox_geometric_input.Visible = False
-            GroupBox_numeric_input.Visible = False
-            groupBox_DB_input.Visible = True
+            TabControl2.SelectedIndex = 2
         ElseIf Radiobutton_select_numeric.Checked = True Then
-            Groupbox_geometric_input.Visible = False
-            GroupBox_numeric_input.Visible = True
-            groupBox_DB_input.Visible = False
+            TabControl2.SelectedIndex = 0
         ElseIf Radiobutton_select_geometric.Checked = True Then
-            Groupbox_geometric_input.Visible = True
-            GroupBox_numeric_input.Visible = False
-            groupBox_DB_input.Visible = False
+            TabControl2.SelectedIndex = 1
         Else
             MsgBox("ERROR: Input method must be selected")
         End If
