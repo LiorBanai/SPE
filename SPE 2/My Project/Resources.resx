@@ -118,143 +118,83 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="spe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon01- 32x32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="both_models_BC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\both_models_BC2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="adbrite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\adbrite.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_unknown.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rpoints" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rpoints.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_confirmation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_confirmation.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPE01_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPE01_64x64.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="geometry_grillage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\geometry_grillage.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="both_models_BC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\both_models_BC1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="results_geo3_case_1and2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\results - geo3 case 1+2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bidvertiser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bidvertiser.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="results_geo4_case_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\results - geo4 case all.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Exclamation_bulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exclamation_bulb.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="m_portal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\m_portal.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flag_english01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flag-english01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrw01_04b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrw01_04b.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu_hebrew" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-hebrew.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cashbag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cashbag.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrw01_01a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrw01_01a.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrw01_012" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrw01_012.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_check.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPE01_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPE01_small.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu_english" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_english.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="default_heb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default_heb.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="results_geo1_case_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\results - geo1 case all.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu_information01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_information01.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_unknown.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrw01_04a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrw01_04a.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="results_geo3_case_3and4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\results - geo3 case 3+4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="m_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\m_map.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="results_geo2_case_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\results - geo2 case all.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SAOS_cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SAOS_cover.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="both_models_BC3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\both_models_BC3.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ship_with_stiffeners" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ship with stiffeners.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quickreward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quickreward.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="button_model_grillage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button_model_grillage.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="question_mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\question mark.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plate_empty_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plate_empty_text.GIF;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrw01_04b" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrw01_04b.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mt_shadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mt_shadow.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bar_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bar_graph.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu_adina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_adina.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPE01_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPE01.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_x.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exclamation_bulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exclamation_bulb.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flag_hebrew01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flag-hebrew01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="both_models_BC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\both_models_BC4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="saar_in_sunset" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\saar_in_sunset.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="spe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01- 32x32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="geometry_model" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\geometry_model.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menu_adina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_adina.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plate_empty_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plate_empty_text.GIF;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question_mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question mark.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrw01_012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrw01_012.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quickreward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quickreward.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_check.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="both_models_BC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\both_models_BC4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="results_geo3_case_3and4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\results - geo3 case 3+4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="both_models_BC3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\both_models_BC3.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_english01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flag-english01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mt_shadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mt_shadow.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPE01_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SPE01_64x64.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menu_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_exit.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geometry_grillage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geometry_grillage.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\m_map.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_x.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="adbrite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adbrite.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="greasypalm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\greasypalm.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,7 +202,76 @@
   <data name="default_eng" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\default_eng.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="default_heb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\default_heb.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="icon_confirmation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_confirmation.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPE01_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SPE01_small.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrw01_01a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrw01_01a.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_hebrew01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flag-hebrew01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="both_models_BC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\both_models_BC2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cashbag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cashbag.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrw01_04a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrw01_04a.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bar_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bar_graph.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SAOS_cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SAOS_cover.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="github16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\github16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_model_grillage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_model_grillage.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="both_models_BC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\both_models_BC1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ko-fi-logo-blue-16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-fi-logo-blue-16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ship_with_stiffeners" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ship with stiffeners.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="results_geo2_case_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\results - geo2 case all.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saar_in_sunset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saar_in_sunset.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="results_geo3_case_1and2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\results - geo3 case 1+2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_information01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_information01.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="results_geo4_case_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\results - geo4 case all.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bidvertiser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bidvertiser.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_english" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_english.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rpoints" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rpoints.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPE01_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SPE01.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paypal16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paypal16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

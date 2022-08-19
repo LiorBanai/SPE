@@ -295,6 +295,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property github16x16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("github16x16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property greasypalm() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("greasypalm", resourceCulture)
@@ -338,6 +348,16 @@ Namespace My.Resources
         Friend ReadOnly Property icon_x() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_x", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ko_fi_logo_blue_16x16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ko-fi-logo-blue-16x16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -418,6 +438,16 @@ Namespace My.Resources
         Friend ReadOnly Property mt_shadow() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("mt_shadow", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property paypal16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("paypal16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

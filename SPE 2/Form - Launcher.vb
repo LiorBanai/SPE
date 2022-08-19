@@ -1,5 +1,7 @@
 Imports system
 Imports System.IO
+Imports System.Security
+
 Public Class GUI_Launcher
     Inherits System.Windows.Forms.Form
 
@@ -95,6 +97,9 @@ Public Class GUI_Launcher
     Friend WithEvents RichTextBox_new As System.Windows.Forms.RichTextBox
     Friend WithEvents PictureBox_SAOS As System.Windows.Forms.PictureBox
     Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents tsGithub As ToolStripStatusLabel
+    Friend WithEvents tsKoFi As ToolStripStatusLabel
+    Friend WithEvents tsPayPal As ToolStripStatusLabel
     Friend WithEvents TSM_Orthotropic_summary As System.Windows.Forms.ToolStripMenuItem
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -163,6 +168,9 @@ Public Class GUI_Launcher
         Me.PictureBox_SAOS = New System.Windows.Forms.PictureBox()
         Me.VScrollBar_new = New System.Windows.Forms.VScrollBar()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.tsGithub = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.tsKoFi = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.tsPayPal = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.picture_TAU, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picture_navy_sign, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picture_navy_HQ_patch, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -177,6 +185,7 @@ Public Class GUI_Launcher
         Me.GroupBox_new.SuspendLayout()
         CType(Me.PictureBox_new, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_SAOS, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'button_input
@@ -766,11 +775,33 @@ Public Class GUI_Launcher
         'StatusStrip1
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 724)
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsGithub, Me.tsKoFi, Me.tsPayPal})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 720)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1159, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1159, 26)
         Me.StatusStrip1.TabIndex = 37
         Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'tsGithub
+        '
+        Me.tsGithub.Image = Global.SPE.My.Resources.Resources.github16x16
+        Me.tsGithub.Name = "tsGithub"
+        Me.tsGithub.Size = New System.Drawing.Size(76, 20)
+        Me.tsGithub.Text = "GitHub"
+        '
+        'tsKoFi
+        '
+        Me.tsKoFi.Image = Global.SPE.My.Resources.Resources.ko_fi_logo_blue_16x16
+        Me.tsKoFi.Name = "tsKoFi"
+        Me.tsKoFi.Size = New System.Drawing.Size(58, 20)
+        Me.tsKoFi.Text = "KoFi"
+        '
+        'tsPayPal
+        '
+        Me.tsPayPal.Image = Global.SPE.My.Resources.Resources.paypal16
+        Me.tsPayPal.Name = "tsPayPal"
+        Me.tsPayPal.Size = New System.Drawing.Size(70, 20)
+        Me.tsPayPal.Text = "PayPal"
         '
         'GUI_Launcher
         '
@@ -825,6 +856,8 @@ Public Class GUI_Launcher
         Me.GroupBox_new.PerformLayout()
         CType(Me.PictureBox_new, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_SAOS, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1425,52 +1458,30 @@ Public Class GUI_Launcher
         RichTextBox_messages.RightToLeft = Windows.Forms.RightToLeft.No
     End Sub
 
-    Private Sub PictureBox_rpoints_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub tsPayPal_Click(sender As Object, e As EventArgs) Handles tsPayPal.Click
         Try
-            System.Diagnostics.Process.Start("http://www.rpoints.com/?ruid=100416")
+            System.Diagnostics.Process.Start("https://www.paypal.com/donate/?business=MCP57TBRAAVXA&no_recurring=0&item_name=Support+Open+source+Projects+%28Analogy+Log+Viewer%2C+HDF5-CSHARP%2C+etc%29&currency_code=USD")
         Catch ex As Exception
             MessageBox.Show("Unable to open link that was clicked.")
         End Try
     End Sub
 
-    Private Sub PictureBox_quickreward_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub tsKoFi_Click(sender As Object, e As EventArgs) Handles tsKoFi.Click
         Try
-            System.Diagnostics.Process.Start("http://quickrewardsnetwork.com/?r=!F94VXV35D5MM0")
-        Catch ex As Exception
-            MessageBox.Show("Unable to open the link that was clicked.")
-        End Try
-    End Sub
-    Private Sub PictureBox_cashbag_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Try
-            System.Diagnostics.Process.Start("http://www.cashbag.co.uk/register.php?user_id=52279")
-        Catch ex As Exception
-            MessageBox.Show("Unable to open the link that was clicked.")
-        End Try
-    End Sub
-
-    Private Sub PictureBox_adbrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Try
-            System.Diagnostics.Process.Start("http://www.adbrite.com/mb/landing_both.php?spid=24222&afb=120x60-1-blue")
-        Catch ex As Exception
-            MessageBox.Show("Unable to open the link that was clicked.")
-        End Try
-    End Sub
-
-    Private Sub PictureBox_bidvertiser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Try
-            System.Diagnostics.Process.Start("http://www.bidvertiser.com/bdv/bidvertiser/bdv_ref.dbm?Ref_Option=pub&Ref_PID=38608")
-        Catch ex As Exception
-            MessageBox.Show("Unable to open the link that was clicked.")
-        End Try
-    End Sub
-
-    Private Sub PictureBox_greasypalm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Try
-            System.Diagnostics.Process.Start("http://tinyurl.com/3def7l")
+            System.Diagnostics.Process.Start("https://ko-fi.com/liorbanai")
         Catch ex As Exception
             MessageBox.Show("Unable to open link that was clicked.")
         End Try
     End Sub
+
+    Private Sub tsGithub_Click(sender As Object, e As EventArgs) Handles tsGithub.Click
+        Try
+            System.Diagnostics.Process.Start("https://github.com/LiorBanai/SPE")
+        Catch ex As Exception
+            MessageBox.Show("Unable to open link that was clicked.")
+        End Try
+    End Sub
+
 End Class
 
 
