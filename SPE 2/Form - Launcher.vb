@@ -94,89 +94,75 @@ Public Class GUI_Launcher
     Friend WithEvents VScrollBar_new As System.Windows.Forms.VScrollBar
     Friend WithEvents RichTextBox_new As System.Windows.Forms.RichTextBox
     Friend WithEvents PictureBox_SAOS As System.Windows.Forms.PictureBox
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents PictureBox_adbrite As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox_bidvertiser As System.Windows.Forms.PictureBox
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents PictureBox_rpoints As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox_quickreward As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox_cashbag As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox_greasypalm As System.Windows.Forms.PictureBox
+    Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents TSM_Orthotropic_summary As System.Windows.Forms.ToolStripMenuItem
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GUI_Launcher))
-        Me.button_input = New System.Windows.Forms.Button
-        Me.button_database = New System.Windows.Forms.Button
-        Me.button_FEA_results = New System.Windows.Forms.Button
-        Me.picture_TAU = New System.Windows.Forms.PictureBox
-        Me.picture_navy_sign = New System.Windows.Forms.PictureBox
-        Me.picture_navy_HQ_patch = New System.Windows.Forms.PictureBox
-        Me.Button_model_orthotropic = New System.Windows.Forms.Button
-        Me.button_about = New System.Windows.Forms.Button
+        Me.button_input = New System.Windows.Forms.Button()
+        Me.button_database = New System.Windows.Forms.Button()
+        Me.button_FEA_results = New System.Windows.Forms.Button()
+        Me.picture_TAU = New System.Windows.Forms.PictureBox()
+        Me.picture_navy_sign = New System.Windows.Forms.PictureBox()
+        Me.picture_navy_HQ_patch = New System.Windows.Forms.PictureBox()
+        Me.Button_model_orthotropic = New System.Windows.Forms.Button()
+        Me.button_about = New System.Windows.Forms.Button()
         Me.menu_images = New System.Windows.Forms.ImageList(Me.components)
-        Me.Picture_heb = New System.Windows.Forms.PictureBox
-        Me.Picture_eng = New System.Windows.Forms.PictureBox
-        Me.Button_ADINA = New System.Windows.Forms.Button
-        Me.Button_switch = New System.Windows.Forms.Button
-        Me.RichTextBox_messages = New System.Windows.Forms.RichTextBox
-        Me.GroupBox_model = New System.Windows.Forms.GroupBox
-        Me.Button_DOI = New System.Windows.Forms.Button
-        Me.Label_DOI = New System.Windows.Forms.Label
-        Me.PictureBox_pdf_get = New System.Windows.Forms.PictureBox
-        Me.RichTextBox_read_msg = New System.Windows.Forms.RichTextBox
-        Me.Button_read_journal = New System.Windows.Forms.Button
-        Me.Button_read_project = New System.Windows.Forms.Button
-        Me.Label_PDF = New System.Windows.Forms.Label
-        Me.PictureBox_pdf_req = New System.Windows.Forms.PictureBox
-        Me.MenuStrip = New System.Windows.Forms.MenuStrip
-        Me.TSM_file = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_exit = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Base_Functions = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_input = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_DB = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_FEA = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Addons = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_ADINA = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Model = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Orthotropic = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Orthotropic_last = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Orthotropic_summary = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Grillage = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Grillage_last = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_grillage_summary = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Language = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_hebrew = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_english = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_User_made = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_separator02 = New System.Windows.Forms.ToolStripSeparator
-        Me.TSM_Remember_lang = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_current_info = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Help = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_Version_History = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_separator01 = New System.Windows.Forms.ToolStripSeparator
-        Me.TSM_About = New System.Windows.Forms.ToolStripMenuItem
-        Me.TSM_combo_prompt = New System.Windows.Forms.ToolStripComboBox
-        Me.Button_model_grillage = New System.Windows.Forms.Button
-        Me.Button_model_compare = New System.Windows.Forms.Button
-        Me.GroupBox_current_model = New System.Windows.Forms.GroupBox
-        Me.ComboBox_current_model = New System.Windows.Forms.ComboBox
-        Me.Label_fast_results = New System.Windows.Forms.Label
-        Me.GroupBox_fast_results = New System.Windows.Forms.GroupBox
+        Me.Picture_heb = New System.Windows.Forms.PictureBox()
+        Me.Picture_eng = New System.Windows.Forms.PictureBox()
+        Me.Button_ADINA = New System.Windows.Forms.Button()
+        Me.Button_switch = New System.Windows.Forms.Button()
+        Me.RichTextBox_messages = New System.Windows.Forms.RichTextBox()
+        Me.GroupBox_model = New System.Windows.Forms.GroupBox()
+        Me.Button_DOI = New System.Windows.Forms.Button()
+        Me.Label_DOI = New System.Windows.Forms.Label()
+        Me.PictureBox_pdf_get = New System.Windows.Forms.PictureBox()
+        Me.RichTextBox_read_msg = New System.Windows.Forms.RichTextBox()
+        Me.Button_read_journal = New System.Windows.Forms.Button()
+        Me.Button_read_project = New System.Windows.Forms.Button()
+        Me.Label_PDF = New System.Windows.Forms.Label()
+        Me.PictureBox_pdf_req = New System.Windows.Forms.PictureBox()
+        Me.MenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.TSM_file = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_exit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Base_Functions = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_input = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_DB = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_FEA = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Addons = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_ADINA = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Model = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Orthotropic = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Orthotropic_last = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Orthotropic_summary = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Grillage = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Grillage_last = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_grillage_summary = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Language = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_hebrew = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_english = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_User_made = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_separator02 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TSM_Remember_lang = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_current_info = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Help = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_Version_History = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_separator01 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TSM_About = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSM_combo_prompt = New System.Windows.Forms.ToolStripComboBox()
+        Me.Button_model_grillage = New System.Windows.Forms.Button()
+        Me.Button_model_compare = New System.Windows.Forms.Button()
+        Me.GroupBox_current_model = New System.Windows.Forms.GroupBox()
+        Me.ComboBox_current_model = New System.Windows.Forms.ComboBox()
+        Me.Label_fast_results = New System.Windows.Forms.Label()
+        Me.GroupBox_fast_results = New System.Windows.Forms.GroupBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.GroupBox_new = New System.Windows.Forms.GroupBox
-        Me.RichTextBox_new = New System.Windows.Forms.RichTextBox
-        Me.PictureBox_new = New System.Windows.Forms.PictureBox
-        Me.PictureBox_SAOS = New System.Windows.Forms.PictureBox
-        Me.VScrollBar_new = New System.Windows.Forms.VScrollBar
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.PictureBox_adbrite = New System.Windows.Forms.PictureBox
-        Me.PictureBox_bidvertiser = New System.Windows.Forms.PictureBox
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.PictureBox_greasypalm = New System.Windows.Forms.PictureBox
-        Me.PictureBox_rpoints = New System.Windows.Forms.PictureBox
-        Me.PictureBox_quickreward = New System.Windows.Forms.PictureBox
-        Me.PictureBox_cashbag = New System.Windows.Forms.PictureBox
+        Me.GroupBox_new = New System.Windows.Forms.GroupBox()
+        Me.RichTextBox_new = New System.Windows.Forms.RichTextBox()
+        Me.PictureBox_new = New System.Windows.Forms.PictureBox()
+        Me.PictureBox_SAOS = New System.Windows.Forms.PictureBox()
+        Me.VScrollBar_new = New System.Windows.Forms.VScrollBar()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         CType(Me.picture_TAU, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picture_navy_sign, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picture_navy_HQ_patch, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -191,14 +177,6 @@ Public Class GUI_Launcher
         Me.GroupBox_new.SuspendLayout()
         CType(Me.PictureBox_new, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_SAOS, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.PictureBox_adbrite, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox_bidvertiser, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox_greasypalm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox_rpoints, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox_quickreward, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox_cashbag, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'button_input
@@ -231,7 +209,7 @@ Public Class GUI_Launcher
         Me.picture_TAU.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.picture_TAU.BackColor = System.Drawing.Color.Transparent
         Me.picture_TAU.Image = CType(resources.GetObject("picture_TAU.Image"), System.Drawing.Image)
-        Me.picture_TAU.Location = New System.Drawing.Point(0, 681)
+        Me.picture_TAU.Location = New System.Drawing.Point(0, 666)
         Me.picture_TAU.Name = "picture_TAU"
         Me.picture_TAU.Size = New System.Drawing.Size(362, 52)
         Me.picture_TAU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -242,7 +220,7 @@ Public Class GUI_Launcher
         '
         Me.picture_navy_sign.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.picture_navy_sign.Image = CType(resources.GetObject("picture_navy_sign.Image"), System.Drawing.Image)
-        Me.picture_navy_sign.Location = New System.Drawing.Point(779, 39)
+        Me.picture_navy_sign.Location = New System.Drawing.Point(981, 39)
         Me.picture_navy_sign.Name = "picture_navy_sign"
         Me.picture_navy_sign.Size = New System.Drawing.Size(135, 128)
         Me.picture_navy_sign.TabIndex = 8
@@ -252,7 +230,7 @@ Public Class GUI_Launcher
         '
         Me.picture_navy_HQ_patch.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.picture_navy_HQ_patch.Image = CType(resources.GetObject("picture_navy_HQ_patch.Image"), System.Drawing.Image)
-        Me.picture_navy_HQ_patch.Location = New System.Drawing.Point(774, 167)
+        Me.picture_navy_HQ_patch.Location = New System.Drawing.Point(976, 167)
         Me.picture_navy_HQ_patch.Name = "picture_navy_HQ_patch"
         Me.picture_navy_HQ_patch.Size = New System.Drawing.Size(172, 183)
         Me.picture_navy_HQ_patch.TabIndex = 9
@@ -292,7 +270,7 @@ Public Class GUI_Launcher
         Me.Picture_heb.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Picture_heb.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Picture_heb.Image = Global.SPE.My.Resources.Resources.flag_hebrew01
-        Me.Picture_heb.Location = New System.Drawing.Point(919, 42)
+        Me.Picture_heb.Location = New System.Drawing.Point(1121, 42)
         Me.Picture_heb.Name = "Picture_heb"
         Me.Picture_heb.Size = New System.Drawing.Size(32, 20)
         Me.Picture_heb.TabIndex = 19
@@ -303,7 +281,7 @@ Public Class GUI_Launcher
         Me.Picture_eng.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Picture_eng.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Picture_eng.Image = Global.SPE.My.Resources.Resources.flag_english01
-        Me.Picture_eng.Location = New System.Drawing.Point(919, 66)
+        Me.Picture_eng.Location = New System.Drawing.Point(1121, 66)
         Me.Picture_eng.Name = "Picture_eng"
         Me.Picture_eng.Size = New System.Drawing.Size(32, 16)
         Me.Picture_eng.TabIndex = 20
@@ -330,7 +308,7 @@ Public Class GUI_Launcher
         'RichTextBox_messages
         '
         Me.RichTextBox_messages.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RichTextBox_messages.BackColor = System.Drawing.SystemColors.Control
         Me.RichTextBox_messages.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox_messages.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
@@ -339,7 +317,7 @@ Public Class GUI_Launcher
         Me.RichTextBox_messages.Name = "RichTextBox_messages"
         Me.RichTextBox_messages.ReadOnly = True
         Me.RichTextBox_messages.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.RichTextBox_messages.Size = New System.Drawing.Size(670, 304)
+        Me.RichTextBox_messages.Size = New System.Drawing.Size(872, 304)
         Me.RichTextBox_messages.TabIndex = 26
         Me.RichTextBox_messages.Text = ""
         Me.RichTextBox_messages.Visible = False
@@ -347,7 +325,7 @@ Public Class GUI_Launcher
         'GroupBox_model
         '
         Me.GroupBox_model.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_model.Controls.Add(Me.Button_DOI)
         Me.GroupBox_model.Controls.Add(Me.Label_DOI)
         Me.GroupBox_model.Controls.Add(Me.PictureBox_pdf_get)
@@ -359,7 +337,7 @@ Public Class GUI_Launcher
         Me.GroupBox_model.Location = New System.Drawing.Point(100, 39)
         Me.GroupBox_model.Name = "GroupBox_model"
         Me.GroupBox_model.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupBox_model.Size = New System.Drawing.Size(670, 304)
+        Me.GroupBox_model.Size = New System.Drawing.Size(872, 304)
         Me.GroupBox_model.TabIndex = 27
         Me.GroupBox_model.TabStop = False
         Me.GroupBox_model.Visible = False
@@ -368,7 +346,7 @@ Public Class GUI_Launcher
         '
         Me.Button_DOI.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button_DOI.Image = Global.SPE.My.Resources.Resources.m_map
-        Me.Button_DOI.Location = New System.Drawing.Point(570, 126)
+        Me.Button_DOI.Location = New System.Drawing.Point(772, 126)
         Me.Button_DOI.Name = "Button_DOI"
         Me.Button_DOI.Size = New System.Drawing.Size(42, 33)
         Me.Button_DOI.TabIndex = 29
@@ -379,7 +357,7 @@ Public Class GUI_Launcher
         Me.Label_DOI.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label_DOI.AutoEllipsis = True
         Me.Label_DOI.Font = New System.Drawing.Font("David", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.Label_DOI.Location = New System.Drawing.Point(384, 126)
+        Me.Label_DOI.Location = New System.Drawing.Point(586, 126)
         Me.Label_DOI.Name = "Label_DOI"
         Me.Label_DOI.Size = New System.Drawing.Size(180, 33)
         Me.Label_DOI.TabIndex = 28
@@ -391,7 +369,7 @@ Public Class GUI_Launcher
         Me.PictureBox_pdf_get.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_pdf_get.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox_pdf_get.Image = CType(resources.GetObject("PictureBox_pdf_get.Image"), System.Drawing.Image)
-        Me.PictureBox_pdf_get.Location = New System.Drawing.Point(570, 264)
+        Me.PictureBox_pdf_get.Location = New System.Drawing.Point(772, 264)
         Me.PictureBox_pdf_get.Name = "PictureBox_pdf_get"
         Me.PictureBox_pdf_get.Size = New System.Drawing.Size(92, 32)
         Me.PictureBox_pdf_get.TabIndex = 1
@@ -400,7 +378,7 @@ Public Class GUI_Launcher
         'RichTextBox_read_msg
         '
         Me.RichTextBox_read_msg.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RichTextBox_read_msg.BackColor = System.Drawing.SystemColors.Control
         Me.RichTextBox_read_msg.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox_read_msg.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
@@ -409,11 +387,11 @@ Public Class GUI_Launcher
         Me.RichTextBox_read_msg.Name = "RichTextBox_read_msg"
         Me.RichTextBox_read_msg.ReadOnly = True
         Me.RichTextBox_read_msg.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.RichTextBox_read_msg.Size = New System.Drawing.Size(658, 108)
+        Me.RichTextBox_read_msg.Size = New System.Drawing.Size(860, 108)
         Me.RichTextBox_read_msg.TabIndex = 27
-        Me.RichTextBox_read_msg.Text = "In this section the user can read about the Orthotropic plate model. The left but" & _
-            "ton opens the fourth year project file while the right opens an english summary " & _
-            "of the entire project."
+        Me.RichTextBox_read_msg.Text = "In this section the user can read about the Orthotropic plate model. The left but" &
+    "ton opens the fourth year project file while the right opens an english summary " &
+    "of the entire project."
         '
         'Button_read_journal
         '
@@ -421,7 +399,7 @@ Public Class GUI_Launcher
         Me.Button_read_journal.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Button_read_journal.Image = CType(resources.GetObject("Button_read_journal.Image"), System.Drawing.Image)
         Me.Button_read_journal.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button_read_journal.Location = New System.Drawing.Point(433, 161)
+        Me.Button_read_journal.Location = New System.Drawing.Point(635, 161)
         Me.Button_read_journal.Name = "Button_read_journal"
         Me.Button_read_journal.Size = New System.Drawing.Size(124, 96)
         Me.Button_read_journal.TabIndex = 4
@@ -443,12 +421,12 @@ Public Class GUI_Launcher
         'Label_PDF
         '
         Me.Label_PDF.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label_PDF.AutoEllipsis = True
         Me.Label_PDF.Font = New System.Drawing.Font("David", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_PDF.Location = New System.Drawing.Point(34, 264)
         Me.Label_PDF.Name = "Label_PDF"
-        Me.Label_PDF.Size = New System.Drawing.Size(530, 39)
+        Me.Label_PDF.Size = New System.Drawing.Size(732, 39)
         Me.Label_PDF.TabIndex = 2
         Me.Label_PDF.Text = "PDF reader is required in order to view the files"
         Me.Label_PDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -464,11 +442,12 @@ Public Class GUI_Launcher
         '
         'MenuStrip
         '
+        Me.MenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_file, Me.TSM_Base_Functions, Me.TSM_Addons, Me.TSM_Model, Me.TSM_Language, Me.TSM_Help, Me.TSM_combo_prompt})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MenuStrip.Size = New System.Drawing.Size(957, 30)
+        Me.MenuStrip.Size = New System.Drawing.Size(1159, 32)
         Me.MenuStrip.TabIndex = 28
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -476,39 +455,39 @@ Public Class GUI_Launcher
         '
         Me.TSM_file.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_exit})
         Me.TSM_file.Name = "TSM_file"
-        Me.TSM_file.Size = New System.Drawing.Size(40, 26)
+        Me.TSM_file.Size = New System.Drawing.Size(46, 28)
         Me.TSM_file.Text = "File"
         '
         'TSM_exit
         '
         Me.TSM_exit.Image = Global.SPE.My.Resources.Resources.menu_exit
         Me.TSM_exit.Name = "TSM_exit"
-        Me.TSM_exit.Size = New System.Drawing.Size(99, 22)
+        Me.TSM_exit.Size = New System.Drawing.Size(116, 26)
         Me.TSM_exit.Text = "Exit"
         '
         'TSM_Base_Functions
         '
         Me.TSM_Base_Functions.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_input, Me.TSM_DB, Me.TSM_FEA})
         Me.TSM_Base_Functions.Name = "TSM_Base_Functions"
-        Me.TSM_Base_Functions.Size = New System.Drawing.Size(118, 26)
+        Me.TSM_Base_Functions.Size = New System.Drawing.Size(120, 28)
         Me.TSM_Base_Functions.Text = "Base Functions"
         '
         'TSM_input
         '
         Me.TSM_input.Name = "TSM_input"
-        Me.TSM_input.Size = New System.Drawing.Size(314, 22)
+        Me.TSM_input.Size = New System.Drawing.Size(335, 26)
         Me.TSM_input.Text = "Maximum Deflection Analysis"
         '
         'TSM_DB
         '
         Me.TSM_DB.Name = "TSM_DB"
-        Me.TSM_DB.Size = New System.Drawing.Size(314, 22)
+        Me.TSM_DB.Size = New System.Drawing.Size(335, 26)
         Me.TSM_DB.Text = "Stiffeners Database"
         '
         'TSM_FEA
         '
         Me.TSM_FEA.Name = "TSM_FEA"
-        Me.TSM_FEA.Size = New System.Drawing.Size(314, 22)
+        Me.TSM_FEA.Size = New System.Drawing.Size(335, 26)
         Me.TSM_FEA.Text = "FEA results of performed simulations"
         Me.TSM_FEA.Visible = False
         '
@@ -516,40 +495,40 @@ Public Class GUI_Launcher
         '
         Me.TSM_Addons.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_ADINA})
         Me.TSM_Addons.Name = "TSM_Addons"
-        Me.TSM_Addons.Size = New System.Drawing.Size(73, 26)
+        Me.TSM_Addons.Size = New System.Drawing.Size(80, 28)
         Me.TSM_Addons.Text = "Add-ons"
         '
         'TSM_ADINA
         '
         Me.TSM_ADINA.Image = Global.SPE.My.Resources.Resources.menu_adina
         Me.TSM_ADINA.Name = "TSM_ADINA"
-        Me.TSM_ADINA.Size = New System.Drawing.Size(181, 22)
+        Me.TSM_ADINA.Size = New System.Drawing.Size(201, 26)
         Me.TSM_ADINA.Text = "Adina Generator"
         '
         'TSM_Model
         '
         Me.TSM_Model.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_Orthotropic, Me.TSM_Grillage})
         Me.TSM_Model.Name = "TSM_Model"
-        Me.TSM_Model.Size = New System.Drawing.Size(119, 26)
+        Me.TSM_Model.Size = New System.Drawing.Size(131, 28)
         Me.TSM_Model.Text = "Model Selection"
         '
         'TSM_Orthotropic
         '
         Me.TSM_Orthotropic.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_Orthotropic_last, Me.TSM_Orthotropic_summary})
         Me.TSM_Orthotropic.Name = "TSM_Orthotropic"
-        Me.TSM_Orthotropic.Size = New System.Drawing.Size(220, 22)
+        Me.TSM_Orthotropic.Size = New System.Drawing.Size(245, 26)
         Me.TSM_Orthotropic.Text = "Ortotropic Plate model"
         '
         'TSM_Orthotropic_last
         '
         Me.TSM_Orthotropic_last.Name = "TSM_Orthotropic_last"
-        Me.TSM_Orthotropic_last.Size = New System.Drawing.Size(220, 22)
+        Me.TSM_Orthotropic_last.Size = New System.Drawing.Size(239, 26)
         Me.TSM_Orthotropic_last.Text = "View Last Results"
         '
         'TSM_Orthotropic_summary
         '
         Me.TSM_Orthotropic_summary.Name = "TSM_Orthotropic_summary"
-        Me.TSM_Orthotropic_summary.Size = New System.Drawing.Size(220, 22)
+        Me.TSM_Orthotropic_summary.Size = New System.Drawing.Size(239, 26)
         Me.TSM_Orthotropic_summary.Text = "Read Model Summary"
         Me.TSM_Orthotropic_summary.Visible = False
         '
@@ -557,20 +536,20 @@ Public Class GUI_Launcher
         '
         Me.TSM_Grillage.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_Grillage_last, Me.TSM_grillage_summary})
         Me.TSM_Grillage.Name = "TSM_Grillage"
-        Me.TSM_Grillage.Size = New System.Drawing.Size(220, 22)
+        Me.TSM_Grillage.Size = New System.Drawing.Size(245, 26)
         Me.TSM_Grillage.Text = "Grillage model"
         '
         'TSM_Grillage_last
         '
         Me.TSM_Grillage_last.Name = "TSM_Grillage_last"
-        Me.TSM_Grillage_last.Size = New System.Drawing.Size(220, 22)
+        Me.TSM_Grillage_last.Size = New System.Drawing.Size(239, 26)
         Me.TSM_Grillage_last.Text = "View Last Results"
         '
         'TSM_grillage_summary
         '
         Me.TSM_grillage_summary.Enabled = False
         Me.TSM_grillage_summary.Name = "TSM_grillage_summary"
-        Me.TSM_grillage_summary.Size = New System.Drawing.Size(220, 22)
+        Me.TSM_grillage_summary.Size = New System.Drawing.Size(239, 26)
         Me.TSM_grillage_summary.Text = "Read Model Summary"
         Me.TSM_grillage_summary.Visible = False
         '
@@ -578,72 +557,72 @@ Public Class GUI_Launcher
         '
         Me.TSM_Language.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_hebrew, Me.TSM_english, Me.TSM_User_made, Me.TSM_separator02, Me.TSM_Remember_lang, Me.TSM_current_info})
         Me.TSM_Language.Name = "TSM_Language"
-        Me.TSM_Language.Size = New System.Drawing.Size(83, 26)
+        Me.TSM_Language.Size = New System.Drawing.Size(88, 28)
         Me.TSM_Language.Text = "Language"
         '
         'TSM_hebrew
         '
         Me.TSM_hebrew.Image = Global.SPE.My.Resources.Resources.menu_hebrew
         Me.TSM_hebrew.Name = "TSM_hebrew"
-        Me.TSM_hebrew.Size = New System.Drawing.Size(292, 22)
+        Me.TSM_hebrew.Size = New System.Drawing.Size(309, 26)
         Me.TSM_hebrew.Text = "עברית"
         '
         'TSM_english
         '
         Me.TSM_english.Image = Global.SPE.My.Resources.Resources.menu_english
         Me.TSM_english.Name = "TSM_english"
-        Me.TSM_english.Size = New System.Drawing.Size(292, 22)
+        Me.TSM_english.Size = New System.Drawing.Size(309, 26)
         Me.TSM_english.Text = "English"
         '
         'TSM_User_made
         '
         Me.TSM_User_made.Image = Global.SPE.My.Resources.Resources.question_mark
         Me.TSM_User_made.Name = "TSM_User_made"
-        Me.TSM_User_made.Size = New System.Drawing.Size(292, 22)
+        Me.TSM_User_made.Size = New System.Drawing.Size(309, 26)
         Me.TSM_User_made.Text = "User-made languages"
         '
         'TSM_separator02
         '
         Me.TSM_separator02.Name = "TSM_separator02"
-        Me.TSM_separator02.Size = New System.Drawing.Size(289, 6)
+        Me.TSM_separator02.Size = New System.Drawing.Size(306, 6)
         '
         'TSM_Remember_lang
         '
         Me.TSM_Remember_lang.Checked = True
         Me.TSM_Remember_lang.CheckState = System.Windows.Forms.CheckState.Checked
         Me.TSM_Remember_lang.Name = "TSM_Remember_lang"
-        Me.TSM_Remember_lang.Size = New System.Drawing.Size(292, 22)
+        Me.TSM_Remember_lang.Size = New System.Drawing.Size(309, 26)
         Me.TSM_Remember_lang.Text = "Remember language on next run"
         '
         'TSM_current_info
         '
         Me.TSM_current_info.Image = Global.SPE.My.Resources.Resources.menu_information01
         Me.TSM_current_info.Name = "TSM_current_info"
-        Me.TSM_current_info.Size = New System.Drawing.Size(292, 22)
+        Me.TSM_current_info.Size = New System.Drawing.Size(309, 26)
         Me.TSM_current_info.Text = "Current language information"
         '
         'TSM_Help
         '
         Me.TSM_Help.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_Version_History, Me.TSM_separator01, Me.TSM_About})
         Me.TSM_Help.Name = "TSM_Help"
-        Me.TSM_Help.Size = New System.Drawing.Size(48, 26)
+        Me.TSM_Help.Size = New System.Drawing.Size(55, 28)
         Me.TSM_Help.Text = "Help"
         '
         'TSM_Version_History
         '
         Me.TSM_Version_History.Name = "TSM_Version_History"
-        Me.TSM_Version_History.Size = New System.Drawing.Size(171, 22)
+        Me.TSM_Version_History.Size = New System.Drawing.Size(188, 26)
         Me.TSM_Version_History.Text = "Version history"
         '
         'TSM_separator01
         '
         Me.TSM_separator01.Name = "TSM_separator01"
-        Me.TSM_separator01.Size = New System.Drawing.Size(168, 6)
+        Me.TSM_separator01.Size = New System.Drawing.Size(185, 6)
         '
         'TSM_About
         '
         Me.TSM_About.Name = "TSM_About"
-        Me.TSM_About.Size = New System.Drawing.Size(171, 22)
+        Me.TSM_About.Size = New System.Drawing.Size(188, 26)
         Me.TSM_About.Text = "about"
         '
         'TSM_combo_prompt
@@ -651,7 +630,7 @@ Public Class GUI_Launcher
         Me.TSM_combo_prompt.Enabled = False
         Me.TSM_combo_prompt.Items.AddRange(New Object() {"gm_blade(1,2,10,3,1,1000,200,1,5,50)", "gm_blade(breadth,length,thickness,r,s,P,E,BC,w,h)", "?"})
         Me.TSM_combo_prompt.Name = "TSM_combo_prompt"
-        Me.TSM_combo_prompt.Size = New System.Drawing.Size(270, 26)
+        Me.TSM_combo_prompt.Size = New System.Drawing.Size(270, 28)
         Me.TSM_combo_prompt.Text = "Currently disabled "
         '
         'Button_model_grillage
@@ -676,7 +655,7 @@ Public Class GUI_Launcher
         Me.GroupBox_current_model.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_current_model.Controls.Add(Me.ComboBox_current_model)
         Me.GroupBox_current_model.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.GroupBox_current_model.Location = New System.Drawing.Point(4, 612)
+        Me.GroupBox_current_model.Location = New System.Drawing.Point(4, 597)
         Me.GroupBox_current_model.Name = "GroupBox_current_model"
         Me.GroupBox_current_model.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.GroupBox_current_model.Size = New System.Drawing.Size(358, 65)
@@ -687,7 +666,7 @@ Public Class GUI_Launcher
         'ComboBox_current_model
         '
         Me.ComboBox_current_model.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ComboBox_current_model.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox_current_model.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.ComboBox_current_model.FormattingEnabled = True
@@ -699,7 +678,7 @@ Public Class GUI_Launcher
         'Label_fast_results
         '
         Me.Label_fast_results.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label_fast_results.AutoEllipsis = True
         Me.Label_fast_results.Location = New System.Drawing.Point(6, 26)
         Me.Label_fast_results.Name = "Label_fast_results"
@@ -709,7 +688,7 @@ Public Class GUI_Launcher
         'GroupBox_fast_results
         '
         Me.GroupBox_fast_results.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_fast_results.Controls.Add(Me.Label_fast_results)
         Me.GroupBox_fast_results.Font = New System.Drawing.Font("David", 12.0!)
         Me.GroupBox_fast_results.Location = New System.Drawing.Point(6, 143)
@@ -731,7 +710,7 @@ Public Class GUI_Launcher
         Me.GroupBox_new.Controls.Add(Me.PictureBox_SAOS)
         Me.GroupBox_new.Controls.Add(Me.VScrollBar_new)
         Me.GroupBox_new.Controls.Add(Me.GroupBox_fast_results)
-        Me.GroupBox_new.Location = New System.Drawing.Point(374, 353)
+        Me.GroupBox_new.Location = New System.Drawing.Point(576, 503)
         Me.GroupBox_new.Name = "GroupBox_new"
         Me.GroupBox_new.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.GroupBox_new.Size = New System.Drawing.Size(572, 214)
@@ -748,9 +727,9 @@ Public Class GUI_Launcher
         Me.RichTextBox_new.ReadOnly = True
         Me.RichTextBox_new.Size = New System.Drawing.Size(380, 95)
         Me.RichTextBox_new.TabIndex = 1
-        Me.RichTextBox_new.Text = "Welcome to the new and improved Stiffened Plates Evaluator." & Global.Microsoft.VisualBasic.ChrW(10) & "Due to my extremely l" & _
-            "imited time, some features are currently disabled and won't be back until Februa" & _
-            "ry 2007."
+        Me.RichTextBox_new.Text = "Welcome to the new and improved Stiffened Plates Evaluator." & Global.Microsoft.VisualBasic.ChrW(10) & "Due to my extremely l" &
+    "imited time, some features are currently disabled and won't be back until Februa" &
+    "ry 2007."
         '
         'PictureBox_new
         '
@@ -784,106 +763,23 @@ Public Class GUI_Launcher
         Me.VScrollBar_new.TabIndex = 37
         Me.VScrollBar_new.Visible = False
         '
-        'GroupBox2
+        'StatusStrip1
         '
-        Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox2.Controls.Add(Me.PictureBox_adbrite)
-        Me.GroupBox2.Controls.Add(Me.PictureBox_bidvertiser)
-        Me.GroupBox2.Location = New System.Drawing.Point(697, 568)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupBox2.Size = New System.Drawing.Size(254, 80)
-        Me.GroupBox2.TabIndex = 39
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Put advertises on your site"
-        '
-        'PictureBox_adbrite
-        '
-        Me.PictureBox_adbrite.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox_adbrite.Image = Global.SPE.My.Resources.Resources.adbrite
-        Me.PictureBox_adbrite.Location = New System.Drawing.Point(128, 17)
-        Me.PictureBox_adbrite.Name = "PictureBox_adbrite"
-        Me.PictureBox_adbrite.Size = New System.Drawing.Size(121, 60)
-        Me.PictureBox_adbrite.TabIndex = 15
-        Me.PictureBox_adbrite.TabStop = False
-        '
-        'PictureBox_bidvertiser
-        '
-        Me.PictureBox_bidvertiser.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox_bidvertiser.Image = Global.SPE.My.Resources.Resources.bidvertiser
-        Me.PictureBox_bidvertiser.Location = New System.Drawing.Point(6, 17)
-        Me.PictureBox_bidvertiser.Name = "PictureBox_bidvertiser"
-        Me.PictureBox_bidvertiser.Size = New System.Drawing.Size(121, 60)
-        Me.PictureBox_bidvertiser.TabIndex = 14
-        Me.PictureBox_bidvertiser.TabStop = False
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.PictureBox_greasypalm)
-        Me.GroupBox1.Controls.Add(Me.PictureBox_rpoints)
-        Me.GroupBox1.Controls.Add(Me.PictureBox_quickreward)
-        Me.GroupBox1.Controls.Add(Me.PictureBox_cashbag)
-        Me.GroupBox1.Location = New System.Drawing.Point(487, 652)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupBox1.Size = New System.Drawing.Size(464, 84)
-        Me.GroupBox1.TabIndex = 38
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Cashbacks and rewards sites"
-        Me.GroupBox1.UseCompatibleTextRendering = True
-        '
-        'PictureBox_greasypalm
-        '
-        Me.PictureBox_greasypalm.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox_greasypalm.Image = Global.SPE.My.Resources.Resources.greasypalm
-        Me.PictureBox_greasypalm.Location = New System.Drawing.Point(324, 20)
-        Me.PictureBox_greasypalm.Name = "PictureBox_greasypalm"
-        Me.PictureBox_greasypalm.Size = New System.Drawing.Size(121, 60)
-        Me.PictureBox_greasypalm.TabIndex = 14
-        Me.PictureBox_greasypalm.TabStop = False
-        '
-        'PictureBox_rpoints
-        '
-        Me.PictureBox_rpoints.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox_rpoints.Image = Global.SPE.My.Resources.Resources.rpoints
-        Me.PictureBox_rpoints.Location = New System.Drawing.Point(6, 20)
-        Me.PictureBox_rpoints.Name = "PictureBox_rpoints"
-        Me.PictureBox_rpoints.Size = New System.Drawing.Size(120, 60)
-        Me.PictureBox_rpoints.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox_rpoints.TabIndex = 11
-        Me.PictureBox_rpoints.TabStop = False
-        '
-        'PictureBox_quickreward
-        '
-        Me.PictureBox_quickreward.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox_quickreward.Image = Global.SPE.My.Resources.Resources.quickreward
-        Me.PictureBox_quickreward.Location = New System.Drawing.Point(132, 20)
-        Me.PictureBox_quickreward.Name = "PictureBox_quickreward"
-        Me.PictureBox_quickreward.Size = New System.Drawing.Size(60, 60)
-        Me.PictureBox_quickreward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox_quickreward.TabIndex = 12
-        Me.PictureBox_quickreward.TabStop = False
-        '
-        'PictureBox_cashbag
-        '
-        Me.PictureBox_cashbag.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox_cashbag.Image = Global.SPE.My.Resources.Resources.cashbag
-        Me.PictureBox_cashbag.Location = New System.Drawing.Point(198, 20)
-        Me.PictureBox_cashbag.Name = "PictureBox_cashbag"
-        Me.PictureBox_cashbag.Size = New System.Drawing.Size(121, 60)
-        Me.PictureBox_cashbag.TabIndex = 13
-        Me.PictureBox_cashbag.TabStop = False
+        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 724)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(1159, 22)
+        Me.StatusStrip1.TabIndex = 37
+        Me.StatusStrip1.Text = "StatusStrip1"
         '
         'GUI_Launcher
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(957, 735)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.ClientSize = New System.Drawing.Size(1159, 754)
         Me.Controls.Add(Me.GroupBox_new)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.GroupBox_current_model)
         Me.Controls.Add(Me.Button_switch)
         Me.Controls.Add(Me.Picture_eng)
@@ -902,6 +798,7 @@ Public Class GUI_Launcher
         Me.Controls.Add(Me.button_input)
         Me.Controls.Add(Me.button_database)
         Me.Controls.Add(Me.GroupBox_model)
+        Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip
         Me.MinimumSize = New System.Drawing.Size(965, 698)
@@ -909,8 +806,8 @@ Public Class GUI_Launcher
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 8)
         Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Deflection Evaluator: Evaluate Maximum Deflection at Center of stiffened Plates/P" & _
-            "anels Due To Uniform Load"
+        Me.Text = "Deflection Evaluator: Evaluate Maximum Deflection at Center of stiffened Plates/P" &
+    "anels Due To Uniform Load"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.picture_TAU, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picture_navy_sign, System.ComponentModel.ISupportInitialize).EndInit()
@@ -928,15 +825,6 @@ Public Class GUI_Launcher
         Me.GroupBox_new.PerformLayout()
         CType(Me.PictureBox_new, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_SAOS, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        CType(Me.PictureBox_adbrite, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox_bidvertiser, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox_greasypalm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox_rpoints, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox_quickreward, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox_cashbag, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -944,7 +832,7 @@ Public Class GUI_Launcher
 
 #End Region
     'Dim Adina_form As adina_main
-    Dim msgs() As String = {"", _
+    Dim msgs() As String = {"",
                            ""}
     Dim local_language As String = ""
     Dim key As Microsoft.Win32.RegistryKey
@@ -1507,13 +1395,13 @@ Public Class GUI_Launcher
     '    'PN1.Popup()
     'End Sub
 
-    
+
 
     Private Sub TSM_combo_prompt_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TSM_combo_prompt.Click
 
     End Sub
 
-   
+
     Private Sub PictureBox_SAOS_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox_SAOS.Click
         Try
             System.Diagnostics.Process.Start("http://www.informaworld.com/smpp/content~content=a780653062~db=all~order=page")
@@ -1537,7 +1425,7 @@ Public Class GUI_Launcher
         RichTextBox_messages.RightToLeft = Windows.Forms.RightToLeft.No
     End Sub
 
-    Private Sub PictureBox_rpoints_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox_rpoints.Click
+    Private Sub PictureBox_rpoints_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             System.Diagnostics.Process.Start("http://www.rpoints.com/?ruid=100416")
         Catch ex As Exception
@@ -1545,14 +1433,14 @@ Public Class GUI_Launcher
         End Try
     End Sub
 
-    Private Sub PictureBox_quickreward_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox_quickreward.Click
+    Private Sub PictureBox_quickreward_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             System.Diagnostics.Process.Start("http://quickrewardsnetwork.com/?r=!F94VXV35D5MM0")
         Catch ex As Exception
             MessageBox.Show("Unable to open the link that was clicked.")
         End Try
     End Sub
-    Private Sub PictureBox_cashbag_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox_cashbag.Click
+    Private Sub PictureBox_cashbag_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             System.Diagnostics.Process.Start("http://www.cashbag.co.uk/register.php?user_id=52279")
         Catch ex As Exception
@@ -1560,7 +1448,7 @@ Public Class GUI_Launcher
         End Try
     End Sub
 
-    Private Sub PictureBox_adbrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox_adbrite.Click
+    Private Sub PictureBox_adbrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             System.Diagnostics.Process.Start("http://www.adbrite.com/mb/landing_both.php?spid=24222&afb=120x60-1-blue")
         Catch ex As Exception
@@ -1568,7 +1456,7 @@ Public Class GUI_Launcher
         End Try
     End Sub
 
-    Private Sub PictureBox_bidvertiser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox_bidvertiser.Click
+    Private Sub PictureBox_bidvertiser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             System.Diagnostics.Process.Start("http://www.bidvertiser.com/bdv/bidvertiser/bdv_ref.dbm?Ref_Option=pub&Ref_PID=38608")
         Catch ex As Exception
@@ -1576,7 +1464,7 @@ Public Class GUI_Launcher
         End Try
     End Sub
 
-    Private Sub PictureBox_greasypalm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox_greasypalm.Click
+    Private Sub PictureBox_greasypalm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             System.Diagnostics.Process.Start("http://tinyurl.com/3def7l")
         Catch ex As Exception
