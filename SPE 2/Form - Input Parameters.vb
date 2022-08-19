@@ -2452,7 +2452,6 @@ Public Class GUI_Input_Parameters
         label_BC_title.Text = language_settings.input_panel4_label_BC_title
         label_ni.Text = language_settings.input_panel4_label_ni
         Label_BC.Text = language_settings.input_panel4_Label_BC
-        label_GPa.Text = language_settings.unit_GPa
         Button_panel04_back.Text = language_settings.input_panel4_Button_panel04_back
         Button_panel04_next.Text = language_settings.input_panel4_Button_panel04_next
         Label_pressure.RightToLeft = language_settings.language_RTL
@@ -2460,7 +2459,6 @@ Public Class GUI_Input_Parameters
         label_ni.RightToLeft = language_settings.language_RTL
         Label_BC.RightToLeft = language_settings.language_RTL
         label_type_of_BC.RightToLeft = language_settings.language_RTL
-        label_GPa.RightToLeft = language_settings.language_RTL
         Button_panel04_back.RightToLeft = language_settings.language_RTL
         Button_panel04_next.RightToLeft = language_settings.language_RTL
 
