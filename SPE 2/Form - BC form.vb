@@ -32,64 +32,87 @@ Public Class GUI_BC_select
     Friend WithEvents case03 As System.Windows.Forms.Button
     Friend WithEvents case04 As System.Windows.Forms.Button
     Friend WithEvents case02 As System.Windows.Forms.Button
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents case01 As System.Windows.Forms.Button
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(GUI_BC_select))
-        Me.case03 = New System.Windows.Forms.Button
-        Me.case04 = New System.Windows.Forms.Button
-        Me.case02 = New System.Windows.Forms.Button
-        Me.case01 = New System.Windows.Forms.Button
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GUI_BC_select))
+        Me.case03 = New System.Windows.Forms.Button()
+        Me.case04 = New System.Windows.Forms.Button()
+        Me.case02 = New System.Windows.Forms.Button()
+        Me.case01 = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'case03
         '
+        Me.case03.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.case03.Image = CType(resources.GetObject("case03.Image"), System.Drawing.Image)
         Me.case03.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.case03.Location = New System.Drawing.Point(240, 144)
+        Me.case03.Location = New System.Drawing.Point(412, 243)
         Me.case03.Name = "case03"
         Me.case03.Size = New System.Drawing.Size(232, 124)
         Me.case03.TabIndex = 6
         '
         'case04
         '
+        Me.case04.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.case04.Image = CType(resources.GetObject("case04.Image"), System.Drawing.Image)
         Me.case04.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.case04.Location = New System.Drawing.Point(4, 144)
+        Me.case04.Location = New System.Drawing.Point(62, 243)
         Me.case04.Name = "case04"
         Me.case04.Size = New System.Drawing.Size(228, 124)
         Me.case04.TabIndex = 7
         '
         'case02
         '
+        Me.case02.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.case02.Image = CType(resources.GetObject("case02.Image"), System.Drawing.Image)
         Me.case02.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.case02.Location = New System.Drawing.Point(4, 8)
+        Me.case02.Location = New System.Drawing.Point(62, 37)
         Me.case02.Name = "case02"
         Me.case02.Size = New System.Drawing.Size(228, 128)
         Me.case02.TabIndex = 5
         '
         'case01
         '
+        Me.case01.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.case01.Image = CType(resources.GetObject("case01.Image"), System.Drawing.Image)
         Me.case01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.case01.Location = New System.Drawing.Point(240, 8)
+        Me.case01.Location = New System.Drawing.Point(412, 37)
         Me.case01.Name = "case01"
         Me.case01.Size = New System.Drawing.Size(232, 128)
         Me.case01.TabIndex = 4
         '
-        'BC_form
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.case02, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.case03, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.case01, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.case04, 1, 1)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(704, 407)
+        Me.TableLayoutPanel1.TabIndex = 8
+        '
+        'GUI_BC_select
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
-        Me.ClientSize = New System.Drawing.Size(480, 276)
-        Me.Controls.Add(Me.case03)
-        Me.Controls.Add(Me.case04)
-        Me.Controls.Add(Me.case02)
-        Me.Controls.Add(Me.case01)
+        Me.ClientSize = New System.Drawing.Size(704, 407)
+        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.MaximumSize = New System.Drawing.Size(486, 304)
-        Me.Name = "BC_form"
+        Me.MaximumSize = New System.Drawing.Size(710, 442)
+        Me.Name = "GUI_BC_select"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Text = "תנאי שפה: הצגה ובחירה"
+        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
