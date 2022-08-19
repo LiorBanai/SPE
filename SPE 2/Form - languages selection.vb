@@ -331,6 +331,13 @@ Public Class GUI_languages_selection
     End Sub
     Private Sub form_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+        If File.Exists("default_eng.ini") = False Then
+            File.WriteAllText("default_eng.ini", My.Resources.default_eng)
+        End If
+        If File.Exists("default_heb.ini") = False Then
+            File.WriteAllText("default_heb.ini", My.Resources.default_heb)
+        End If
+
         Dim di As New DirectoryInfo(Environment.CurrentDirectory)
         Dim fi As FileInfo() = di.GetFiles()
         Dim fiTemp As FileInfo
