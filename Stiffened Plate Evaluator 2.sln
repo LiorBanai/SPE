@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Stiffened Plates Evaluator 2", "SPE 2\Stiffened Plates Evaluator 2.vbproj", "{1FBAC75C-1C42-488A-9BEE-69839358D193}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Stiffened Plate Evaluator 2 Setup", "SPE 2 setup\SPE 2 setup.vdproj", "{492C441D-D566-4158-BE7D-8480B6787750}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,11 @@ Global
 		{1FBAC75C-1C42-488A-9BEE-69839358D193}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FBAC75C-1C42-488A-9BEE-69839358D193}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FBAC75C-1C42-488A-9BEE-69839358D193}.Release|Any CPU.Build.0 = Release|Any CPU
-		{492C441D-D566-4158-BE7D-8480B6787750}.Debug|Any CPU.ActiveCfg = Release
-		{492C441D-D566-4158-BE7D-8480B6787750}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B9AFC37-DCD5-41E4-9251-7386A506E6A7}
 	EndGlobalSection
 EndGlobal
