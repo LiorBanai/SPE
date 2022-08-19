@@ -3919,16 +3919,7 @@ Public Class GUI_Data_and_Results
         general_settings.save_settings_to_registry()
     End Sub
     Private Sub Picture_heb_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Picture_heb_panel1.Click, Picture_heb_panel2.Click, Picture_heb_panel3.Click, Picture_heb_panel4.Click
-        If File.Exists("default_heb.ini") = True Then
-            GUI_set("default_heb.ini")
-        Else
-            ' TO BE COMPLETE LATER
-            ' TO BE COMPLETE LATER
-            ' TO BE COMPLETE LATER
-            ' TO BE COMPLETE LATER
-            ' TO BE COMPLETE LATER
-            ' TO BE COMPLETE LATER
-        End If
+        GUI_set("default_heb.ini")
         general_settings.save_settings_to_registry()
     End Sub
     Private Sub more_error_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button_more_error.Click

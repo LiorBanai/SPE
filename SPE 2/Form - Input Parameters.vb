@@ -3605,14 +3605,11 @@ Public Class GUI_Input_Parameters
         general_settings.save_settings_to_registry()
     End Sub
     Private Sub Picture_heb_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Picture_heb.Click
-        If File.Exists("default_heb.ini") = True Then
-            GUI_set("default_heb.ini")
-            gui_update_stiffeners()
+        GUI_set("default_heb.ini")
+        gui_update_stiffeners()
             general_settings.controls_Library.luncher_form.Activate()
             Me.Focus()
-        Else
-            'message to follow
-        End If
+
         general_settings.save_settings_to_registry()
     End Sub
     Private Sub Button_case02_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button_case02.Click

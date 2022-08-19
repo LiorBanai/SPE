@@ -303,14 +303,10 @@ Public Class GUI_last_result
         End If
     End Sub
     Private Sub Picture_heb_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Picture_heb.Click
-        If File.Exists("default_heb.ini") = True Then
-            GUI_set("default_heb.ini")
-            language_settings.language_current_file = "default_heb.ini"
+        GUI_set("default_heb.ini")
+        language_settings.language_current_file = "default_heb.ini"
             general_settings.controls_Library.luncher_form.Activate()
-            Me.Focus()
-        Else
-            'message to follow
-        End If
+        Me.Focus()
     End Sub
     Private Sub Picture_eng_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Picture_eng.Click
         If File.Exists("default_eng.ini") = True Then

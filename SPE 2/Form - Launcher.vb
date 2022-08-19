@@ -1258,15 +1258,10 @@ Public Class GUI_Launcher
         End If
     End Sub
     Private Sub TSM_hebrew_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TSM_hebrew.Click, Picture_heb.Click
-        If File.Exists("default_heb.ini") = True Then
-            TSM_hebrew.Enabled = True
-            GUI_set("default_heb.ini")
+        TSM_hebrew.Enabled = True
+        GUI_set("default_heb.ini")
             language_settings.language_current_file = "default_heb.ini"
-            local_language = "default_heb.ini"
-        Else
-            TSM_hebrew.Enabled = False
-            'message to follow
-        End If
+        local_language = "default_heb.ini"
         language_settings.language_remember = TSM_Remember_lang.Checked
         general_settings.save_settings_to_registry()
     End Sub
