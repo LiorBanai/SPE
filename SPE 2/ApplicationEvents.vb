@@ -1,3 +1,5 @@
+Imports Microsoft.VisualBasic.ApplicationServices
+
 Namespace My
 
     ' The following events are availble for MyApplication:
@@ -11,22 +13,23 @@ Namespace My
 
         Private Sub MyApplication_UnhandledException(ByVal sender As Object, ByVal e As Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs) Handles Me.UnhandledException
             Dim msg_style As MsgBoxStyle = MsgBoxStyle.Critical
-            Dim msg_text As String = "The following message has been copied to the clipboard" & vbCr & vbCr & "Please report this back to the developer." & vbCr & _
-            vbCr & "****************************" & vbCr & "The exception message is:" & vbCr & e.Exception.Message & _
-            vbCr & "The exception StackTrace is:" & vbCr & e.Exception.StackTrace & _
+            Dim msg_text As String = "The following message has been copied to the clipboard" & vbCr & vbCr & "Please report this back to the developer." & vbCr &
+            vbCr & "****************************" & vbCr & "The exception message is:" & vbCr & e.Exception.Message &
+            vbCr & "The exception StackTrace is:" & vbCr & e.Exception.StackTrace &
             vbCr & "****************************" & vbCr & e.Exception.ToString
 
-            MessageBox.Show("The following message has been copied to the clipboard" & vbCr & vbCr & "Please report this back to the developer." & vbCr & _
-            vbCr & "****************************" & vbCr & "The exception message is:" & vbCr & e.Exception.Message & _
-            vbCr & "The exception StackTrace is:" & vbCr & e.Exception.StackTrace & _
+            MessageBox.Show("The following message has been copied to the clipboard" & vbCr & vbCr & "Please report this back to the developer." & vbCr &
+            vbCr & "****************************" & vbCr & "The exception message is:" & vbCr & e.Exception.Message &
+            vbCr & "The exception StackTrace is:" & vbCr & e.Exception.StackTrace &
             vbCr & "****************************" & vbCr & e.Exception.ToString, "Exception Occured")
 
-            My.Computer.Clipboard.SetText("The following message has been copied to the clipboard" & vbCr & "Please report this back to the developer." & _
-            vbCr & "The exception message is:" & vbCr & e.Exception.Message & _
-            vbCr & "The exception StackTrace is:" & vbCr & e.Exception.StackTrace & _
+            My.Computer.Clipboard.SetText("The following message has been copied to the clipboard" & vbCr & "Please report this back to the developer." &
+            vbCr & "The exception message is:" & vbCr & e.Exception.Message &
+            vbCr & "The exception StackTrace is:" & vbCr & e.Exception.StackTrace &
             vbCr & "****************************" & vbCr & e.Exception.ToString)
             e.ExitApplication = False
         End Sub
+
     End Class
 
 End Namespace
