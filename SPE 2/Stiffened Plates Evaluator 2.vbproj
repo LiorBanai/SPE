@@ -1,15 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
-		<TargetFramework>net471</TargetFramework>
+		<TargetFrameworks>net48;net472;net471</TargetFrameworks>
 		<GenerateResourceUsePreserializedResources>false</GenerateResourceUsePreserializedResources>
 		<PackageId>Analogy.CommonControls</PackageId>
 		<Authors>Lior Banai</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/LiorBanai/SPE</PackageProjectUrl>
 		<PackageIcon>icon.png</PackageIcon>
-		<PackageIconUrl />
 		<RepositoryUrl>https://github.com/LiorBanai/SPE</RepositoryUrl>
-		<PackageTags />
+		<Platforms>AnyCPU;x64</Platforms>
 		<RepositoryType>git</RepositoryType>
 		<Version>2.1.0</Version>
 		<Copyright>Lior Banai © 2005-2022</Copyright>
