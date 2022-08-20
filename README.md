@@ -15,7 +15,7 @@ Originally was created in Visual basic using .Net framework 1.1.
  
  Updated to .Net Framework 4.7 and .NET 6...
  
-![main UI](Assets/Main_UI.jpg)
+![main UI](Assets/Main_UI2.jpg)
 
 
 ## History
