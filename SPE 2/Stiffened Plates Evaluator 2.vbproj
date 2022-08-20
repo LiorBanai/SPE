@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
-		<TargetFramework>net471</TargetFramework>
+		<TargetFrameworks>net48;net461</TargetFrameworks>
 		<GenerateResourceUsePreserializedResources>false</GenerateResourceUsePreserializedResources>
 		<PackageId>Analogy.CommonControls</PackageId>
 		<Authors>Lior Banai</Authors>
@@ -13,7 +13,7 @@
 		<RepositoryType>git</RepositoryType>
 		<Version>2.1.0</Version>
 		<Copyright>Lior Banai © 2005-2022</Copyright>
-		<Product>("Stiffened Plates Evaluator")&gt;</Product>
+		<Product>("Stiffened Plates Evaluator")</Product>
 		<PackageReleaseNotes></PackageReleaseNotes>
 		<Company>Lior Banai</Company>
 		<PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
