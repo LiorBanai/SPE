@@ -149,130 +149,130 @@ Public Class GUI_Data_and_Results
     Friend WithEvents RichTextBox_result_for_saving_HTML As System.Windows.Forms.RichTextBox
     Friend WithEvents ImageList_model As System.Windows.Forms.ImageList
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"סיכום נתונים"}, 3, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"ביצוע חישוב"}, 2, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"שמירת תוצאות"}, 4, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"אופציונלי: יצירת מודל אלמנטים סופיים"}, 5, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Me.components = New System.ComponentModel.Container()
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Data Summary"}, 3, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Maximum Deflection Result"}, 2, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"model calculation"}, 4, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Create ADINA Model"}, 5, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GUI_Data_and_Results))
-        Me.groupbox_plate_geo = New System.Windows.Forms.GroupBox
-        Me.Button_view_parameters = New System.Windows.Forms.Button
-        Me.label_unit_mm01 = New System.Windows.Forms.Label
-        Me.label_unit_m02 = New System.Windows.Forms.Label
-        Me.label_unit_m01 = New System.Windows.Forms.Label
-        Me.numeric_t = New System.Windows.Forms.NumericUpDown
-        Me.numeric_b = New System.Windows.Forms.NumericUpDown
-        Me.numeric_a = New System.Windows.Forms.NumericUpDown
-        Me.label_t = New System.Windows.Forms.Label
-        Me.label_b = New System.Windows.Forms.Label
-        Me.label_a = New System.Windows.Forms.Label
-        Me.label_title = New System.Windows.Forms.Label
-        Me.GroupBox_stiffeners_number = New System.Windows.Forms.GroupBox
-        Me.numeric_short = New System.Windows.Forms.NumericUpDown
-        Me.numeric_long = New System.Windows.Forms.NumericUpDown
-        Me.label_short = New System.Windows.Forms.Label
-        Me.label_long = New System.Windows.Forms.Label
-        Me.GroupBox_stiffeners = New System.Windows.Forms.GroupBox
-        Me.GroupBox_stiffeners_geometric = New System.Windows.Forms.GroupBox
-        Me.textbox_geo_type = New System.Windows.Forms.TextBox
-        Me.Label_geometric = New System.Windows.Forms.Label
-        Me.GroupBox_stiffeners_data = New System.Windows.Forms.GroupBox
-        Me.Button_data_change = New System.Windows.Forms.Button
-        Me.Label_data_unit = New System.Windows.Forms.Label
-        Me.Button_data_more = New System.Windows.Forms.Button
-        Me.TextBox_b = New System.Windows.Forms.TextBox
-        Me.Label_transverse01 = New System.Windows.Forms.Label
-        Me.TextBox_nb = New System.Windows.Forms.TextBox
-        Me.Label_non_central02 = New System.Windows.Forms.Label
-        Me.Label_central02 = New System.Windows.Forms.Label
-        Me.TextBox_a = New System.Windows.Forms.TextBox
-        Me.Label_longitudinals01 = New System.Windows.Forms.Label
-        Me.Label_non_central01 = New System.Windows.Forms.Label
-        Me.Label_central01 = New System.Windows.Forms.Label
-        Me.TextBox_na = New System.Windows.Forms.TextBox
-        Me.data_units = New System.Windows.Forms.ComboBox
-        Me.groupbox_general = New System.Windows.Forms.GroupBox
-        Me.Label_GPa = New System.Windows.Forms.Label
-        Me.button_BC_select = New System.Windows.Forms.Button
-        Me.combobox_P_units = New System.Windows.Forms.ComboBox
-        Me.textbox_P_input = New System.Windows.Forms.TextBox
-        Me.textbox_ni_input = New System.Windows.Forms.TextBox
-        Me.textbox_E_input = New System.Windows.Forms.TextBox
-        Me.Label_pressure = New System.Windows.Forms.Label
-        Me.label_ni = New System.Windows.Forms.Label
-        Me.Label_E = New System.Windows.Forms.Label
-        Me.numeric_case_input = New System.Windows.Forms.NumericUpDown
-        Me.Label_BC = New System.Windows.Forms.Label
-        Me.RichTextBox_result_for_saving = New System.Windows.Forms.RichTextBox
-        Me.Button_compute = New System.Windows.Forms.Button
-        Me.Textbox_results = New System.Windows.Forms.TextBox
-        Me.label_msg01 = New System.Windows.Forms.Label
-        Me.Button_more_error = New System.Windows.Forms.Button
-        Me.button_results_clear = New System.Windows.Forms.Button
-        Me.ListView_steps = New System.Windows.Forms.ListView
+        Me.groupbox_plate_geo = New System.Windows.Forms.GroupBox()
+        Me.Button_view_parameters = New System.Windows.Forms.Button()
+        Me.label_unit_mm01 = New System.Windows.Forms.Label()
+        Me.label_unit_m02 = New System.Windows.Forms.Label()
+        Me.label_unit_m01 = New System.Windows.Forms.Label()
+        Me.numeric_t = New System.Windows.Forms.NumericUpDown()
+        Me.numeric_b = New System.Windows.Forms.NumericUpDown()
+        Me.numeric_a = New System.Windows.Forms.NumericUpDown()
+        Me.label_t = New System.Windows.Forms.Label()
+        Me.label_b = New System.Windows.Forms.Label()
+        Me.label_a = New System.Windows.Forms.Label()
+        Me.label_title = New System.Windows.Forms.Label()
+        Me.GroupBox_stiffeners_number = New System.Windows.Forms.GroupBox()
+        Me.numeric_short = New System.Windows.Forms.NumericUpDown()
+        Me.numeric_long = New System.Windows.Forms.NumericUpDown()
+        Me.label_short = New System.Windows.Forms.Label()
+        Me.label_long = New System.Windows.Forms.Label()
+        Me.GroupBox_stiffeners = New System.Windows.Forms.GroupBox()
+        Me.GroupBox_stiffeners_geometric = New System.Windows.Forms.GroupBox()
+        Me.textbox_geo_type = New System.Windows.Forms.TextBox()
+        Me.Label_geometric = New System.Windows.Forms.Label()
+        Me.GroupBox_stiffeners_data = New System.Windows.Forms.GroupBox()
+        Me.Button_data_change = New System.Windows.Forms.Button()
+        Me.Label_data_unit = New System.Windows.Forms.Label()
+        Me.Button_data_more = New System.Windows.Forms.Button()
+        Me.TextBox_b = New System.Windows.Forms.TextBox()
+        Me.Label_transverse01 = New System.Windows.Forms.Label()
+        Me.TextBox_nb = New System.Windows.Forms.TextBox()
+        Me.Label_non_central02 = New System.Windows.Forms.Label()
+        Me.Label_central02 = New System.Windows.Forms.Label()
+        Me.TextBox_a = New System.Windows.Forms.TextBox()
+        Me.Label_longitudinals01 = New System.Windows.Forms.Label()
+        Me.Label_non_central01 = New System.Windows.Forms.Label()
+        Me.Label_central01 = New System.Windows.Forms.Label()
+        Me.TextBox_na = New System.Windows.Forms.TextBox()
+        Me.data_units = New System.Windows.Forms.ComboBox()
+        Me.groupbox_general = New System.Windows.Forms.GroupBox()
+        Me.Label_GPa = New System.Windows.Forms.Label()
+        Me.button_BC_select = New System.Windows.Forms.Button()
+        Me.combobox_P_units = New System.Windows.Forms.ComboBox()
+        Me.textbox_P_input = New System.Windows.Forms.TextBox()
+        Me.textbox_ni_input = New System.Windows.Forms.TextBox()
+        Me.textbox_E_input = New System.Windows.Forms.TextBox()
+        Me.Label_pressure = New System.Windows.Forms.Label()
+        Me.label_ni = New System.Windows.Forms.Label()
+        Me.Label_E = New System.Windows.Forms.Label()
+        Me.numeric_case_input = New System.Windows.Forms.NumericUpDown()
+        Me.Label_BC = New System.Windows.Forms.Label()
+        Me.RichTextBox_result_for_saving = New System.Windows.Forms.RichTextBox()
+        Me.Button_compute = New System.Windows.Forms.Button()
+        Me.Textbox_results = New System.Windows.Forms.TextBox()
+        Me.label_msg01 = New System.Windows.Forms.Label()
+        Me.Button_more_error = New System.Windows.Forms.Button()
+        Me.button_results_clear = New System.Windows.Forms.Button()
+        Me.ListView_steps = New System.Windows.Forms.ListView()
         Me.ImageList_listview = New System.Windows.Forms.ImageList(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.Picture_eng_panel1 = New System.Windows.Forms.PictureBox
-        Me.Picture_heb_panel1 = New System.Windows.Forms.PictureBox
-        Me.GroupBox_numeric_stiffeners = New System.Windows.Forms.GroupBox
-        Me.Label_mm_msg = New System.Windows.Forms.Label
-        Me.CheckBox_Inb = New System.Windows.Forms.CheckBox
-        Me.CheckBox_Ib = New System.Windows.Forms.CheckBox
-        Me.CheckBox_Ina = New System.Windows.Forms.CheckBox
-        Me.CheckBox_Ia = New System.Windows.Forms.CheckBox
-        Me.TextBox_Inb_d = New System.Windows.Forms.TextBox
-        Me.TextBox_Ina_d = New System.Windows.Forms.TextBox
-        Me.TextBox_Ia_d = New System.Windows.Forms.TextBox
-        Me.TextBox_Ib_d = New System.Windows.Forms.TextBox
-        Me.Button_save_stiffeners = New System.Windows.Forms.Button
-        Me.TextBox_Inb_b = New System.Windows.Forms.TextBox
-        Me.TextBox_Ina_b = New System.Windows.Forms.TextBox
-        Me.TextBox_Ia_b = New System.Windows.Forms.TextBox
-        Me.TextBox_Ib_b = New System.Windows.Forms.TextBox
-        Me.Label_b_change = New System.Windows.Forms.Label
-        Me.Label_d_change = New System.Windows.Forms.Label
-        Me.Label_longitudinals02 = New System.Windows.Forms.Label
-        Me.Label_transverse02 = New System.Windows.Forms.Label
-        Me.Label_non_central04 = New System.Windows.Forms.Label
-        Me.Label_central04 = New System.Windows.Forms.Label
-        Me.Label_non_central03 = New System.Windows.Forms.Label
-        Me.Label_central03 = New System.Windows.Forms.Label
-        Me.Panel2 = New System.Windows.Forms.Panel
-        Me.PictureBox_figures = New System.Windows.Forms.PictureBox
-        Me.NumericUpDown_SD = New System.Windows.Forms.NumericUpDown
-        Me.Picture_eng_panel2 = New System.Windows.Forms.PictureBox
-        Me.Picture_heb_panel2 = New System.Windows.Forms.PictureBox
-        Me.RichTextBox_results = New System.Windows.Forms.RichTextBox
-        Me.Label_SD = New System.Windows.Forms.Label
-        Me.Panel3 = New System.Windows.Forms.Panel
-        Me.button_results_save_HTML = New System.Windows.Forms.Button
-        Me.GroupBox_choose_language = New System.Windows.Forms.GroupBox
-        Me.GroupBox_update = New System.Windows.Forms.GroupBox
-        Me.RadioButton_add_replace = New System.Windows.Forms.RadioButton
-        Me.Button_update = New System.Windows.Forms.Button
-        Me.RadioButton_add_after = New System.Windows.Forms.RadioButton
-        Me.RadioButton_other_language = New System.Windows.Forms.RadioButton
-        Me.RadioButton_default_english = New System.Windows.Forms.RadioButton
-        Me.RichTextBox_result_for_saving_HTML = New System.Windows.Forms.RichTextBox
-        Me.Picture_eng_panel3 = New System.Windows.Forms.PictureBox
-        Me.Picture_heb_panel3 = New System.Windows.Forms.PictureBox
-        Me.button_results_save = New System.Windows.Forms.Button
-        Me.Panel4 = New System.Windows.Forms.Panel
-        Me.GroupBox_creation_type = New System.Windows.Forms.GroupBox
-        Me.RadioButton_normal = New System.Windows.Forms.RadioButton
-        Me.RadioButton_fast = New System.Windows.Forms.RadioButton
-        Me.Label_affiliated = New System.Windows.Forms.Label
-        Me.PictureBox02 = New System.Windows.Forms.PictureBox
-        Me.PictureBox01 = New System.Windows.Forms.PictureBox
-        Me.Button_Run_ADINA = New System.Windows.Forms.Button
-        Me.Button_feed_ADINA = New System.Windows.Forms.Button
-        Me.RichTextBox_model_qualify = New System.Windows.Forms.RichTextBox
-        Me.RichTextBox_adina_msg = New System.Windows.Forms.RichTextBox
-        Me.Picture_eng_panel4 = New System.Windows.Forms.PictureBox
-        Me.Picture_heb_panel4 = New System.Windows.Forms.PictureBox
-        Me.Label_Adina = New System.Windows.Forms.Label
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Picture_eng_panel1 = New System.Windows.Forms.PictureBox()
+        Me.Picture_heb_panel1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox_numeric_stiffeners = New System.Windows.Forms.GroupBox()
+        Me.Label_mm_msg = New System.Windows.Forms.Label()
+        Me.CheckBox_Inb = New System.Windows.Forms.CheckBox()
+        Me.CheckBox_Ib = New System.Windows.Forms.CheckBox()
+        Me.CheckBox_Ina = New System.Windows.Forms.CheckBox()
+        Me.CheckBox_Ia = New System.Windows.Forms.CheckBox()
+        Me.TextBox_Inb_d = New System.Windows.Forms.TextBox()
+        Me.TextBox_Ina_d = New System.Windows.Forms.TextBox()
+        Me.TextBox_Ia_d = New System.Windows.Forms.TextBox()
+        Me.TextBox_Ib_d = New System.Windows.Forms.TextBox()
+        Me.Button_save_stiffeners = New System.Windows.Forms.Button()
+        Me.TextBox_Inb_b = New System.Windows.Forms.TextBox()
+        Me.TextBox_Ina_b = New System.Windows.Forms.TextBox()
+        Me.TextBox_Ia_b = New System.Windows.Forms.TextBox()
+        Me.TextBox_Ib_b = New System.Windows.Forms.TextBox()
+        Me.Label_b_change = New System.Windows.Forms.Label()
+        Me.Label_d_change = New System.Windows.Forms.Label()
+        Me.Label_longitudinals02 = New System.Windows.Forms.Label()
+        Me.Label_transverse02 = New System.Windows.Forms.Label()
+        Me.Label_non_central04 = New System.Windows.Forms.Label()
+        Me.Label_central04 = New System.Windows.Forms.Label()
+        Me.Label_non_central03 = New System.Windows.Forms.Label()
+        Me.Label_central03 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox_figures = New System.Windows.Forms.PictureBox()
+        Me.NumericUpDown_SD = New System.Windows.Forms.NumericUpDown()
+        Me.Picture_eng_panel2 = New System.Windows.Forms.PictureBox()
+        Me.Picture_heb_panel2 = New System.Windows.Forms.PictureBox()
+        Me.RichTextBox_results = New System.Windows.Forms.RichTextBox()
+        Me.Label_SD = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.button_results_save_HTML = New System.Windows.Forms.Button()
+        Me.GroupBox_choose_language = New System.Windows.Forms.GroupBox()
+        Me.GroupBox_update = New System.Windows.Forms.GroupBox()
+        Me.RadioButton_add_replace = New System.Windows.Forms.RadioButton()
+        Me.Button_update = New System.Windows.Forms.Button()
+        Me.RadioButton_add_after = New System.Windows.Forms.RadioButton()
+        Me.RadioButton_other_language = New System.Windows.Forms.RadioButton()
+        Me.RadioButton_default_english = New System.Windows.Forms.RadioButton()
+        Me.RichTextBox_result_for_saving_HTML = New System.Windows.Forms.RichTextBox()
+        Me.Picture_eng_panel3 = New System.Windows.Forms.PictureBox()
+        Me.Picture_heb_panel3 = New System.Windows.Forms.PictureBox()
+        Me.button_results_save = New System.Windows.Forms.Button()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.GroupBox_creation_type = New System.Windows.Forms.GroupBox()
+        Me.RadioButton_normal = New System.Windows.Forms.RadioButton()
+        Me.RadioButton_fast = New System.Windows.Forms.RadioButton()
+        Me.Label_affiliated = New System.Windows.Forms.Label()
+        Me.PictureBox02 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox01 = New System.Windows.Forms.PictureBox()
+        Me.Button_Run_ADINA = New System.Windows.Forms.Button()
+        Me.Button_feed_ADINA = New System.Windows.Forms.Button()
+        Me.RichTextBox_model_qualify = New System.Windows.Forms.RichTextBox()
+        Me.RichTextBox_adina_msg = New System.Windows.Forms.RichTextBox()
+        Me.Picture_eng_panel4 = New System.Windows.Forms.PictureBox()
+        Me.Picture_heb_panel4 = New System.Windows.Forms.PictureBox()
+        Me.Label_Adina = New System.Windows.Forms.Label()
         Me.ImageList_model = New System.Windows.Forms.ImageList(Me.components)
-        Me.SplitContainer = New System.Windows.Forms.SplitContainer
+        Me.SplitContainer = New System.Windows.Forms.SplitContainer()
         Me.groupbox_plate_geo.SuspendLayout()
         CType(Me.numeric_t, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.numeric_b, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -305,6 +305,7 @@ Public Class GUI_Data_and_Results
         CType(Me.PictureBox01, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Picture_eng_panel4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Picture_heb_panel4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer.Panel1.SuspendLayout()
         Me.SplitContainer.Panel2.SuspendLayout()
         Me.SplitContainer.SuspendLayout()
@@ -453,7 +454,7 @@ Public Class GUI_Data_and_Results
         'label_title
         '
         Me.label_title.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.label_title.AutoEllipsis = True
         Me.label_title.Font = New System.Drawing.Font("David", 22.2!, System.Drawing.FontStyle.Underline)
         Me.label_title.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -461,7 +462,7 @@ Public Class GUI_Data_and_Results
         Me.label_title.Name = "label_title"
         Me.label_title.Size = New System.Drawing.Size(707, 48)
         Me.label_title.TabIndex = 42
-        Me.label_title.Text = "סיכום נתונים "
+        Me.label_title.Text = "Results"
         Me.label_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GroupBox_stiffeners_number
@@ -503,7 +504,7 @@ Public Class GUI_Data_and_Results
         'label_short
         '
         Me.label_short.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.label_short.AutoEllipsis = True
         Me.label_short.Font = New System.Drawing.Font("David", 10.8!)
         Me.label_short.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -518,7 +519,7 @@ Public Class GUI_Data_and_Results
         'label_long
         '
         Me.label_long.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.label_long.AutoEllipsis = True
         Me.label_long.Font = New System.Drawing.Font("David", 10.8!)
         Me.label_long.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -538,7 +539,7 @@ Public Class GUI_Data_and_Results
         Me.GroupBox_stiffeners.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.GroupBox_stiffeners.Location = New System.Drawing.Point(377, 237)
         Me.GroupBox_stiffeners.Name = "GroupBox_stiffeners"
-        Me.GroupBox_stiffeners.Size = New System.Drawing.Size(339, 408)
+        Me.GroupBox_stiffeners.Size = New System.Drawing.Size(374, 408)
         Me.GroupBox_stiffeners.TabIndex = 44
         Me.GroupBox_stiffeners.TabStop = False
         Me.GroupBox_stiffeners.Text = "Stiffeners"
@@ -606,7 +607,7 @@ Public Class GUI_Data_and_Results
         '
         Me.Button_data_change.AutoEllipsis = True
         Me.Button_data_change.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.Button_data_change.Location = New System.Drawing.Point(12, 27)
+        Me.Button_data_change.Location = New System.Drawing.Point(224, 27)
         Me.Button_data_change.Name = "Button_data_change"
         Me.Button_data_change.Size = New System.Drawing.Size(85, 28)
         Me.Button_data_change.TabIndex = 56
@@ -617,9 +618,9 @@ Public Class GUI_Data_and_Results
         Me.Label_data_unit.AutoEllipsis = True
         Me.Label_data_unit.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_data_unit.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_data_unit.Location = New System.Drawing.Point(204, 30)
+        Me.Label_data_unit.Location = New System.Drawing.Point(12, 30)
         Me.Label_data_unit.Name = "Label_data_unit"
-        Me.Label_data_unit.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Label_data_unit.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_data_unit.Size = New System.Drawing.Size(110, 25)
         Me.Label_data_unit.TabIndex = 55
         Me.Label_data_unit.Text = "יחידות:"
@@ -638,7 +639,7 @@ Public Class GUI_Data_and_Results
         'TextBox_b
         '
         Me.TextBox_b.Font = New System.Drawing.Font("David", 10.8!)
-        Me.TextBox_b.Location = New System.Drawing.Point(8, 180)
+        Me.TextBox_b.Location = New System.Drawing.Point(202, 180)
         Me.TextBox_b.Name = "TextBox_b"
         Me.TextBox_b.ReadOnly = True
         Me.TextBox_b.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -654,7 +655,6 @@ Public Class GUI_Data_and_Results
         Me.Label_transverse01.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label_transverse01.Location = New System.Drawing.Point(8, 152)
         Me.Label_transverse01.Name = "Label_transverse01"
-        Me.Label_transverse01.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_transverse01.Size = New System.Drawing.Size(301, 21)
         Me.Label_transverse01.TabIndex = 10
         Me.Label_transverse01.Text = "רוחביים"
@@ -663,7 +663,7 @@ Public Class GUI_Data_and_Results
         'TextBox_nb
         '
         Me.TextBox_nb.Font = New System.Drawing.Font("David", 10.8!)
-        Me.TextBox_nb.Location = New System.Drawing.Point(8, 210)
+        Me.TextBox_nb.Location = New System.Drawing.Point(202, 210)
         Me.TextBox_nb.Name = "TextBox_nb"
         Me.TextBox_nb.ReadOnly = True
         Me.TextBox_nb.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -677,9 +677,8 @@ Public Class GUI_Data_and_Results
         Me.Label_non_central02.AutoEllipsis = True
         Me.Label_non_central02.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_non_central02.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_non_central02.Location = New System.Drawing.Point(122, 210)
+        Me.Label_non_central02.Location = New System.Drawing.Point(9, 210)
         Me.Label_non_central02.Name = "Label_non_central02"
-        Me.Label_non_central02.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_non_central02.Size = New System.Drawing.Size(187, 25)
         Me.Label_non_central02.TabIndex = 15
         Me.Label_non_central02.Text = "לא מרכזיים"
@@ -690,9 +689,8 @@ Public Class GUI_Data_and_Results
         Me.Label_central02.AutoEllipsis = True
         Me.Label_central02.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_central02.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_central02.Location = New System.Drawing.Point(122, 180)
+        Me.Label_central02.Location = New System.Drawing.Point(9, 180)
         Me.Label_central02.Name = "Label_central02"
-        Me.Label_central02.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_central02.Size = New System.Drawing.Size(187, 25)
         Me.Label_central02.TabIndex = 14
         Me.Label_central02.Text = "מרכזי"
@@ -701,7 +699,7 @@ Public Class GUI_Data_and_Results
         'TextBox_a
         '
         Me.TextBox_a.Font = New System.Drawing.Font("David", 10.8!)
-        Me.TextBox_a.Location = New System.Drawing.Point(8, 90)
+        Me.TextBox_a.Location = New System.Drawing.Point(202, 90)
         Me.TextBox_a.Name = "TextBox_a"
         Me.TextBox_a.ReadOnly = True
         Me.TextBox_a.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -728,9 +726,8 @@ Public Class GUI_Data_and_Results
         Me.Label_non_central01.AutoEllipsis = True
         Me.Label_non_central01.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_non_central01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_non_central01.Location = New System.Drawing.Point(122, 120)
+        Me.Label_non_central01.Location = New System.Drawing.Point(9, 120)
         Me.Label_non_central01.Name = "Label_non_central01"
-        Me.Label_non_central01.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_non_central01.Size = New System.Drawing.Size(187, 25)
         Me.Label_non_central01.TabIndex = 13
         Me.Label_non_central01.Text = "לא מרכזיים"
@@ -741,9 +738,8 @@ Public Class GUI_Data_and_Results
         Me.Label_central01.AutoEllipsis = True
         Me.Label_central01.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_central01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_central01.Location = New System.Drawing.Point(122, 90)
+        Me.Label_central01.Location = New System.Drawing.Point(9, 90)
         Me.Label_central01.Name = "Label_central01"
-        Me.Label_central01.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_central01.Size = New System.Drawing.Size(187, 25)
         Me.Label_central01.TabIndex = 12
         Me.Label_central01.Text = "מרכזי"
@@ -752,7 +748,7 @@ Public Class GUI_Data_and_Results
         'TextBox_na
         '
         Me.TextBox_na.Font = New System.Drawing.Font("David", 10.8!)
-        Me.TextBox_na.Location = New System.Drawing.Point(8, 120)
+        Me.TextBox_na.Location = New System.Drawing.Point(202, 120)
         Me.TextBox_na.Name = "TextBox_na"
         Me.TextBox_na.ReadOnly = True
         Me.TextBox_na.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -789,7 +785,7 @@ Public Class GUI_Data_and_Results
         Me.groupbox_general.Font = New System.Drawing.Font("David", 12.0!)
         Me.groupbox_general.Location = New System.Drawing.Point(377, 59)
         Me.groupbox_general.Name = "groupbox_general"
-        Me.groupbox_general.Size = New System.Drawing.Size(339, 172)
+        Me.groupbox_general.Size = New System.Drawing.Size(376, 172)
         Me.groupbox_general.TabIndex = 45
         Me.groupbox_general.TabStop = False
         Me.groupbox_general.Text = "General Properties"
@@ -799,9 +795,8 @@ Public Class GUI_Data_and_Results
         Me.Label_GPa.AutoEllipsis = True
         Me.Label_GPa.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_GPa.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_GPa.Location = New System.Drawing.Point(39, 80)
+        Me.Label_GPa.Location = New System.Drawing.Point(318, 80)
         Me.Label_GPa.Name = "Label_GPa"
-        Me.Label_GPa.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_GPa.Size = New System.Drawing.Size(52, 25)
         Me.Label_GPa.TabIndex = 54
         Me.Label_GPa.Text = "[GPa]"
@@ -812,7 +807,7 @@ Public Class GUI_Data_and_Results
         Me.button_BC_select.AutoEllipsis = True
         Me.button_BC_select.Font = New System.Drawing.Font("David", 10.8!)
         Me.button_BC_select.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.button_BC_select.Location = New System.Drawing.Point(6, 138)
+        Me.button_BC_select.Location = New System.Drawing.Point(293, 138)
         Me.button_BC_select.Name = "button_BC_select"
         Me.button_BC_select.Size = New System.Drawing.Size(81, 28)
         Me.button_BC_select.TabIndex = 53
@@ -824,7 +819,7 @@ Public Class GUI_Data_and_Results
         Me.combobox_P_units.Font = New System.Drawing.Font("David", 10.8!)
         Me.combobox_P_units.ItemHeight = 17
         Me.combobox_P_units.Items.AddRange(New Object() {"Pa", "Kpa", "Mpa"})
-        Me.combobox_P_units.Location = New System.Drawing.Point(6, 30)
+        Me.combobox_P_units.Location = New System.Drawing.Point(289, 30)
         Me.combobox_P_units.Name = "combobox_P_units"
         Me.combobox_P_units.Size = New System.Drawing.Size(81, 25)
         Me.combobox_P_units.TabIndex = 52
@@ -832,7 +827,7 @@ Public Class GUI_Data_and_Results
         'textbox_P_input
         '
         Me.textbox_P_input.Font = New System.Drawing.Font("David", 10.8!)
-        Me.textbox_P_input.Location = New System.Drawing.Point(96, 30)
+        Me.textbox_P_input.Location = New System.Drawing.Point(214, 30)
         Me.textbox_P_input.Name = "textbox_P_input"
         Me.textbox_P_input.Size = New System.Drawing.Size(52, 25)
         Me.textbox_P_input.TabIndex = 51
@@ -842,7 +837,7 @@ Public Class GUI_Data_and_Results
         'textbox_ni_input
         '
         Me.textbox_ni_input.Font = New System.Drawing.Font("David", 10.8!)
-        Me.textbox_ni_input.Location = New System.Drawing.Point(96, 110)
+        Me.textbox_ni_input.Location = New System.Drawing.Point(214, 110)
         Me.textbox_ni_input.Name = "textbox_ni_input"
         Me.textbox_ni_input.Size = New System.Drawing.Size(52, 25)
         Me.textbox_ni_input.TabIndex = 50
@@ -852,7 +847,7 @@ Public Class GUI_Data_and_Results
         'textbox_E_input
         '
         Me.textbox_E_input.Font = New System.Drawing.Font("David", 10.8!)
-        Me.textbox_E_input.Location = New System.Drawing.Point(96, 80)
+        Me.textbox_E_input.Location = New System.Drawing.Point(214, 80)
         Me.textbox_E_input.Name = "textbox_E_input"
         Me.textbox_E_input.Size = New System.Drawing.Size(52, 25)
         Me.textbox_E_input.TabIndex = 49
@@ -864,7 +859,7 @@ Public Class GUI_Data_and_Results
         Me.Label_pressure.AutoEllipsis = True
         Me.Label_pressure.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_pressure.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_pressure.Location = New System.Drawing.Point(149, 25)
+        Me.Label_pressure.Location = New System.Drawing.Point(13, 24)
         Me.Label_pressure.Name = "Label_pressure"
         Me.Label_pressure.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_pressure.Size = New System.Drawing.Size(180, 44)
@@ -877,7 +872,7 @@ Public Class GUI_Data_and_Results
         Me.label_ni.AutoEllipsis = True
         Me.label_ni.Font = New System.Drawing.Font("David", 10.8!)
         Me.label_ni.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.label_ni.Location = New System.Drawing.Point(149, 110)
+        Me.label_ni.Location = New System.Drawing.Point(13, 109)
         Me.label_ni.Name = "label_ni"
         Me.label_ni.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.label_ni.Size = New System.Drawing.Size(183, 25)
@@ -890,7 +885,7 @@ Public Class GUI_Data_and_Results
         Me.Label_E.AutoEllipsis = True
         Me.Label_E.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_E.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_E.Location = New System.Drawing.Point(149, 80)
+        Me.Label_E.Location = New System.Drawing.Point(13, 79)
         Me.Label_E.Name = "Label_E"
         Me.Label_E.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_E.Size = New System.Drawing.Size(183, 25)
@@ -901,7 +896,7 @@ Public Class GUI_Data_and_Results
         'numeric_case_input
         '
         Me.numeric_case_input.Font = New System.Drawing.Font("David", 10.8!)
-        Me.numeric_case_input.Location = New System.Drawing.Point(96, 140)
+        Me.numeric_case_input.Location = New System.Drawing.Point(214, 140)
         Me.numeric_case_input.Maximum = New Decimal(New Integer() {4, 0, 0, 0})
         Me.numeric_case_input.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.numeric_case_input.Name = "numeric_case_input"
@@ -915,7 +910,7 @@ Public Class GUI_Data_and_Results
         Me.Label_BC.AutoEllipsis = True
         Me.Label_BC.Font = New System.Drawing.Font("David", 10.8!)
         Me.Label_BC.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_BC.Location = New System.Drawing.Point(149, 140)
+        Me.Label_BC.Location = New System.Drawing.Point(12, 140)
         Me.Label_BC.Name = "Label_BC"
         Me.Label_BC.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_BC.Size = New System.Drawing.Size(180, 25)
@@ -999,6 +994,7 @@ Public Class GUI_Data_and_Results
         Me.ListView_steps.AutoArrange = False
         Me.ListView_steps.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView_steps.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+        Me.ListView_steps.HideSelection = False
         ListViewItem1.Checked = True
         ListViewItem1.StateImageIndex = 1
         ListViewItem2.Checked = True
@@ -1167,7 +1163,7 @@ Public Class GUI_Data_and_Results
         '
         Me.TextBox_Inb_d.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox_Inb_d.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.TextBox_Inb_d.Location = New System.Drawing.Point(17, 292)
+        Me.TextBox_Inb_d.Location = New System.Drawing.Point(177, 292)
         Me.TextBox_Inb_d.Name = "TextBox_Inb_d"
         Me.TextBox_Inb_d.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_Inb_d.Size = New System.Drawing.Size(68, 25)
@@ -1178,7 +1174,7 @@ Public Class GUI_Data_and_Results
         '
         Me.TextBox_Ina_d.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox_Ina_d.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.TextBox_Ina_d.Location = New System.Drawing.Point(17, 200)
+        Me.TextBox_Ina_d.Location = New System.Drawing.Point(177, 200)
         Me.TextBox_Ina_d.Name = "TextBox_Ina_d"
         Me.TextBox_Ina_d.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_Ina_d.Size = New System.Drawing.Size(68, 25)
@@ -1189,7 +1185,7 @@ Public Class GUI_Data_and_Results
         '
         Me.TextBox_Ia_d.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox_Ia_d.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.TextBox_Ia_d.Location = New System.Drawing.Point(17, 172)
+        Me.TextBox_Ia_d.Location = New System.Drawing.Point(177, 172)
         Me.TextBox_Ia_d.Name = "TextBox_Ia_d"
         Me.TextBox_Ia_d.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_Ia_d.Size = New System.Drawing.Size(68, 25)
@@ -1200,7 +1196,7 @@ Public Class GUI_Data_and_Results
         '
         Me.TextBox_Ib_d.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox_Ib_d.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.TextBox_Ib_d.Location = New System.Drawing.Point(17, 264)
+        Me.TextBox_Ib_d.Location = New System.Drawing.Point(177, 264)
         Me.TextBox_Ib_d.Name = "TextBox_Ib_d"
         Me.TextBox_Ib_d.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_Ib_d.Size = New System.Drawing.Size(68, 25)
@@ -1219,7 +1215,7 @@ Public Class GUI_Data_and_Results
         '
         Me.TextBox_Inb_b.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox_Inb_b.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.TextBox_Inb_b.Location = New System.Drawing.Point(100, 292)
+        Me.TextBox_Inb_b.Location = New System.Drawing.Point(260, 292)
         Me.TextBox_Inb_b.Name = "TextBox_Inb_b"
         Me.TextBox_Inb_b.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_Inb_b.Size = New System.Drawing.Size(68, 25)
@@ -1230,7 +1226,7 @@ Public Class GUI_Data_and_Results
         '
         Me.TextBox_Ina_b.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox_Ina_b.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.TextBox_Ina_b.Location = New System.Drawing.Point(100, 200)
+        Me.TextBox_Ina_b.Location = New System.Drawing.Point(260, 200)
         Me.TextBox_Ina_b.Name = "TextBox_Ina_b"
         Me.TextBox_Ina_b.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_Ina_b.Size = New System.Drawing.Size(68, 25)
@@ -1241,7 +1237,7 @@ Public Class GUI_Data_and_Results
         '
         Me.TextBox_Ia_b.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox_Ia_b.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.TextBox_Ia_b.Location = New System.Drawing.Point(100, 172)
+        Me.TextBox_Ia_b.Location = New System.Drawing.Point(260, 172)
         Me.TextBox_Ia_b.Name = "TextBox_Ia_b"
         Me.TextBox_Ia_b.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_Ia_b.Size = New System.Drawing.Size(68, 25)
@@ -1252,7 +1248,7 @@ Public Class GUI_Data_and_Results
         '
         Me.TextBox_Ib_b.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox_Ib_b.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.TextBox_Ib_b.Location = New System.Drawing.Point(100, 264)
+        Me.TextBox_Ib_b.Location = New System.Drawing.Point(260, 264)
         Me.TextBox_Ib_b.Name = "TextBox_Ib_b"
         Me.TextBox_Ib_b.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox_Ib_b.Size = New System.Drawing.Size(68, 25)
@@ -1265,7 +1261,7 @@ Public Class GUI_Data_and_Results
         Me.Label_b_change.AutoEllipsis = True
         Me.Label_b_change.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_b_change.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_b_change.Location = New System.Drawing.Point(87, 146)
+        Me.Label_b_change.Location = New System.Drawing.Point(247, 146)
         Me.Label_b_change.Name = "Label_b_change"
         Me.Label_b_change.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_b_change.Size = New System.Drawing.Size(93, 25)
@@ -1279,7 +1275,7 @@ Public Class GUI_Data_and_Results
         Me.Label_d_change.AutoEllipsis = True
         Me.Label_d_change.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_d_change.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_d_change.Location = New System.Drawing.Point(13, 146)
+        Me.Label_d_change.Location = New System.Drawing.Point(173, 146)
         Me.Label_d_change.Name = "Label_d_change"
         Me.Label_d_change.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_d_change.Size = New System.Drawing.Size(69, 25)
@@ -1292,7 +1288,7 @@ Public Class GUI_Data_and_Results
         Me.Label_longitudinals02.AutoEllipsis = True
         Me.Label_longitudinals02.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_longitudinals02.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_longitudinals02.Location = New System.Drawing.Point(186, 146)
+        Me.Label_longitudinals02.Location = New System.Drawing.Point(22, 146)
         Me.Label_longitudinals02.Name = "Label_longitudinals02"
         Me.Label_longitudinals02.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label_longitudinals02.Size = New System.Drawing.Size(139, 25)
@@ -1305,9 +1301,8 @@ Public Class GUI_Data_and_Results
         Me.Label_transverse02.AutoEllipsis = True
         Me.Label_transverse02.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_transverse02.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_transverse02.Location = New System.Drawing.Point(186, 233)
+        Me.Label_transverse02.Location = New System.Drawing.Point(22, 233)
         Me.Label_transverse02.Name = "Label_transverse02"
-        Me.Label_transverse02.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_transverse02.Size = New System.Drawing.Size(140, 25)
         Me.Label_transverse02.TabIndex = 28
         Me.Label_transverse02.Text = "קצרים"
@@ -1318,9 +1313,8 @@ Public Class GUI_Data_and_Results
         Me.Label_non_central04.AutoEllipsis = True
         Me.Label_non_central04.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_non_central04.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_non_central04.Location = New System.Drawing.Point(186, 291)
+        Me.Label_non_central04.Location = New System.Drawing.Point(22, 291)
         Me.Label_non_central04.Name = "Label_non_central04"
-        Me.Label_non_central04.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_non_central04.Size = New System.Drawing.Size(144, 25)
         Me.Label_non_central04.TabIndex = 32
         Me.Label_non_central04.Text = "משניים"
@@ -1331,9 +1325,8 @@ Public Class GUI_Data_and_Results
         Me.Label_central04.AutoEllipsis = True
         Me.Label_central04.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_central04.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_central04.Location = New System.Drawing.Point(186, 263)
+        Me.Label_central04.Location = New System.Drawing.Point(22, 263)
         Me.Label_central04.Name = "Label_central04"
-        Me.Label_central04.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_central04.Size = New System.Drawing.Size(144, 25)
         Me.Label_central04.TabIndex = 31
         Me.Label_central04.Text = "מרכזי"
@@ -1344,9 +1337,8 @@ Public Class GUI_Data_and_Results
         Me.Label_non_central03.AutoEllipsis = True
         Me.Label_non_central03.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_non_central03.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_non_central03.Location = New System.Drawing.Point(186, 200)
+        Me.Label_non_central03.Location = New System.Drawing.Point(22, 200)
         Me.Label_non_central03.Name = "Label_non_central03"
-        Me.Label_non_central03.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_non_central03.Size = New System.Drawing.Size(144, 25)
         Me.Label_non_central03.TabIndex = 30
         Me.Label_non_central03.Text = "משניים"
@@ -1357,9 +1349,8 @@ Public Class GUI_Data_and_Results
         Me.Label_central03.AutoEllipsis = True
         Me.Label_central03.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label_central03.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label_central03.Location = New System.Drawing.Point(186, 172)
+        Me.Label_central03.Location = New System.Drawing.Point(22, 172)
         Me.Label_central03.Name = "Label_central03"
-        Me.Label_central03.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label_central03.Size = New System.Drawing.Size(144, 25)
         Me.Label_central03.TabIndex = 29
         Me.Label_central03.Text = "מרכזי"
@@ -1438,9 +1429,9 @@ Public Class GUI_Data_and_Results
         Me.RichTextBox_results.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.RichTextBox_results.Size = New System.Drawing.Size(686, 91)
         Me.RichTextBox_results.TabIndex = 58
-        Me.RichTextBox_results.Text = "According to the FEA analyses that were performed, for unstiffened plates, all th" & _
-            "e relative errors between the analytic estimations and the FEA results are less " & _
-            "than 10 percents."
+        Me.RichTextBox_results.Text = "According to the FEA analyses that were performed, for unstiffened plates, all th" &
+    "e relative errors between the analytic estimations and the FEA results are less " &
+    "than 10 percents."
         Me.RichTextBox_results.Visible = False
         '
         'Label_SD
@@ -1640,7 +1631,7 @@ Public Class GUI_Data_and_Results
         'RadioButton_normal
         '
         Me.RadioButton_normal.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadioButton_normal.AutoEllipsis = True
         Me.RadioButton_normal.Location = New System.Drawing.Point(4, 21)
         Me.RadioButton_normal.Name = "RadioButton_normal"
@@ -1652,7 +1643,7 @@ Public Class GUI_Data_and_Results
         'RadioButton_fast
         '
         Me.RadioButton_fast.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadioButton_fast.AutoEllipsis = True
         Me.RadioButton_fast.Checked = True
         Me.RadioButton_fast.Location = New System.Drawing.Point(4, 55)
@@ -1673,9 +1664,9 @@ Public Class GUI_Data_and_Results
         Me.Label_affiliated.Name = "Label_affiliated"
         Me.Label_affiliated.Size = New System.Drawing.Size(763, 45)
         Me.Label_affiliated.TabIndex = 57
-        Me.Label_affiliated.Text = """ADINA Generator"" is in no way affiliated with ADINA R & D ,Inc. All ADINA tradem" & _
-            "arks and copyrights, except ""ADINA Generator"", are the property of their respect" & _
-            "ive holders."
+        Me.Label_affiliated.Text = """ADINA Generator"" is in no way affiliated with ADINA R & D ,Inc. All ADINA tradem" &
+    "arks and copyrights, except ""ADINA Generator"", are the property of their respect" &
+    "ive holders."
         Me.Label_affiliated.UseMnemonic = False
         '
         'PictureBox02
@@ -1721,7 +1712,7 @@ Public Class GUI_Data_and_Results
         'RichTextBox_model_qualify
         '
         Me.RichTextBox_model_qualify.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RichTextBox_model_qualify.BackColor = System.Drawing.Color.WhiteSmoke
         Me.RichTextBox_model_qualify.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox_model_qualify.BulletIndent = 1
@@ -1741,7 +1732,7 @@ Public Class GUI_Data_and_Results
         'RichTextBox_adina_msg
         '
         Me.RichTextBox_adina_msg.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RichTextBox_adina_msg.BackColor = System.Drawing.Color.WhiteSmoke
         Me.RichTextBox_adina_msg.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox_adina_msg.BulletIndent = 1
@@ -1754,8 +1745,8 @@ Public Class GUI_Data_and_Results
         Me.RichTextBox_adina_msg.ShowSelectionMargin = True
         Me.RichTextBox_adina_msg.Size = New System.Drawing.Size(683, 112)
         Me.RichTextBox_adina_msg.TabIndex = 51
-        Me.RichTextBox_adina_msg.Text = "ההגבלות הגאומטריות עבור ADINA Generator הן כדלקמן:" & Global.Microsoft.VisualBasic.ChrW(10) & "•  כל החיזוקים חייבים להיות בע" & _
-            "לי אותו גובה (עובי יכול להיות שונה)." & Global.Microsoft.VisualBasic.ChrW(10) & "•  לפחות חיזוק אחד חייב להיות בכל ציר."
+        Me.RichTextBox_adina_msg.Text = "ההגבלות הגאומטריות עבור ADINA Generator הן כדלקמן:" & Global.Microsoft.VisualBasic.ChrW(10) & "•  כל החיזוקים חייבים להיות בע" &
+    "לי אותו גובה (עובי יכול להיות שונה)." & Global.Microsoft.VisualBasic.ChrW(10) & "•  לפחות חיזוק אחד חייב להיות בכל ציר."
         '
         'Picture_eng_panel4
         '
@@ -1829,8 +1820,8 @@ Public Class GUI_Data_and_Results
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(859, 694)
         Me.Name = "GUI_Data_and_Results"
-        Me.Text = "סיכום נתונים וביצוע חישוב לפי מודל הפלטה האורתוטרופית (מבוסס על מאמר של A.H. SCHA" & _
-            "DE)"
+        Me.Text = "סיכום נתונים וביצוע חישוב לפי מודל הפלטה האורתוטרופית (מבוסס על מאמר של A.H. SCHA" &
+    "DE)"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.groupbox_plate_geo.ResumeLayout(False)
         CType(Me.numeric_t, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1871,6 +1862,7 @@ Public Class GUI_Data_and_Results
         CType(Me.Picture_heb_panel4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer.Panel1.ResumeLayout(False)
         Me.SplitContainer.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer.ResumeLayout(False)
         Me.ResumeLayout(False)
 
