@@ -150,10 +150,10 @@ Public Class GUI_Data_and_Results
     Friend WithEvents ImageList_model As System.Windows.Forms.ImageList
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Data Summary"}, 3, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Maximum Deflection Result"}, 2, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"model calculation"}, 4, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Create ADINA Model"}, 5, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Data Summary"}, 3, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Maximum Deflection Result"}, 2, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem7 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"model calculation"}, 4, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem8 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Create ADINA Model"}, 5, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GUI_Data_and_Results))
         Me.groupbox_plate_geo = New System.Windows.Forms.GroupBox()
         Me.Button_view_parameters = New System.Windows.Forms.Button()
@@ -920,13 +920,15 @@ Public Class GUI_Data_and_Results
         '
         'RichTextBox_result_for_saving
         '
+        Me.RichTextBox_result_for_saving.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RichTextBox_result_for_saving.BackColor = System.Drawing.Color.White
         Me.RichTextBox_result_for_saving.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.RichTextBox_result_for_saving.Location = New System.Drawing.Point(20, 295)
         Me.RichTextBox_result_for_saving.Name = "RichTextBox_result_for_saving"
         Me.RichTextBox_result_for_saving.ReadOnly = True
         Me.RichTextBox_result_for_saving.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.RichTextBox_result_for_saving.Size = New System.Drawing.Size(604, 224)
+        Me.RichTextBox_result_for_saving.Size = New System.Drawing.Size(720, 224)
         Me.RichTextBox_result_for_saving.TabIndex = 46
         Me.RichTextBox_result_for_saving.Text = ""
         Me.RichTextBox_result_for_saving.WordWrap = False
@@ -936,7 +938,7 @@ Public Class GUI_Data_and_Results
         Me.Button_compute.AutoEllipsis = True
         Me.Button_compute.Font = New System.Drawing.Font("David", 11.8!)
         Me.Button_compute.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_compute.Location = New System.Drawing.Point(522, 8)
+        Me.Button_compute.Location = New System.Drawing.Point(21, 11)
         Me.Button_compute.Name = "Button_compute"
         Me.Button_compute.Size = New System.Drawing.Size(182, 45)
         Me.Button_compute.TabIndex = 47
@@ -946,7 +948,7 @@ Public Class GUI_Data_and_Results
         '
         Me.Textbox_results.Font = New System.Drawing.Font("David", 28.2!)
         Me.Textbox_results.ForeColor = System.Drawing.Color.Gray
-        Me.Textbox_results.Location = New System.Drawing.Point(9, 12)
+        Me.Textbox_results.Location = New System.Drawing.Point(460, 12)
         Me.Textbox_results.Name = "Textbox_results"
         Me.Textbox_results.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Textbox_results.Size = New System.Drawing.Size(244, 54)
@@ -959,9 +961,9 @@ Public Class GUI_Data_and_Results
         Me.label_msg01.AutoEllipsis = True
         Me.label_msg01.Font = New System.Drawing.Font("David", 11.8!)
         Me.label_msg01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.label_msg01.Location = New System.Drawing.Point(261, 9)
+        Me.label_msg01.Location = New System.Drawing.Point(209, 9)
         Me.label_msg01.Name = "label_msg01"
-        Me.label_msg01.Size = New System.Drawing.Size(255, 64)
+        Me.label_msg01.Size = New System.Drawing.Size(241, 57)
         Me.label_msg01.TabIndex = 55
         Me.label_msg01.Text = "Maximum deflection at center of plate"
         Me.label_msg01.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -971,7 +973,7 @@ Public Class GUI_Data_and_Results
         Me.Button_more_error.AutoEllipsis = True
         Me.Button_more_error.Font = New System.Drawing.Font("David", 10.8!)
         Me.Button_more_error.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button_more_error.Location = New System.Drawing.Point(522, 64)
+        Me.Button_more_error.Location = New System.Drawing.Point(21, 64)
         Me.Button_more_error.Name = "Button_more_error"
         Me.Button_more_error.Size = New System.Drawing.Size(182, 45)
         Me.Button_more_error.TabIndex = 57
@@ -980,6 +982,7 @@ Public Class GUI_Data_and_Results
         '
         'button_results_clear
         '
+        Me.button_results_clear.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.button_results_clear.Font = New System.Drawing.Font("David", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.button_results_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.button_results_clear.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -995,15 +998,15 @@ Public Class GUI_Data_and_Results
         Me.ListView_steps.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView_steps.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.ListView_steps.HideSelection = False
-        ListViewItem1.Checked = True
-        ListViewItem1.StateImageIndex = 1
-        ListViewItem2.Checked = True
-        ListViewItem2.StateImageIndex = 1
-        ListViewItem3.Checked = True
-        ListViewItem3.StateImageIndex = 1
-        ListViewItem4.Checked = True
-        ListViewItem4.StateImageIndex = 5
-        Me.ListView_steps.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
+        ListViewItem5.Checked = True
+        ListViewItem5.StateImageIndex = 1
+        ListViewItem6.Checked = True
+        ListViewItem6.StateImageIndex = 1
+        ListViewItem7.Checked = True
+        ListViewItem7.StateImageIndex = 1
+        ListViewItem8.Checked = True
+        ListViewItem8.StateImageIndex = 5
+        Me.ListView_steps.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8})
         Me.ListView_steps.LargeImageList = Me.ImageList_listview
         Me.ListView_steps.Location = New System.Drawing.Point(0, 0)
         Me.ListView_steps.Name = "ListView_steps"
@@ -1387,7 +1390,7 @@ Public Class GUI_Data_and_Results
         'NumericUpDown_SD
         '
         Me.NumericUpDown_SD.AutoSize = True
-        Me.NumericUpDown_SD.Location = New System.Drawing.Point(460, 78)
+        Me.NumericUpDown_SD.Location = New System.Drawing.Point(656, 76)
         Me.NumericUpDown_SD.Maximum = New Decimal(New Integer() {8, 0, 0, 0})
         Me.NumericUpDown_SD.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDown_SD.Name = "NumericUpDown_SD"
@@ -1401,7 +1404,7 @@ Public Class GUI_Data_and_Results
         Me.Picture_eng_panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Picture_eng_panel2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Picture_eng_panel2.Image = Global.SPE.My.Resources.Resources.flag_english01
-        Me.Picture_eng_panel2.Location = New System.Drawing.Point(721, 32)
+        Me.Picture_eng_panel2.Location = New System.Drawing.Point(721, 40)
         Me.Picture_eng_panel2.Name = "Picture_eng_panel2"
         Me.Picture_eng_panel2.Size = New System.Drawing.Size(32, 16)
         Me.Picture_eng_panel2.TabIndex = 61
@@ -1412,7 +1415,7 @@ Public Class GUI_Data_and_Results
         Me.Picture_heb_panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Picture_heb_panel2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Picture_heb_panel2.Image = Global.SPE.My.Resources.Resources.flag_hebrew01
-        Me.Picture_heb_panel2.Location = New System.Drawing.Point(721, 8)
+        Me.Picture_heb_panel2.Location = New System.Drawing.Point(721, 16)
         Me.Picture_heb_panel2.Name = "Picture_heb_panel2"
         Me.Picture_heb_panel2.Size = New System.Drawing.Size(32, 20)
         Me.Picture_heb_panel2.TabIndex = 60
@@ -1420,9 +1423,9 @@ Public Class GUI_Data_and_Results
         '
         'RichTextBox_results
         '
-        Me.RichTextBox_results.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.RichTextBox_results.BackColor = System.Drawing.SystemColors.Control
         Me.RichTextBox_results.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.RichTextBox_results.ForeColor = System.Drawing.Color.Chartreuse
+        Me.RichTextBox_results.ForeColor = System.Drawing.Color.Black
         Me.RichTextBox_results.Location = New System.Drawing.Point(18, 115)
         Me.RichTextBox_results.Name = "RichTextBox_results"
         Me.RichTextBox_results.ReadOnly = True
@@ -1438,7 +1441,7 @@ Public Class GUI_Data_and_Results
         '
         Me.Label_SD.AutoEllipsis = True
         Me.Label_SD.Font = New System.Drawing.Font("David", 11.8!)
-        Me.Label_SD.Location = New System.Drawing.Point(14, 80)
+        Me.Label_SD.Location = New System.Drawing.Point(207, 76)
         Me.Label_SD.Name = "Label_SD"
         Me.Label_SD.Size = New System.Drawing.Size(436, 22)
         Me.Label_SD.TabIndex = 63
@@ -1462,6 +1465,7 @@ Public Class GUI_Data_and_Results
         '
         'button_results_save_HTML
         '
+        Me.button_results_save_HTML.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.button_results_save_HTML.Font = New System.Drawing.Font("David", 13.8!)
         Me.button_results_save_HTML.Location = New System.Drawing.Point(203, 584)
         Me.button_results_save_HTML.Name = "button_results_save_HTML"
@@ -1473,24 +1477,28 @@ Public Class GUI_Data_and_Results
         '
         'GroupBox_choose_language
         '
+        Me.GroupBox_choose_language.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_choose_language.Controls.Add(Me.GroupBox_update)
         Me.GroupBox_choose_language.Controls.Add(Me.RadioButton_other_language)
         Me.GroupBox_choose_language.Controls.Add(Me.RadioButton_default_english)
         Me.GroupBox_choose_language.Controls.Add(Me.RichTextBox_result_for_saving_HTML)
-        Me.GroupBox_choose_language.Location = New System.Drawing.Point(20, 24)
+        Me.GroupBox_choose_language.Location = New System.Drawing.Point(20, 26)
         Me.GroupBox_choose_language.Name = "GroupBox_choose_language"
-        Me.GroupBox_choose_language.Size = New System.Drawing.Size(604, 246)
+        Me.GroupBox_choose_language.Size = New System.Drawing.Size(695, 246)
         Me.GroupBox_choose_language.TabIndex = 66
         Me.GroupBox_choose_language.TabStop = False
         '
         'GroupBox_update
         '
+        Me.GroupBox_update.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_update.Controls.Add(Me.RadioButton_add_replace)
         Me.GroupBox_update.Controls.Add(Me.Button_update)
         Me.GroupBox_update.Controls.Add(Me.RadioButton_add_after)
         Me.GroupBox_update.Location = New System.Drawing.Point(16, 85)
         Me.GroupBox_update.Name = "GroupBox_update"
-        Me.GroupBox_update.Size = New System.Drawing.Size(566, 155)
+        Me.GroupBox_update.Size = New System.Drawing.Size(668, 155)
         Me.GroupBox_update.TabIndex = 70
         Me.GroupBox_update.TabStop = False
         Me.GroupBox_update.Text = "Update of text"
@@ -1508,8 +1516,9 @@ Public Class GUI_Data_and_Results
         '
         'Button_update
         '
+        Me.Button_update.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Button_update.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.Button_update.Location = New System.Drawing.Point(215, 103)
+        Me.Button_update.Location = New System.Drawing.Point(279, 103)
         Me.Button_update.Name = "Button_update"
         Me.Button_update.Size = New System.Drawing.Size(113, 46)
         Me.Button_update.TabIndex = 67
@@ -1586,6 +1595,7 @@ Public Class GUI_Data_and_Results
         '
         'button_results_save
         '
+        Me.button_results_save.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.button_results_save.Font = New System.Drawing.Font("David", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.button_results_save.Image = CType(resources.GetObject("button_results_save.Image"), System.Drawing.Image)
         Me.button_results_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1621,12 +1631,12 @@ Public Class GUI_Data_and_Results
         Me.GroupBox_creation_type.Controls.Add(Me.RadioButton_normal)
         Me.GroupBox_creation_type.Controls.Add(Me.RadioButton_fast)
         Me.GroupBox_creation_type.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.GroupBox_creation_type.Location = New System.Drawing.Point(21, 435)
+        Me.GroupBox_creation_type.Location = New System.Drawing.Point(21, 438)
         Me.GroupBox_creation_type.Name = "GroupBox_creation_type"
         Me.GroupBox_creation_type.Size = New System.Drawing.Size(712, 96)
         Me.GroupBox_creation_type.TabIndex = 58
         Me.GroupBox_creation_type.TabStop = False
-        Me.GroupBox_creation_type.Text = "ADD THIS TO LANG FILES"
+        Me.GroupBox_creation_type.Text = "Creation Mode"
         '
         'RadioButton_normal
         '
@@ -1803,10 +1813,10 @@ Public Class GUI_Data_and_Results
         '
         'SplitContainer.Panel2
         '
-        Me.SplitContainer.Panel2.Controls.Add(Me.Panel1)
-        Me.SplitContainer.Panel2.Controls.Add(Me.Panel2)
         Me.SplitContainer.Panel2.Controls.Add(Me.Panel4)
         Me.SplitContainer.Panel2.Controls.Add(Me.Panel3)
+        Me.SplitContainer.Panel2.Controls.Add(Me.Panel2)
+        Me.SplitContainer.Panel2.Controls.Add(Me.Panel1)
         Me.SplitContainer.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.SplitContainer.Size = New System.Drawing.Size(926, 686)
         Me.SplitContainer.SplitterDistance = 159
