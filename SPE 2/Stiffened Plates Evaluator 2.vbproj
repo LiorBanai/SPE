@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
-		<TargetFrameworks>net48;net472;net471</TargetFrameworks>
+		<TargetFramework>net471</TargetFramework>
 		<GenerateResourceUsePreserializedResources>false</GenerateResourceUsePreserializedResources>
 		<PackageId>Analogy.CommonControls</PackageId>
 		<Authors>Lior Banai</Authors>
@@ -30,6 +30,9 @@
 		<OutputPath>bin\</OutputPath>
 		<WarningLevel>1</WarningLevel>
 		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Latest|AnyCPU'">
+		<OutputPath>bin\</OutputPath>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<DefineDebug>true</DefineDebug>
