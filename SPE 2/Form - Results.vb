@@ -150,10 +150,10 @@ Public Class GUI_Data_and_Results
     Friend WithEvents ImageList_model As System.Windows.Forms.ImageList
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Data Summary"}, 3, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Maximum Deflection Result"}, 2, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem7 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"model calculation"}, 4, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
-        Dim ListViewItem8 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Create ADINA Model"}, 5, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Data Summary"}, 3, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Maximum Deflection Result"}, 2, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"model calculation"}, 4, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
+        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Create ADINA Model"}, 5, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, New System.Drawing.Font("David", 12.0!))
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GUI_Data_and_Results))
         Me.groupbox_plate_geo = New System.Windows.Forms.GroupBox()
         Me.Button_view_parameters = New System.Windows.Forms.Button()
@@ -621,7 +621,7 @@ Public Class GUI_Data_and_Results
         Me.Label_data_unit.Location = New System.Drawing.Point(12, 30)
         Me.Label_data_unit.Name = "Label_data_unit"
         Me.Label_data_unit.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label_data_unit.Size = New System.Drawing.Size(110, 25)
+        Me.Label_data_unit.Size = New System.Drawing.Size(107, 25)
         Me.Label_data_unit.TabIndex = 55
         Me.Label_data_unit.Text = "יחידות:"
         Me.Label_data_unit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -764,7 +764,7 @@ Public Class GUI_Data_and_Results
         Me.data_units.Font = New System.Drawing.Font("David", 10.8!)
         Me.data_units.ItemHeight = 17
         Me.data_units.Items.AddRange(New Object() {"[m^4]", "[cm^4]", "[mm^4]"})
-        Me.data_units.Location = New System.Drawing.Point(116, 30)
+        Me.data_units.Location = New System.Drawing.Point(129, 29)
         Me.data_units.Name = "data_units"
         Me.data_units.Size = New System.Drawing.Size(84, 25)
         Me.data_units.TabIndex = 54
@@ -998,15 +998,15 @@ Public Class GUI_Data_and_Results
         Me.ListView_steps.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView_steps.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.ListView_steps.HideSelection = False
-        ListViewItem5.Checked = True
-        ListViewItem5.StateImageIndex = 1
-        ListViewItem6.Checked = True
-        ListViewItem6.StateImageIndex = 1
-        ListViewItem7.Checked = True
-        ListViewItem7.StateImageIndex = 1
-        ListViewItem8.Checked = True
-        ListViewItem8.StateImageIndex = 5
-        Me.ListView_steps.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8})
+        ListViewItem1.Checked = True
+        ListViewItem1.StateImageIndex = 1
+        ListViewItem2.Checked = True
+        ListViewItem2.StateImageIndex = 1
+        ListViewItem3.Checked = True
+        ListViewItem3.StateImageIndex = 1
+        ListViewItem4.Checked = True
+        ListViewItem4.StateImageIndex = 5
+        Me.ListView_steps.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
         Me.ListView_steps.LargeImageList = Me.ImageList_listview
         Me.ListView_steps.Location = New System.Drawing.Point(0, 0)
         Me.ListView_steps.Name = "ListView_steps"
@@ -1682,7 +1682,7 @@ Public Class GUI_Data_and_Results
         'PictureBox02
         '
         Me.PictureBox02.Image = CType(resources.GetObject("PictureBox02.Image"), System.Drawing.Image)
-        Me.PictureBox02.Location = New System.Drawing.Point(574, 356)
+        Me.PictureBox02.Location = New System.Drawing.Point(581, 356)
         Me.PictureBox02.Name = "PictureBox02"
         Me.PictureBox02.Size = New System.Drawing.Size(157, 55)
         Me.PictureBox02.TabIndex = 56
@@ -1702,7 +1702,7 @@ Public Class GUI_Data_and_Results
         'Button_Run_ADINA
         '
         Me.Button_Run_ADINA.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.Button_Run_ADINA.Location = New System.Drawing.Point(378, 336)
+        Me.Button_Run_ADINA.Location = New System.Drawing.Point(386, 336)
         Me.Button_Run_ADINA.Name = "Button_Run_ADINA"
         Me.Button_Run_ADINA.Size = New System.Drawing.Size(180, 88)
         Me.Button_Run_ADINA.TabIndex = 54
@@ -1712,7 +1712,7 @@ Public Class GUI_Data_and_Results
         'Button_feed_ADINA
         '
         Me.Button_feed_ADINA.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.Button_feed_ADINA.Location = New System.Drawing.Point(184, 336)
+        Me.Button_feed_ADINA.Location = New System.Drawing.Point(196, 336)
         Me.Button_feed_ADINA.Name = "Button_feed_ADINA"
         Me.Button_feed_ADINA.Size = New System.Drawing.Size(180, 88)
         Me.Button_feed_ADINA.TabIndex = 53
@@ -1813,10 +1813,10 @@ Public Class GUI_Data_and_Results
         '
         'SplitContainer.Panel2
         '
+        Me.SplitContainer.Panel2.Controls.Add(Me.Panel1)
         Me.SplitContainer.Panel2.Controls.Add(Me.Panel4)
         Me.SplitContainer.Panel2.Controls.Add(Me.Panel3)
         Me.SplitContainer.Panel2.Controls.Add(Me.Panel2)
-        Me.SplitContainer.Panel2.Controls.Add(Me.Panel1)
         Me.SplitContainer.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.SplitContainer.Size = New System.Drawing.Size(926, 686)
         Me.SplitContainer.SplitterDistance = 159
