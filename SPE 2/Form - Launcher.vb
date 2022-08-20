@@ -320,7 +320,7 @@ Public Class GUI_Launcher
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RichTextBox_messages.BackColor = System.Drawing.SystemColors.Control
         Me.RichTextBox_messages.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox_messages.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+        Me.RichTextBox_messages.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.RichTextBox_messages.ForeColor = System.Drawing.SystemColors.HotTrack
         Me.RichTextBox_messages.Location = New System.Drawing.Point(100, 46)
         Me.RichTextBox_messages.Name = "RichTextBox_messages"
@@ -457,7 +457,7 @@ Public Class GUI_Launcher
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MenuStrip.Size = New System.Drawing.Size(1159, 32)
+        Me.MenuStrip.Size = New System.Drawing.Size(1159, 31)
         Me.MenuStrip.TabIndex = 28
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -465,39 +465,39 @@ Public Class GUI_Launcher
         '
         Me.TSM_file.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_exit})
         Me.TSM_file.Name = "TSM_file"
-        Me.TSM_file.Size = New System.Drawing.Size(46, 28)
+        Me.TSM_file.Size = New System.Drawing.Size(49, 28)
         Me.TSM_file.Text = "File"
         '
         'TSM_exit
         '
         Me.TSM_exit.Image = Global.SPE.My.Resources.Resources.menu_exit
         Me.TSM_exit.Name = "TSM_exit"
-        Me.TSM_exit.Size = New System.Drawing.Size(116, 26)
+        Me.TSM_exit.Size = New System.Drawing.Size(121, 28)
         Me.TSM_exit.Text = "Exit"
         '
         'TSM_Base_Functions
         '
         Me.TSM_Base_Functions.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_input, Me.TSM_DB, Me.TSM_FEA})
         Me.TSM_Base_Functions.Name = "TSM_Base_Functions"
-        Me.TSM_Base_Functions.Size = New System.Drawing.Size(120, 28)
+        Me.TSM_Base_Functions.Size = New System.Drawing.Size(137, 28)
         Me.TSM_Base_Functions.Text = "Base Functions"
         '
         'TSM_input
         '
         Me.TSM_input.Name = "TSM_input"
-        Me.TSM_input.Size = New System.Drawing.Size(335, 26)
+        Me.TSM_input.Size = New System.Drawing.Size(372, 28)
         Me.TSM_input.Text = "Maximum Deflection Analysis"
         '
         'TSM_DB
         '
         Me.TSM_DB.Name = "TSM_DB"
-        Me.TSM_DB.Size = New System.Drawing.Size(335, 26)
+        Me.TSM_DB.Size = New System.Drawing.Size(372, 28)
         Me.TSM_DB.Text = "Stiffeners Database"
         '
         'TSM_FEA
         '
         Me.TSM_FEA.Name = "TSM_FEA"
-        Me.TSM_FEA.Size = New System.Drawing.Size(335, 26)
+        Me.TSM_FEA.Size = New System.Drawing.Size(372, 28)
         Me.TSM_FEA.Text = "FEA results of performed simulations"
         Me.TSM_FEA.Visible = False
         '
@@ -505,40 +505,40 @@ Public Class GUI_Launcher
         '
         Me.TSM_Addons.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_ADINA})
         Me.TSM_Addons.Name = "TSM_Addons"
-        Me.TSM_Addons.Size = New System.Drawing.Size(80, 28)
+        Me.TSM_Addons.Size = New System.Drawing.Size(89, 28)
         Me.TSM_Addons.Text = "Add-ons"
         '
         'TSM_ADINA
         '
         Me.TSM_ADINA.Image = Global.SPE.My.Resources.Resources.menu_adina
         Me.TSM_ADINA.Name = "TSM_ADINA"
-        Me.TSM_ADINA.Size = New System.Drawing.Size(201, 26)
+        Me.TSM_ADINA.Size = New System.Drawing.Size(220, 28)
         Me.TSM_ADINA.Text = "Adina Generator"
         '
         'TSM_Model
         '
         Me.TSM_Model.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_Orthotropic, Me.TSM_Grillage})
         Me.TSM_Model.Name = "TSM_Model"
-        Me.TSM_Model.Size = New System.Drawing.Size(131, 28)
+        Me.TSM_Model.Size = New System.Drawing.Size(146, 28)
         Me.TSM_Model.Text = "Model Selection"
         '
         'TSM_Orthotropic
         '
         Me.TSM_Orthotropic.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_Orthotropic_last, Me.TSM_Orthotropic_summary})
         Me.TSM_Orthotropic.Name = "TSM_Orthotropic"
-        Me.TSM_Orthotropic.Size = New System.Drawing.Size(245, 26)
+        Me.TSM_Orthotropic.Size = New System.Drawing.Size(269, 28)
         Me.TSM_Orthotropic.Text = "Ortotropic Plate model"
         '
         'TSM_Orthotropic_last
         '
         Me.TSM_Orthotropic_last.Name = "TSM_Orthotropic_last"
-        Me.TSM_Orthotropic_last.Size = New System.Drawing.Size(239, 26)
+        Me.TSM_Orthotropic_last.Size = New System.Drawing.Size(262, 28)
         Me.TSM_Orthotropic_last.Text = "View Last Results"
         '
         'TSM_Orthotropic_summary
         '
         Me.TSM_Orthotropic_summary.Name = "TSM_Orthotropic_summary"
-        Me.TSM_Orthotropic_summary.Size = New System.Drawing.Size(239, 26)
+        Me.TSM_Orthotropic_summary.Size = New System.Drawing.Size(262, 28)
         Me.TSM_Orthotropic_summary.Text = "Read Model Summary"
         Me.TSM_Orthotropic_summary.Visible = False
         '
@@ -546,20 +546,20 @@ Public Class GUI_Launcher
         '
         Me.TSM_Grillage.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_Grillage_last, Me.TSM_grillage_summary})
         Me.TSM_Grillage.Name = "TSM_Grillage"
-        Me.TSM_Grillage.Size = New System.Drawing.Size(245, 26)
+        Me.TSM_Grillage.Size = New System.Drawing.Size(269, 28)
         Me.TSM_Grillage.Text = "Grillage model"
         '
         'TSM_Grillage_last
         '
         Me.TSM_Grillage_last.Name = "TSM_Grillage_last"
-        Me.TSM_Grillage_last.Size = New System.Drawing.Size(239, 26)
+        Me.TSM_Grillage_last.Size = New System.Drawing.Size(262, 28)
         Me.TSM_Grillage_last.Text = "View Last Results"
         '
         'TSM_grillage_summary
         '
         Me.TSM_grillage_summary.Enabled = False
         Me.TSM_grillage_summary.Name = "TSM_grillage_summary"
-        Me.TSM_grillage_summary.Size = New System.Drawing.Size(239, 26)
+        Me.TSM_grillage_summary.Size = New System.Drawing.Size(262, 28)
         Me.TSM_grillage_summary.Text = "Read Model Summary"
         Me.TSM_grillage_summary.Visible = False
         '
@@ -567,72 +567,73 @@ Public Class GUI_Launcher
         '
         Me.TSM_Language.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_hebrew, Me.TSM_english, Me.TSM_User_made, Me.TSM_separator02, Me.TSM_Remember_lang, Me.TSM_current_info})
         Me.TSM_Language.Name = "TSM_Language"
-        Me.TSM_Language.Size = New System.Drawing.Size(88, 28)
+        Me.TSM_Language.Size = New System.Drawing.Size(99, 28)
         Me.TSM_Language.Text = "Language"
         '
         'TSM_hebrew
         '
+        Me.TSM_hebrew.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.TSM_hebrew.Image = Global.SPE.My.Resources.Resources.menu_hebrew
         Me.TSM_hebrew.Name = "TSM_hebrew"
-        Me.TSM_hebrew.Size = New System.Drawing.Size(309, 26)
+        Me.TSM_hebrew.Size = New System.Drawing.Size(347, 28)
         Me.TSM_hebrew.Text = "עברית"
         '
         'TSM_english
         '
         Me.TSM_english.Image = Global.SPE.My.Resources.Resources.menu_english
         Me.TSM_english.Name = "TSM_english"
-        Me.TSM_english.Size = New System.Drawing.Size(309, 26)
+        Me.TSM_english.Size = New System.Drawing.Size(347, 28)
         Me.TSM_english.Text = "English"
         '
         'TSM_User_made
         '
         Me.TSM_User_made.Image = Global.SPE.My.Resources.Resources.question_mark
         Me.TSM_User_made.Name = "TSM_User_made"
-        Me.TSM_User_made.Size = New System.Drawing.Size(309, 26)
+        Me.TSM_User_made.Size = New System.Drawing.Size(347, 28)
         Me.TSM_User_made.Text = "User-made languages"
         '
         'TSM_separator02
         '
         Me.TSM_separator02.Name = "TSM_separator02"
-        Me.TSM_separator02.Size = New System.Drawing.Size(306, 6)
+        Me.TSM_separator02.Size = New System.Drawing.Size(344, 6)
         '
         'TSM_Remember_lang
         '
         Me.TSM_Remember_lang.Checked = True
         Me.TSM_Remember_lang.CheckState = System.Windows.Forms.CheckState.Checked
         Me.TSM_Remember_lang.Name = "TSM_Remember_lang"
-        Me.TSM_Remember_lang.Size = New System.Drawing.Size(309, 26)
+        Me.TSM_Remember_lang.Size = New System.Drawing.Size(347, 28)
         Me.TSM_Remember_lang.Text = "Remember language on next run"
         '
         'TSM_current_info
         '
         Me.TSM_current_info.Image = Global.SPE.My.Resources.Resources.menu_information01
         Me.TSM_current_info.Name = "TSM_current_info"
-        Me.TSM_current_info.Size = New System.Drawing.Size(309, 26)
+        Me.TSM_current_info.Size = New System.Drawing.Size(347, 28)
         Me.TSM_current_info.Text = "Current language information"
         '
         'TSM_Help
         '
         Me.TSM_Help.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_Version_History, Me.TSM_separator01, Me.TSM_About})
         Me.TSM_Help.Name = "TSM_Help"
-        Me.TSM_Help.Size = New System.Drawing.Size(55, 28)
+        Me.TSM_Help.Size = New System.Drawing.Size(59, 28)
         Me.TSM_Help.Text = "Help"
         '
         'TSM_Version_History
         '
         Me.TSM_Version_History.Name = "TSM_Version_History"
-        Me.TSM_Version_History.Size = New System.Drawing.Size(188, 26)
+        Me.TSM_Version_History.Size = New System.Drawing.Size(206, 28)
         Me.TSM_Version_History.Text = "Version history"
         '
         'TSM_separator01
         '
         Me.TSM_separator01.Name = "TSM_separator01"
-        Me.TSM_separator01.Size = New System.Drawing.Size(185, 6)
+        Me.TSM_separator01.Size = New System.Drawing.Size(203, 6)
         '
         'TSM_About
         '
         Me.TSM_About.Name = "TSM_About"
-        Me.TSM_About.Size = New System.Drawing.Size(188, 26)
+        Me.TSM_About.Size = New System.Drawing.Size(206, 28)
         Me.TSM_About.Text = "about"
         '
         'TSM_combo_prompt
@@ -642,6 +643,7 @@ Public Class GUI_Launcher
         Me.TSM_combo_prompt.Name = "TSM_combo_prompt"
         Me.TSM_combo_prompt.Size = New System.Drawing.Size(270, 28)
         Me.TSM_combo_prompt.Text = "Currently disabled "
+        Me.TSM_combo_prompt.Visible = False
         '
         'Button_model_grillage
         '
@@ -829,7 +831,6 @@ Public Class GUI_Launcher
         Me.MinimumSize = New System.Drawing.Size(965, 698)
         Me.Name = "GUI_Launcher"
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 8)
-        Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Deflection Evaluator: Evaluate Maximum Deflection at Center of stiffened Plates/P" &
     "anels Due To Uniform Load"
