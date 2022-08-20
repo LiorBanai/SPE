@@ -451,6 +451,7 @@ Public Class GUI_Launcher
         '
         'MenuStrip
         '
+        Me.MenuStrip.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSM_file, Me.TSM_Base_Functions, Me.TSM_Addons, Me.TSM_Model, Me.TSM_Language, Me.TSM_Help, Me.TSM_combo_prompt})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
@@ -654,11 +655,11 @@ Public Class GUI_Launcher
         '
         Me.GroupBox_current_model.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_current_model.Controls.Add(Me.ComboBox_current_model)
-        Me.GroupBox_current_model.Font = New System.Drawing.Font("David", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.GroupBox_current_model.Location = New System.Drawing.Point(4, 597)
+        Me.GroupBox_current_model.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+        Me.GroupBox_current_model.Location = New System.Drawing.Point(4, 581)
         Me.GroupBox_current_model.Name = "GroupBox_current_model"
         Me.GroupBox_current_model.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupBox_current_model.Size = New System.Drawing.Size(358, 65)
+        Me.GroupBox_current_model.Size = New System.Drawing.Size(444, 79)
         Me.GroupBox_current_model.TabIndex = 31
         Me.GroupBox_current_model.TabStop = False
         Me.GroupBox_current_model.Text = "Current model"
@@ -668,11 +669,11 @@ Public Class GUI_Launcher
         Me.ComboBox_current_model.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ComboBox_current_model.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox_current_model.Font = New System.Drawing.Font("David", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+        Me.ComboBox_current_model.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.ComboBox_current_model.FormattingEnabled = True
-        Me.ComboBox_current_model.Location = New System.Drawing.Point(6, 24)
+        Me.ComboBox_current_model.Location = New System.Drawing.Point(6, 35)
         Me.ComboBox_current_model.Name = "ComboBox_current_model"
-        Me.ComboBox_current_model.Size = New System.Drawing.Size(340, 25)
+        Me.ComboBox_current_model.Size = New System.Drawing.Size(426, 33)
         Me.ComboBox_current_model.TabIndex = 32
         '
         'Label_fast_results
@@ -710,6 +711,7 @@ Public Class GUI_Launcher
         Me.GroupBox_new.Controls.Add(Me.PictureBox_new)
         Me.GroupBox_new.Controls.Add(Me.PictureBox_SAOS)
         Me.GroupBox_new.Controls.Add(Me.GroupBox_fast_results)
+        Me.GroupBox_new.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox_new.Location = New System.Drawing.Point(454, 484)
         Me.GroupBox_new.Name = "GroupBox_new"
         Me.GroupBox_new.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -733,7 +735,7 @@ Public Class GUI_Launcher
         'RichTextBox_new
         '
         Me.RichTextBox_new.BackColor = System.Drawing.Color.Cyan
-        Me.RichTextBox_new.Font = New System.Drawing.Font("David", 10.15!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+        Me.RichTextBox_new.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.RichTextBox_new.Location = New System.Drawing.Point(45, 28)
         Me.RichTextBox_new.Name = "RichTextBox_new"
         Me.RichTextBox_new.ReadOnly = True
@@ -766,11 +768,12 @@ Public Class GUI_Launcher
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsGithub, Me.tsKoFi, Me.tsPayPal})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 720)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 717)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1159, 26)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1159, 29)
         Me.StatusStrip1.TabIndex = 37
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -778,26 +781,26 @@ Public Class GUI_Launcher
         '
         Me.tsGithub.Image = Global.SPE.My.Resources.Resources.github16x16
         Me.tsGithub.Name = "tsGithub"
-        Me.tsGithub.Size = New System.Drawing.Size(76, 20)
+        Me.tsGithub.Size = New System.Drawing.Size(84, 23)
         Me.tsGithub.Text = "GitHub"
         '
         'tsKoFi
         '
         Me.tsKoFi.Image = Global.SPE.My.Resources.Resources.ko_fi_logo_blue_16x16
         Me.tsKoFi.Name = "tsKoFi"
-        Me.tsKoFi.Size = New System.Drawing.Size(58, 20)
+        Me.tsKoFi.Size = New System.Drawing.Size(62, 23)
         Me.tsKoFi.Text = "KoFi"
         '
         'tsPayPal
         '
         Me.tsPayPal.Image = Global.SPE.My.Resources.Resources.paypal16
         Me.tsPayPal.Name = "tsPayPal"
-        Me.tsPayPal.Size = New System.Drawing.Size(70, 20)
+        Me.tsPayPal.Size = New System.Drawing.Size(78, 23)
         Me.tsPayPal.Text = "PayPal"
         '
         'GUI_Launcher
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 18)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1159, 754)
@@ -820,7 +823,7 @@ Public Class GUI_Launcher
         Me.Controls.Add(Me.button_input)
         Me.Controls.Add(Me.button_database)
         Me.Controls.Add(Me.GroupBox_model)
-        Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip
         Me.MinimumSize = New System.Drawing.Size(965, 698)
