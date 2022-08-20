@@ -457,7 +457,7 @@ Public Class GUI_Launcher
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MenuStrip.Size = New System.Drawing.Size(1159, 31)
+        Me.MenuStrip.Size = New System.Drawing.Size(1159, 32)
         Me.MenuStrip.TabIndex = 28
         Me.MenuStrip.Text = "MenuStrip1"
         '
