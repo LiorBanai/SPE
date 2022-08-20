@@ -20,6 +20,9 @@ Originally was created in Visual basic using .Net framework 1.1.
 
 ## History
 
+### V2.1.0
+- Updated to 2022
+
 ### V2.0.0
 - This version is a 2006 version, post submission, which added additional Model (Grillage model) and English  langague
 - this version is for reference only
