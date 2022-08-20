@@ -80,7 +80,6 @@ Public Class GUI_Launcher
     Friend WithEvents TSM_separator01 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents TSM_About As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button_model_grillage As System.Windows.Forms.Button
-    Friend WithEvents Button_model_compare As System.Windows.Forms.Button
     Friend WithEvents GroupBox_current_model As System.Windows.Forms.GroupBox
     Friend WithEvents ComboBox_current_model As System.Windows.Forms.ComboBox
     Friend WithEvents TSM_combo_prompt As System.Windows.Forms.ToolStripComboBox
@@ -93,13 +92,13 @@ Public Class GUI_Launcher
     Friend WithEvents Button_DOI As System.Windows.Forms.Button
     Friend WithEvents GroupBox_new As System.Windows.Forms.GroupBox
     Friend WithEvents PictureBox_new As System.Windows.Forms.PictureBox
-    Friend WithEvents VScrollBar_new As System.Windows.Forms.VScrollBar
     Friend WithEvents RichTextBox_new As System.Windows.Forms.RichTextBox
     Friend WithEvents PictureBox_SAOS As System.Windows.Forms.PictureBox
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents tsGithub As ToolStripStatusLabel
     Friend WithEvents tsKoFi As ToolStripStatusLabel
     Friend WithEvents tsPayPal As ToolStripStatusLabel
+    Friend WithEvents PictureBox_MT As PictureBox
     Friend WithEvents TSM_Orthotropic_summary As System.Windows.Forms.ToolStripMenuItem
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -156,17 +155,16 @@ Public Class GUI_Launcher
         Me.TSM_About = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSM_combo_prompt = New System.Windows.Forms.ToolStripComboBox()
         Me.Button_model_grillage = New System.Windows.Forms.Button()
-        Me.Button_model_compare = New System.Windows.Forms.Button()
         Me.GroupBox_current_model = New System.Windows.Forms.GroupBox()
         Me.ComboBox_current_model = New System.Windows.Forms.ComboBox()
         Me.Label_fast_results = New System.Windows.Forms.Label()
         Me.GroupBox_fast_results = New System.Windows.Forms.GroupBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox_new = New System.Windows.Forms.GroupBox()
+        Me.PictureBox_MT = New System.Windows.Forms.PictureBox()
         Me.RichTextBox_new = New System.Windows.Forms.RichTextBox()
         Me.PictureBox_new = New System.Windows.Forms.PictureBox()
         Me.PictureBox_SAOS = New System.Windows.Forms.PictureBox()
-        Me.VScrollBar_new = New System.Windows.Forms.VScrollBar()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tsGithub = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tsKoFi = New System.Windows.Forms.ToolStripStatusLabel()
@@ -183,6 +181,7 @@ Public Class GUI_Launcher
         Me.GroupBox_current_model.SuspendLayout()
         Me.GroupBox_fast_results.SuspendLayout()
         Me.GroupBox_new.SuspendLayout()
+        CType(Me.PictureBox_MT, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_new, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_SAOS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
@@ -229,17 +228,18 @@ Public Class GUI_Launcher
         '
         Me.picture_navy_sign.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.picture_navy_sign.Image = CType(resources.GetObject("picture_navy_sign.Image"), System.Drawing.Image)
-        Me.picture_navy_sign.Location = New System.Drawing.Point(981, 39)
+        Me.picture_navy_sign.Location = New System.Drawing.Point(1013, 120)
         Me.picture_navy_sign.Name = "picture_navy_sign"
         Me.picture_navy_sign.Size = New System.Drawing.Size(135, 128)
         Me.picture_navy_sign.TabIndex = 8
         Me.picture_navy_sign.TabStop = False
+        Me.picture_navy_sign.Visible = False
         '
         'picture_navy_HQ_patch
         '
         Me.picture_navy_HQ_patch.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.picture_navy_HQ_patch.Image = CType(resources.GetObject("picture_navy_HQ_patch.Image"), System.Drawing.Image)
-        Me.picture_navy_HQ_patch.Location = New System.Drawing.Point(976, 167)
+        Me.picture_navy_HQ_patch.Location = New System.Drawing.Point(976, 254)
         Me.picture_navy_HQ_patch.Name = "picture_navy_HQ_patch"
         Me.picture_navy_HQ_patch.Size = New System.Drawing.Size(172, 183)
         Me.picture_navy_HQ_patch.TabIndex = 9
@@ -650,15 +650,6 @@ Public Class GUI_Launcher
         Me.Button_model_grillage.Size = New System.Drawing.Size(90, 90)
         Me.Button_model_grillage.TabIndex = 29
         '
-        'Button_model_compare
-        '
-        Me.Button_model_compare.Enabled = False
-        Me.Button_model_compare.Location = New System.Drawing.Point(207, 436)
-        Me.Button_model_compare.Name = "Button_model_compare"
-        Me.Button_model_compare.Size = New System.Drawing.Size(90, 90)
-        Me.Button_model_compare.TabIndex = 30
-        Me.Button_model_compare.Visible = False
-        '
         'GroupBox_current_model
         '
         Me.GroupBox_current_model.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
@@ -691,7 +682,7 @@ Public Class GUI_Launcher
         Me.Label_fast_results.AutoEllipsis = True
         Me.Label_fast_results.Location = New System.Drawing.Point(6, 26)
         Me.Label_fast_results.Name = "Label_fast_results"
-        Me.Label_fast_results.Size = New System.Drawing.Size(548, 25)
+        Me.Label_fast_results.Size = New System.Drawing.Size(670, 25)
         Me.Label_fast_results.TabIndex = 0
         '
         'GroupBox_fast_results
@@ -700,9 +691,9 @@ Public Class GUI_Launcher
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox_fast_results.Controls.Add(Me.Label_fast_results)
         Me.GroupBox_fast_results.Font = New System.Drawing.Font("David", 12.0!)
-        Me.GroupBox_fast_results.Location = New System.Drawing.Point(6, 143)
+        Me.GroupBox_fast_results.Location = New System.Drawing.Point(6, 162)
         Me.GroupBox_fast_results.Name = "GroupBox_fast_results"
-        Me.GroupBox_fast_results.Size = New System.Drawing.Size(560, 65)
+        Me.GroupBox_fast_results.Size = New System.Drawing.Size(682, 65)
         Me.GroupBox_fast_results.TabIndex = 35
         Me.GroupBox_fast_results.TabStop = False
         Me.GroupBox_fast_results.Visible = False
@@ -714,31 +705,42 @@ Public Class GUI_Launcher
         'GroupBox_new
         '
         Me.GroupBox_new.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox_new.Controls.Add(Me.PictureBox_MT)
         Me.GroupBox_new.Controls.Add(Me.RichTextBox_new)
         Me.GroupBox_new.Controls.Add(Me.PictureBox_new)
         Me.GroupBox_new.Controls.Add(Me.PictureBox_SAOS)
-        Me.GroupBox_new.Controls.Add(Me.VScrollBar_new)
         Me.GroupBox_new.Controls.Add(Me.GroupBox_fast_results)
-        Me.GroupBox_new.Location = New System.Drawing.Point(576, 503)
+        Me.GroupBox_new.Location = New System.Drawing.Point(454, 484)
         Me.GroupBox_new.Name = "GroupBox_new"
         Me.GroupBox_new.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupBox_new.Size = New System.Drawing.Size(572, 214)
+        Me.GroupBox_new.Size = New System.Drawing.Size(694, 233)
         Me.GroupBox_new.TabIndex = 36
         Me.GroupBox_new.TabStop = False
         Me.GroupBox_new.Text = "What's New"
+        '
+        'PictureBox_MT
+        '
+        Me.PictureBox_MT.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox_MT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox_MT.Image = Global.SPE.My.Resources.Resources.SNAME
+        Me.PictureBox_MT.Location = New System.Drawing.Point(544, 12)
+        Me.PictureBox_MT.Name = "PictureBox_MT"
+        Me.PictureBox_MT.Size = New System.Drawing.Size(144, 144)
+        Me.PictureBox_MT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox_MT.TabIndex = 39
+        Me.PictureBox_MT.TabStop = False
         '
         'RichTextBox_new
         '
         Me.RichTextBox_new.BackColor = System.Drawing.Color.Cyan
         Me.RichTextBox_new.Font = New System.Drawing.Font("David", 10.15!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
-        Me.RichTextBox_new.Location = New System.Drawing.Point(37, 28)
+        Me.RichTextBox_new.Location = New System.Drawing.Point(45, 28)
         Me.RichTextBox_new.Name = "RichTextBox_new"
         Me.RichTextBox_new.ReadOnly = True
-        Me.RichTextBox_new.Size = New System.Drawing.Size(380, 95)
+        Me.RichTextBox_new.Size = New System.Drawing.Size(380, 128)
         Me.RichTextBox_new.TabIndex = 1
-        Me.RichTextBox_new.Text = "Welcome to the new and improved Stiffened Plates Evaluator." & Global.Microsoft.VisualBasic.ChrW(10) & "Due to my extremely l" &
-    "imited time, some features are currently disabled and won't be back until Februa" &
-    "ry 2007."
+        Me.RichTextBox_new.Text = "Welcome to the new and improved Stiffened Plates Evaluator." & Global.Microsoft.VisualBasic.ChrW(10) & "This program was crea" &
+    "ted in 2005." & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'PictureBox_new
         '
@@ -755,22 +757,12 @@ Public Class GUI_Launcher
         Me.PictureBox_SAOS.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox_SAOS.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox_SAOS.Image = Global.SPE.My.Resources.Resources.SAOS_cover
-        Me.PictureBox_SAOS.Location = New System.Drawing.Point(456, 12)
+        Me.PictureBox_SAOS.Location = New System.Drawing.Point(431, 28)
         Me.PictureBox_SAOS.Name = "PictureBox_SAOS"
         Me.PictureBox_SAOS.Size = New System.Drawing.Size(95, 125)
         Me.PictureBox_SAOS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox_SAOS.TabIndex = 37
         Me.PictureBox_SAOS.TabStop = False
-        '
-        'VScrollBar_new
-        '
-        Me.VScrollBar_new.LargeChange = 6
-        Me.VScrollBar_new.Location = New System.Drawing.Point(418, 28)
-        Me.VScrollBar_new.Maximum = 5
-        Me.VScrollBar_new.Name = "VScrollBar_new"
-        Me.VScrollBar_new.Size = New System.Drawing.Size(20, 95)
-        Me.VScrollBar_new.TabIndex = 37
-        Me.VScrollBar_new.Visible = False
         '
         'StatusStrip1
         '
@@ -825,7 +817,6 @@ Public Class GUI_Launcher
         Me.Controls.Add(Me.Button_model_orthotropic)
         Me.Controls.Add(Me.Button_model_grillage)
         Me.Controls.Add(Me.button_FEA_results)
-        Me.Controls.Add(Me.Button_model_compare)
         Me.Controls.Add(Me.button_input)
         Me.Controls.Add(Me.button_database)
         Me.Controls.Add(Me.GroupBox_model)
@@ -854,6 +845,7 @@ Public Class GUI_Launcher
         Me.GroupBox_fast_results.ResumeLayout(False)
         Me.GroupBox_new.ResumeLayout(False)
         Me.GroupBox_new.PerformLayout()
+        CType(Me.PictureBox_MT, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_new, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_SAOS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StatusStrip1.ResumeLayout(False)
@@ -1091,11 +1083,7 @@ Public Class GUI_Launcher
             Else
                 Button_model_grillage.Visible = True
             End If
-            If Button_model_compare.Visible = True Then
-                Button_model_compare.Visible = False
-            Else
-                Button_model_compare.Visible = True
-            End If
+
         End If
     End Sub
     Private Sub Button_ADINA_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button_ADINA.MouseHover
@@ -1260,7 +1248,7 @@ Public Class GUI_Launcher
     Private Sub TSM_hebrew_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TSM_hebrew.Click, Picture_heb.Click
         TSM_hebrew.Enabled = True
         GUI_set("default_heb.ini")
-            language_settings.language_current_file = "default_heb.ini"
+        language_settings.language_current_file = "default_heb.ini"
         local_language = "default_heb.ini"
         language_settings.language_remember = TSM_Remember_lang.Checked
         general_settings.save_settings_to_registry()
@@ -1432,7 +1420,7 @@ Public Class GUI_Launcher
 
     Private Sub PictureBox_SAOS_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox_SAOS.Click
         Try
-            System.Diagnostics.Process.Start("http://www.informaworld.com/smpp/content~content=a780653062~db=all~order=page")
+            System.Diagnostics.Process.Start("http://dx.doi.org/10.1533/saos.2005.0135")
         Catch ex As Exception
             MessageBox.Show("Unable to open the link that was clicked.")
         End Try
@@ -1477,6 +1465,13 @@ Public Class GUI_Launcher
         End Try
     End Sub
 
+    Private Sub PictureBox_MT_Click(sender As Object, e As EventArgs) Handles PictureBox_MT.Click
+        Try
+            System.Diagnostics.Process.Start("https://doi.org/10.5957/mt1.2007.44.4.212")
+        Catch ex As Exception
+            MessageBox.Show("Unable to open link that was clicked.")
+        End Try
+    End Sub
 End Class
 
 

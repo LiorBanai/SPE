@@ -121,6 +121,9 @@
   <data name="Exclamation_bulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exclamation_bulb.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="default_eng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default_eng.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="m_portal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\m_portal.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,9 +166,6 @@
   <data name="icon_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_check.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="both_models_BC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\both_models_BC4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="results_geo3_case_3and4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\results - geo3 case 3+4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,6 +175,9 @@
   <data name="flag_english01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flag-english01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SPE01_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SPE01.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mt_shadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mt_shadow.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,9 +186,6 @@
   </data>
   <data name="menu_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_exit.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="geometry_grillage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\geometry_grillage.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="m_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\m_map.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +199,8 @@
   <data name="greasypalm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\greasypalm.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="default_eng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\default_eng.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="geometry_grillage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geometry_grillage.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_confirmation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_confirmation.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,14 +217,14 @@
   <data name="both_models_BC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\both_models_BC2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cashbag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cashbag.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button_model_grillage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_model_grillage.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrw01_04a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrw01_04a.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bar_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bar_graph.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="both_models_BC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\both_models_BC4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SAOS_cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SAOS_cover.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,8 +232,8 @@
   <data name="github16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\github16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button_model_grillage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button_model_grillage.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cashbag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cashbag.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="both_models_BC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\both_models_BC1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,6 +259,9 @@
   <data name="results_geo4_case_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\results - geo4 case all.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="paypal16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paypal16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bidvertiser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bidvertiser.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,10 +271,10 @@
   <data name="rpoints" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rpoints.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SPE01_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPE01.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bar_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bar_graph.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="paypal16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\paypal16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SNAME" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SNAME.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

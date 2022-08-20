@@ -377,6 +377,7 @@
     <None Include="Resources\results - geo4 case all.jpg" />
     <None Include="Resources\mt_shadow.gif" />
     <None Include="Resources\greasypalm.gif" />
+    <None Include="Resources\SNAME.png" />
     <Content Include="results.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
